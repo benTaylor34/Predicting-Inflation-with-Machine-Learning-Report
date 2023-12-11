@@ -1,0 +1,11 @@
+\begin{thebibliography}{1}
+
+\bibitem{10.1145/1553374.1553453}
+Honglak Lee, Roger Grosse, Rajesh Ranganath, and Andrew~Y. Ng.
+\newblock Convolutional deep belief networks for scalable unsupervised learning
+  of hierarchical representations.
+\newblock In {\em Proceedings of the 26th Annual International Conference on
+  Machine Learning}, ICML '09, page 609–616, New York, NY, USA, 2009.
+  Association for Computing Machinery.
+
+\end{thebibliography}

@@ -1,7 +1,7 @@
-PWD c:\Users\Ben\OneDrive\Documents\Computer_Science_Uni\Year 3\FYP\latex
+PWD c:\Users\Ben\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report
 INPUT C:\Users\Ben\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Ben\OneDrive\Documents\Computer_Science_Uni\Year 3\FYP\latex\thesis.tex
-OUTPUT thesis.log
+INPUT c:\Users\Ben\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report\Thesis.tex
+OUTPUT Thesis.log
 INPUT .\luthesis.cls
 INPUT luthesis.cls
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
@@ -138,10 +138,10 @@ INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\thesis.aux
-INPUT .\thesis.aux
-INPUT thesis.aux
-OUTPUT thesis.aux
+INPUT .\Thesis.aux
+INPUT .\Thesis.aux
+INPUT Thesis.aux
+OUTPUT Thesis.aux
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -156,14 +156,14 @@ INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-n
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
-INPUT .\thesis.out
-INPUT .\thesis.out
-INPUT thesis.out
-INPUT thesis.out
-OUTPUT thesis.pdf
-INPUT .\thesis.out
-INPUT .\thesis.out
-OUTPUT thesis.out
+INPUT .\Thesis.out
+INPUT .\Thesis.out
+INPUT Thesis.out
+INPUT Thesis.out
+OUTPUT Thesis.pdf
+INPUT .\Thesis.out
+INPUT .\Thesis.out
+OUTPUT Thesis.out
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -187,18 +187,22 @@ INPUT Abstract.tex
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\thesis.toc
-INPUT .\thesis.toc
-INPUT thesis.toc
-OUTPUT thesis.toc
-INPUT .\thesis.lof
-INPUT .\thesis.lof
-INPUT thesis.lof
-OUTPUT thesis.lof
-INPUT .\thesis.lot
-INPUT .\thesis.lot
-INPUT thesis.lot
-OUTPUT thesis.lot
+INPUT .\Thesis.toc
+INPUT .\Thesis.toc
+INPUT Thesis.toc
+OUTPUT Thesis.toc
+INPUT .\Thesis.lof
+INPUT .\Thesis.lof
+INPUT Thesis.lof
+OUTPUT Thesis.lof
+INPUT .\Thesis.lot
+INPUT .\Thesis.lot
+INPUT Thesis.lot
+OUTPUT Thesis.lot
+INPUT .\Thesis.bbl
+INPUT .\Thesis.bbl
+INPUT Thesis.bbl
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
@@ -210,9 +214,10 @@ INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT Literature Review.tex
-INPUT thesis.aux
-INPUT .\thesis.out
-INPUT .\thesis.out
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
+INPUT Thesis.aux
+INPUT .\Thesis.out
+INPUT .\Thesis.out
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -221,3 +226,7 @@ INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl12.pfb
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl12.pfb
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb

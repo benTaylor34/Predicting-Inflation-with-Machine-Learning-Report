@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  7 DEC 2023 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  11 DEC 2023 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Ben/OneDrive/Documents/Computer_Science_Uni/Year 3/FYP/latex/thesis.tex"
-(c:/Users/Ben/OneDrive/Documents/Computer_Science_Uni/Year 3/FYP/latex/thesis.tex
+**c:/Users/Ben/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex
+(c:/Users/Ben/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (luthesis.cls
@@ -288,8 +288,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box53
-) (thesis.aux)
-\openout1 = `thesis.aux'.
+) (Thesis.aux)
+\openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -371,9 +371,9 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 27.
-(thesis.out) (thesis.out)
+(Thesis.out) (Thesis.out)
 \@outlinefile=\write3
-\openout3 = `thesis.out'.
+\openout3 = `Thesis.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 29.
@@ -421,9 +421,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (thesis.toc)
+] (Thesis.toc)
 \tf@toc=\write4
-\openout4 = `thesis.toc'.
+\openout4 = `Thesis.toc'.
 
  [4
 color push 0 g 0 G
@@ -479,9 +479,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (thesis.lof)
+] (Thesis.lof)
 \tf@lof=\write5
-\openout5 = `thesis.lof'.
+\openout5 = `Thesis.lof'.
 
  [5
 color push 0 g 0 G
@@ -491,9 +491,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (thesis.lot)
+] (Thesis.lot)
 \tf@lot=\write6
-\openout6 = `thesis.lot'.
+\openout6 = `Thesis.lot'.
 
  [6
 color push 0 g 0 G
@@ -503,12 +503,22 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (Introduction.tex
-Chapter 1.
-) (Literature Review.tex [1
+] (Thesis.bbl) (Introduction.tex [1
 color push 0 g 0 G
 color pop
 
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 1.
+) (Literature Review.tex [2
+color push 0 g 0 G
+color pop
 
 color push 0 g 0 G
 color pop
@@ -516,7 +526,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-) [2
+[3
 color push 0 g 0 G
 color pop
 
@@ -524,9 +534,18 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+]) [4
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
 Chapter 3.
-[3
+[5
 color push 0 g 0 G
 color pop
 
@@ -536,7 +555,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 4.
-[4
+[6
 color push 0 g 0 G
 color pop
 
@@ -546,7 +565,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 5.
-[5
+[7
 color push 0 g 0 G
 color pop
 
@@ -554,26 +573,26 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (thesis.aux)
+] (Thesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-Package rerunfilecheck Info: File `thesis.out' has not changed.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: E0056BCD7CC891716E695C1D60B5FA3F;1856.
  ) 
 Here is how much of TeX's memory you used:
- 11423 strings out of 475248
- 185690 string characters out of 5758757
- 1924785 words of memory out of 5000000
- 32737 multiletter control sequences out of 15000+600000
- 563836 words of font info for 55 fonts, out of 8000000 for 9000
+ 11446 strings out of 475248
+ 186277 string characters out of 5758757
+ 1925785 words of memory out of 5000000
+ 32751 multiletter control sequences out of 15000+600000
+ 564535 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,340b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on thesis.pdf (11 pages, 89234 bytes).
+ 75i,14n,79p,348b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Thesis.pdf (13 pages, 118794 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
