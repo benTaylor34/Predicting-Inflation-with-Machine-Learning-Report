@@ -214,6 +214,7 @@ INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT Literature Review.tex
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
 INPUT Thesis.aux
 INPUT .\Thesis.out

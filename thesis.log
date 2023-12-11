@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  11 DEC 2023 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  11 DEC 2023 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,6 +469,18 @@ color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -514,6 +526,10 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
 Chapter 1.
 ) (Literature Review.tex [2
@@ -530,12 +546,16 @@ Chapter 2.
 color push 0 g 0 G
 color pop
 
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]) [4
 color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
@@ -579,20 +599,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E0056BCD7CC891716E695C1D60B5FA3F;1856.
+(rerunfilecheck)             Checksum: BA02F9DCC865BEEAD522CFE320D3A138;2400.
  ) 
 Here is how much of TeX's memory you used:
- 11446 strings out of 475248
- 186277 string characters out of 5758757
- 1925785 words of memory out of 5000000
- 32751 multiletter control sequences out of 15000+600000
- 564535 words of font info for 57 fonts, out of 8000000 for 9000
+ 11457 strings out of 475248
+ 186498 string characters out of 5758757
+ 1926785 words of memory out of 5000000
+ 32757 multiletter control sequences out of 15000+600000
+ 564842 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,348b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,384b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (13 pages, 118794 bytes).
+Output written on Thesis.pdf (13 pages, 123629 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

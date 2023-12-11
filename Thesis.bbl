@@ -1,11 +1,18 @@
 \begin{thebibliography}{1}
 
-\bibitem{10.1145/1553374.1553453}
-Honglak Lee, Roger Grosse, Rajesh Ranganath, and Andrew~Y. Ng.
-\newblock Convolutional deep belief networks for scalable unsupervised learning
-  of hierarchical representations.
-\newblock In {\em Proceedings of the 26th Annual International Conference on
-  Machine Learning}, ICML '09, page 609–616, New York, NY, USA, 2009.
-  Association for Computing Machinery.
+\bibitem{achelis2001technical}
+Steven~B Achelis.
+\newblock Technical analysis from a to z, 2001.
+
+\bibitem{tsay2005analysis}
+Ruey~S Tsay.
+\newblock {\em Analysis of financial time series}.
+\newblock John wiley \& sons, 2005.
+
+\bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
+G.~Udny Yule.
+\newblock Why do we sometimes get nonsense-correlations between time-series?--a
+  study in sampling and the nature of time-series.
+\newblock {\em Journal of the Royal Statistical Society}, 89(1):1--63, 1926.
 
 \end{thebibliography}
