@@ -1,0 +1,48 @@
+%%% first attempt at thesis in latex
+%%% going for setup + introduction and literature review
+\documentclass[mono, fyp]{luthesis}
+\usepackage{showframe}
+\programme{Computer Science}
+\setmodcode{COUB01}
+\idnumber{F014621}
+\setfyptext{A Project Report}
+\usepackage[pdftitle={Prediciting Inflation With Machine Learning},%
+  pdfauthor={Ben M. Taylor},%
+  pdfsubject={}]{hyperref}
+\usepackage{booktabs}
+
+%%%
+%%% Header info
+%%%
+\title{Predicting Inflation With Machine Learning}
+\author{Ben M. Taylor}
+
+\thesisDateDay{2nd}
+\thesisDateMonth{12}
+\thesisDateYear{2024}
+
+%%%
+%%% Document Body
+%%%
+\begin{document}
+\maketitle
+\frontmatter
+\input{Abstract}
+
+\chapter{Acknowledgements}
+Acknowledgement chapter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+\input{Introduction}
+
+\input{Literature Review}
+
+\chapter{Main chapters}
+\chapter{Conclusion}
+\chapter{References}
+\end{document}

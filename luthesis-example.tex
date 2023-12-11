@@ -1,0 +1,696 @@
+%%% This is an example thesis that you can use with luthesis.
+%%%
+%%% There are some choices as to how you format your thesis.
+%%% Please read the comments in this file for information.
+%%%
+%%% Please also read the comments in luthesis.cls as they provide
+%%% more details.
+%%%
+\documentclass[twoside,openright,iwp,online]{luthesis}  
+% There are other options for other theses.  Check the documentation below
+\usepackage{showframe}
+% Usage for Final Year Projects (fyp in options)
+\programme{Computer Science}
+\setmodcode{13COC253}
+\idnumber{B123456}
+\setfyptext{A Project Report}
+
+% Usage for MSc dissertations (msc in options)
+\programme{Internet Computing and Network Security}
+\programmeshort{ICNS}
+\idnumber{B123456}
+\supervisor{Dr Fred Bloggs}
+
+% For PhD use no options.
+
+\usepackage[pdftitle={Information on Using luthesis},%
+  pdfauthor={Matthew Tylee Atkinson,Iain Phillips},%
+  pdfsubject={}]{hyperref}
+
+\usepackage{booktabs}
+
+%%%
+%%% Header information
+%%%
+\title{Information on Using \textsf{luthesis}} 
+\author{Matthew Tylee Atkinson \& Iain Phillips}
+
+% We specify the date the thesis was printed and signed
+% (these may be merged in future releases).
+\thesisDateDay{35th}
+\thesisDateMonth{12}  % If you put the name instead of the number, you
+                      % will get the error ``Missing number, treated
+                      % as zero.''
+\thesisDateYear{2042}
+
+%%%
+%%% The Document Body
+%%%
+\begin{document}
+\maketitle % generates our title page and appropriate forms
+
+\frontmatter
+\chapter{Abstract}
+
+\textbf{This document contains lots of useful information on how to
+  use \textsf{luthesis} and \LaTeX\ in general to typeset your thesis.
+  Please read it carefully.}
+
+This is the abstract.  It could have been marked-up in an
+\verb|abstract| environment, but then would not have appeared in the
+Table of Contents (ToC).
+
+\chapter{Acknowledgements}
+
+This is the ACKs chapter.  It is quite hard to write!
+
+Whilst we're here, it is important to point out that in your real
+thesis, you should probably keep each chapter in a separate
+\verb|.tex| file.  You bring these into your document using
+\verb|\include{filename}| (without the \verb|.tex| extension).
+
+I would like to acknowledge Mark Withall, John Whitley and Iain
+Phillips for contributing code for and help with \textsf{luthesis}.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter   % you need this before the first real chapter of your
+              % thesis.
+
+\chapter{Introduction}
+
+Here set out your main goals.  Make sure you define all of the terms
+in your thesis title.
+
+You may also find the following programs useful:
+\textbf{lacheck}~\cite{lacheck} for detecting common errors in your
+code and \textbf{latexmk} and \textbf{rubber}~\cite{rubber} for
+automating the building of complex \LaTeX\ documents (note that this
+doesn't currently work with \textsf{glossaries} sadly---feel free to
+patch it to add the support!)
+
+Don't forget to read the recommended introduction to
+\LaTeX\footnote{\url{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}}.
+
+You can use the \textsf{beamer} package~\cite{beamer} to typeset
+presentations!
+
+If you need help with \TeX, then consult the \TeX\
+FAQ\footnote{\url{http://faq.tug.org}}.  There is also the newsgroup
+\verb|comp.text.tex| and Loughborough's local mailing list,
+``typo'' (send an email (with any subject) containing the
+  words \texttt{subscribe typo} in the body to
+  \url{majordomo@lists.lboro.ac.uk}).  Of course, we encourage active
+discussion in the lab about \TeX, too!
+
+If you need help using this \verb!luthesis! class, then subscribe to the
+\verb!luthesis! mailing list following the instructions above.
+
+\section{Which \TeX\ Distribution?}
+
+If you are using Linux, you should install the \TeX Live packages
+(which could be as simple as opening a terminal and typing
+\verb|apt-get install texlive-latex| if you're using Debian or
+Ubuntu).
+
+For other systems visit \url{http://www.texlive.org} and download the
+files specific to your operating system.
+
+\emph{It is important to note that most, if not all, of the packages
+  mentioned here should be included in your \TeX\ distribution
+  already---including documentation.}
+
+\section{Which Editor?}
+
+There are many \TeX\ and \LaTeX\ editors available, ranging from the
+classic text editors such as \textbf{vim} (of which there is a Mac
+version\footnote{\url{http://code.google.com/p/macvim/}}) and emacs
+(see Appendix) to dedicated ``\LaTeX\ IDE''s\footnote{e.g.\ Kile
+  \url{http://kile.sourceforge.net/}} or more wordprocessor-like
+programs\footnote{i.e.\ LyX \url{http://www.lyx.org/}}.
+
+There will be an editor to suit your style of working!
+
+\section{Which Bibliography Manager?}
+
+This is a very important area!  The best one we've found is
+BibDesk\footnote{\url{http://bibdesk.sourceforge.net/}}.  However,
+this is Mac-only, so you'll probably like to try either
+KBibTeX\footnote{\url{http://www.unix-ag.uni-kl.de/~fischer/kbibtex/}}
+if you are on Linux or
+JabRef\footnote{\url{http://jabref.sourceforge.net/}} if you want a
+cross-platform solution.
+
+There are also some new web-entangled systems that look quite
+interesting.  Of course there are bookmarking sites such as
+\url{http://www.citeulike.com/} but there is also a system that lives
+inside one's web browser, too.\footnote{Zotero
+  \url{http://www.zotero.org/}}
+
+Whatever tool you eventually settle on, make sure that it is both
+efficient to use (i.e.\ getting citations in is quick and easy and
+that you can find them and manage them, including their unique
+identifiers, in a way that appeals to you) but also allows export to
+the \textbf{bibtex} format of citations for use in \LaTeX\ (many
+bibliography managers use \textbf{bibtex} files as their database, so
+this is automatic).
+
+\section{Installing \textsf{luthesis}}
+
+Please read the comments in \texttt{luthesis.cls} for information on
+how to install.  These comments also contain important usage
+information.  As with most \LaTeX-related file formats, you can open
+the class file with a text editor.
+
+
+\chapter{Literature Review}
+
+Here we discuss what others have done in the area.  Close with the gap
+analysis and a brief description of what's next in your thesis.
+
+The \textsf{gcite} package~\cite{gcite} can provide a more readable
+way to present citations to your external examiner.
+
+
+\chapter{Method}
+
+Describe what you did and why.  If you need to use lots of
+abbreviations or jargon in your thesis, then the \textsf{glossaries}
+package~\cite{glossaries} should come in very handy!
+
+If you are using a lot of maths in your work, you must check out the
+AMS packages\footnote{\url{http://www.ams.org/tex/amslatex.html}}.
+These contain a lot of extra symbols and environments that are useful
+for typesetting maths.
+
+Remember that it's important to make vector-based (as opposed to
+bitmap) diagrams where possible.  This enables them to be printed at
+any resolution and avoids problems such as pixelation that are common
+with bitmaps.  You can use GUI programs such as
+\textbf{Dia}\footnote{\url{http://live.gnome.org/Dia}},
+\textbf{Inkscape}\footnote{\url{http://www.inkscape.org/}} and the
+venerable \textbf{Xfig}\footnote{\url{http://www.xfig.org/}} to do
+this or, if you're a real h4rdc0r3 1337 g33k you could use any number
+of programmatic and often \TeX-friendly solutions such as
+\textbf{METAPOST}\footnote{\url{http://www.tug.org/metapost.html}},
+\textbf{PSTricks}\footnote{\url{http://tug.org/PSTricks/}},
+\textbf{XY-Pic}\footnote{\url{http://www.tug.org/applications/Xy-pic/}},
+\textbf{TikZ}\footnote{\url{http://sourceforge.net/projects/pgf/}} or
+\textbf{Sketch}\footnote{\url{http://www.frontiernet.net/~eugene.ressler/}}.
+\textbf{draw.io}\footnote{\url{https://app.diagrams.net/}}
+
+Save your pictures as \verb!.eps! files.  Texlive 2010 and later
+versions will automatically convert these to pdf on compilation.  Note
+that \verb!eps! supports both vector and bitmap formats, so simply
+because it's an \verb!eps! doesn't mean it's vector.
+
+\chapter{Results}
+
+If you have lots of results tables, you can use the \textsf{datatool}
+package~\cite{datatool} to import them automatically as the document
+is compiled, saving you from having to convert them manually.
+
+\Autoref{tab:example} demonstrates how you can mark up tables.  You
+can apply most of this to figures---\emph{however, captions for
+  figures must go at the bottom of the figure}.  Use the
+\textsf{booktabs} package~\cite{booktabs} to ensure
+professional-quality results!\footnote{See
+  \url{http://en.wikibooks.org/wiki/LaTeX/Tables\#Professional_tables}
+  for an example of what a difference \textsf{booktabs} makes.}
+
+\begin{table}
+  \begin{center}
+		\caption{Comparison of adaptivity features in common OSes (latest versions; including bundled applications)\label{tab:example}}
+		\begin{tabular}{p{0.4\textwidth}ccc}
+			\toprule
+			Feature & Mac OS X & GNOME & Windows \\
+			\midrule
+			Sharing user's settings across machines & Yes & Yes & Yes \\
+			Apply user's preferred settings automatically on log-in & Yes & Yes & Yes \\
+			Suggesting appropriate assistive features to user & No & No & No \\
+			Checking for appropriateness of enabled assistive features & No & No & No \\
+			API for informing applications of users' needs & No & No & No \\
+			API for applying adaptations to applications' content & No & No & No \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Thanks to the \textsf{hyperref} package, you can use the time-saving
+\verb|\autoref| command instead of \verb|\ref| when referring to
+figures, tables, sections and even theorems!  It puts in the type of
+the thing you're citing (e.g.\ ``section~'') so that you don't have
+to.  You can redefine the names of the elements referred to (such as
+``section'') and, in fact, this can be used to make a version of
+\verb|\autoref| that can be used at the beginning of sentences (to
+ensure the first letter is capitalised).  Thanks to Ted
+Pavlic,\footnote{\url{http://www.tedpavlic.com/post_preamble_for_journal_of_math_bio.php\#jmb_autoref_defs}}
+we have been able to create several other commands you can use when
+you need to refer to multiple items at once, or need the item type
+name capitalised (i.e.\ at the beginning of a sentence); these
+commands are \verb|\Autoref|, \verb|\Autorefs| and \verb|\autorefs|.
+
+\textbf{Please note} that if you do use these commands, they will only
+work if you are also using the \textsf{hyperref} package.  It is very
+easy to make \textsf{hyperref} \emph{not} colour its output, so you
+\emph{can} use it to print off your thesis for the external examiner
+and for the final bound version---using hyperref does not force you to
+have coloured text.
+
+All you have to do to force hyperref to stop colouring text is pass
+the \texttt{mono} option to \textsf{luthesis}!
+
+Finally, you should note that the behaviour of the \verb|*utoref*|
+commands has been altered ever so slightly so that they enforce no
+non-breaking space before them.  This means that you can write
+\verb|...as seen in \autoref{sec:results}| in the natural way you are
+used to with \LaTeX.  The default behaviour would mean you have to
+write \verb|...as seen in\autoref{sec:results}|, which seems unusual
+and not what you would expect from a \verb|\ref|-style command.
+
+
+\chapter{Conclusions\label{ch:conclusions}}
+
+Here discuss your contributions and future work---and ensure you end
+on a positive note!
+
+Note that, in the \verb|.tex| file, the label is \emph{inside} the
+\verb|\chapter{}| command.  This ensures that links to the chapter are
+constructed properly.
+
+Finally, to ensure that your ``References'' section is included in the
+table of contents (if you are not using \textsf{gcite} or
+\textsf{biblatex}), insert the following commands directly before the
+\verb|\bibligoraphy{}| command.
+
+\begin{verbatim}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\end{verbatim}
+
+Don't worry about the use of \verb|\cleardoublepage|---it does The
+Right Thing(tm) when the document is single-sided.  Also, the
+\verb|\phantomsection| is required if you are using \textbf{pdflatex}
+and \textsf{hyperref}, as is \emph{strongly recommended} for
+\textsf{luthesis} documents.
+
+If you are using \textsf{gcite}---and therefore
+\textsf{biblatex}---the procedure for adding the bibliography is
+slightly different and you don't need to add the above commands.  This
+is all explained in the \textsf{gcite} manual.
+
+
+\chapter{Document Options}
+The \verb!luthesis! class supports the following document options.
+\begin{itemize}
+\item \verb|iwp| get the page numbering right, i.e. start at 1 and
+  continue to the end with no special numbering for frontmatter.
+\item \verb|cooetc| see below.
+\item \verb|mono| guess!
+\item \verb|twoside| double sided printing
+\item \verb|openright| start all new chapters on a right hand page in two sided printing.
+\end{itemize}
+
+\section{Loughborough forms}
+
+Loughborough require a \emph{Certificate of Originality, Thesis Access
+  Conditions and Deposit Agreement} form to be bound as the first two
+pages of the thesis.  This is available on the template shop as form
+4.1c.  You can include this in your final PDF before printing by
+following the following procedure:
+\begin{itemize}
+\item Download form 4.1c from the template shop, fill it in, print,
+  sign and scan using an MFD.  Remember to scan as a multiple page
+  job.
+\item Take the emailed PDF and drop it into your thesis folder with
+  the name \verb!CoOTACaDA.pdf!
+\item Add the \verb!cooetc! option to your \verb!\documentclass!
+  command.
+\item rebuild.
+\end{itemize}
+If you wish (which I recommend) to change the file name from
+CoOTACaDA.pdf, then use the \verb$\setcoofile{newfilename}$ command,
+remembering to rename the file too.
+
+\emph{There is a CoATACaDA.pdf file distributed with the luthesis
+  zipfile.  This is not suitable for a submitted thesis, but allows
+  compilation.  Remember to make one of your own}
+
+\section{What type of report/thesis/dissertation?}
+If you are completing an end-of-year report for a research degree,
+then include word \verb$first$, \verb$second$ etc as an optino to your
+\verb$\doicumentclass$ command.  This will adjust the first page as
+necessary.
+
+If you are preparing a transfer report, you should use this class with
+the \verb$transfer$ option to your \verb$\documentclass$ command.
+
+If you are preparing an M.Sc.\ dissertation, you should use this class
+with the \verb$msc$ option.  You may also add your degree programme
+title and id number using the following commands:
+\begin{itemize}
+\item \verb$\programme$ The long name for your programme, e.g.\
+  Internet Computing and Network Security.
+\item \verb$\id$ Your id number.
+\item \verb$\programmeshort$ A short version of your programme name,
+  e.g.~ICNS.  This with your id number is printed in a box on the top
+  right of the front page.
+\end{itemize}
+
+If you are preparing a final year project for an undergraduate degree
+please use the \verb$fyp$ option (this also applies for the 3rd year
+of a 4-year degree or 4th year of a 5-year degree).
+
+There are other options provided by the class---please read the
+documentation in the \texttt{.cls} file to learn about them (and the
+changes from the standard document classes).
+
+\bibliographystyle{plain}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\bibliography{luthesis}
+
+\backmatter
+\appendix
+\chapter{Example Appendix}
+
+You should avoid using these but for supporting evidence that is not directly related to the main body of the thesis---e.g.\ to store large tables of results, where in the main text you only want to tell the story of and give the flavour of the results.  You may also like to include a list of your publications.
+
+\chapter{Long test}
+
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+A longer chapter for testings some stuff.
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\section{More headings for testing ToC}
+
+\end{document}
