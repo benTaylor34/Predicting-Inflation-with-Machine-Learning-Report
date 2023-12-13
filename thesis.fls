@@ -208,6 +208,7 @@ INPUT .\Introduction.tex
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
 INPUT Introduction.tex
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
@@ -215,7 +216,12 @@ INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT Literature Review.tex
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
+INPUT .\images\articleGrowth.png
+INPUT .\images\articleGrowth.png
+INPUT .\images\articleGrowth.png
+INPUT .\images\articleGrowth.png
+INPUT .\images\articleGrowth.png
+INPUT .\images\articleGrowth.png
 INPUT Thesis.aux
 INPUT .\Thesis.out
 INPUT .\Thesis.out

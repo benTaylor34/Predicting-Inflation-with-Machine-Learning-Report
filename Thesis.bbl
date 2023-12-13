@@ -9,9 +9,31 @@ Oguz Akbilgic, Hamparsum Bozdogan, and Mehmet~Erdal Balaban.
 \newblock A novel hybrid rbf neural networks model as a forecaster.
 \newblock {\em Statistics and Computing}, 24:365--375, 2014.
 
+\bibitem{Awad2015}
+Mariette Awad and Rahul Khanna.
+\newblock {\em Machine Learning}, pages 1--18.
+\newblock Apress, Berkeley, CA, 2015.
+
+\bibitem{8259424}
+Jeff Dean, David Patterson, and Cliff Young.
+\newblock A new golden age in computer architecture: Empowering the
+  machine-learning revolution.
+\newblock {\em IEEE Micro}, 38(2):21--29, 2018.
+
+\bibitem{Dean2019TheDL}
+Jeffrey Dean.
+\newblock The deep learning revolution and its implications for computer
+  architecture and chip design.
+\newblock {\em ArXiv}, abs/1911.05289, 2019.
+
 \bibitem{Harrington_2003}
 Cynthia Harrington.
 \newblock Fundamental vs. technical analysis, 2003.
+
+\bibitem{michalski2013machine}
+Ryszard~Stanislaw Michalski, Jaime~Guillermo Carbonell, and Tom~M Mitchell.
+\newblock {\em Machine learning: An artificial intelligence approach}.
+\newblock Springer Science \& Business Media, 2013.
 
 \bibitem{murphy1999technical}
 John~J Murphy.
