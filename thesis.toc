@@ -8,13 +8,13 @@
 \contentsline {section}{\numberline {1.4}Methodology}{2}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Motivation}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Available Literature}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Available Literature and Context}{3}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{3}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{4}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{4}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Problem Domain}{4}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{4}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Existing Models}{4}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Problem Domain}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{5}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Existing Models}{5}{subsection.2.3.2}%
 \contentsline {subsubsection}{None Machine Learning Models}{5}{section*.7}%
 \contentsline {subsubsection}{Machine Learning Models}{5}{section*.8}%
 \contentsline {subsection}{\numberline {2.3.3}Gap Anaylsis}{5}{subsection.2.3.3}%

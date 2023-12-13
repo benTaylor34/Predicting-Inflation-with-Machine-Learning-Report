@@ -9,7 +9,7 @@ finding supporting arguments that can guide our work and help us to avoid, as mu
 redundancy in our and others' works. 
 Having completed the literature review, we should have a strong foundation to start and guide our project.
 
-\section{Available Literature}
+\section{Available Literature and Context}
 This report's topic focuses on the prediction of inflation through the use of machine learning.
 To accomplish this we can view papers predominantly addressing two types of topics. 
 The first type is papers that focus on the topic of predicting inflation or other economic indicators and time series.
@@ -18,12 +18,24 @@ Additionally, it is pertinent to survey the current literature on inflation: its
 \subsection{Financial Indicator Prediction Papers}
 The application of using past values to predict future values has been widely implemented for years, 
 one of the earliest uses of autoregressive models used for time series being in the 1920s from U.G.Yule\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
-There is a strong monetary incentive to produce research on how best to predict financial indicators as the correct predictions can lead to profit and the avoidance of loss both for corporations and for individuals. 
-This results in a large assortment of papers written experimenting with a variety of techniques to predict future values, most of which we can learn from to help structure our models.
+There is a strong monetary incentive to produce research on how best to predict financial indicators as the correct predictions can allow organizations and individuals to not only profit but also avoid loss.
+This results in a myriad of papers being written, experimenting with a variety of techniques to predict future values, most of which we can learn from to help structure our models.
 The predominant analysis strategies for predicting financial market behaviour are fundamental analysis and technical analysis\cite{Harrington_2003}.
-Fundamental analysis attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
-Technical analysis attempts to identify opportunities and predict investments by viewing movements and trends in market data.
+\par Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
+Additionally, fundamental analysis frequently makes use of techniques such as sentiment analysis that often deal with unstructured data.
+The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939}.
+According to Tom Seegmiller "Financial efficiency measures how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
+\par Technical analysis attempts to identify opportunities and predict investments by viewing movements and trends in market data.
+Unlike fundamental analysis, technical analysis does not take into account many of the same fundamentals that can help indicate an asset's current value for example quarterly revenue.
+This is partially because it is often argued that technical indicators such as inflation or a stock's value are already priced in according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
+From this, we can come to the understanding that while fundamental analysis is the idea of looking at the current factors affecting an asset and using them to evaluate to asset's true value; 
+Technical analysis is built upon the idea that past performance can predict future performance.
+Traditionally, technical analysis has relied heavily on statistical models to forecast the future performance of assets\cite{rockefeller2019technical}.
+However, with the increase of big data and the internet, ever larger amounts of potential financial predictive data are continually being produced.
+Simple statistical models may struggle to produce accurate future predictions when faced with big data sets containing complex characteristics\cite{Akbilgic2014ANH}.
+This makes machine learning a great tool for technical analysis as we can feed our models large amounts of historical data without the need for much additional context.
 \subsection{Machine Learning Papers} 
+This brings us to Machine Learning algorithms. 
 Machine Learning is a 'hot topic' that is to say there is an abundance of fresh papers constantly being put out within the field. 
 This bodes well for our project as it means that we should have plenty of guidance on the options available to conduct and develop our predictive models. 
 \subsection{Inflation Papers}

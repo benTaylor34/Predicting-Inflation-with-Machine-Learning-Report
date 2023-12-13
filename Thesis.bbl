@@ -1,17 +1,49 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{achelis2001technical}
 Steven~B Achelis.
 \newblock Technical analysis from a to z, 2001.
 
+\bibitem{Akbilgic2014ANH}
+Oguz Akbilgic, Hamparsum Bozdogan, and Mehmet~Erdal Balaban.
+\newblock A novel hybrid rbf neural networks model as a forecaster.
+\newblock {\em Statistics and Computing}, 24:365--375, 2014.
+
 \bibitem{Harrington_2003}
 Cynthia Harrington.
 \newblock Fundamental vs. technical analysis, 2003.
+
+\bibitem{murphy1999technical}
+John~J Murphy.
+\newblock {\em Technical analysis of the financial markets: A comprehensive
+  guide to trading methods and applications}.
+\newblock Penguin, 1999.
+
+\bibitem{rockefeller2019technical}
+Barbara Rockefeller.
+\newblock {\em Technical analysis for dummies}.
+\newblock John Wiley \& Sons, 2019.
+
+\bibitem{Seegmiller_2023}
+Tom Seegmiller.
+\newblock 10 metrics to measure the financial efficiency of your organization,
+  Sep 2023.
+
+\bibitem{thomsett2006getting}
+Michael~C Thomsett.
+\newblock {\em Getting started in fundamental analysis}.
+\newblock John Wiley \& Sons, 2006.
 
 \bibitem{tsay2005analysis}
 Ruey~S Tsay.
 \newblock {\em Analysis of financial time series}.
 \newblock John wiley \& sons, 2005.
+
+\bibitem{WAFI2015939}
+Ahmed.~S. Wafi, Hassan Hassan, and Adel Mabrouk.
+\newblock Fundamental analysis models in financial markets – review study.
+\newblock {\em Procedia Economics and Finance}, 30:939--947, 2015.
+\newblock IISES 3rd and 4th Economics and Finance Conference.
 
 \bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
 G.~Udny Yule.
