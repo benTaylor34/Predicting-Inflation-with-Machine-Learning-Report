@@ -10,6 +10,11 @@ redundancy in our and others' works.
 Having completed the literature review, we should have a strong foundation to start and guide our project.
 
 \section{Available Literature and Context}
+There is certainly a strong monetary incentive to produce research on how best to predict financial indicators. 
+The correct predictions can not only allow organizations and individuals to profit greatly but also to avoid loss.
+This results in a myriad of papers being written, experimenting with a variety of techniques to predict future values, 
+most of which we can learn from to help structure our models.
+\par 
 This report's topic focuses on the prediction of inflation through the use of machine learning.
 To accomplish this we can view papers predominantly addressing two types of topics. 
 The first type is papers that focus on the topic of predicting inflation or other economic indicators and time series.
@@ -17,29 +22,32 @@ The second type of papers we can research are ones that deal with different mach
 Additionally, it is pertinent to survey the current literature on inflation: its causing factors, effects, and significance.  
 
 \subsection{Financial Indicator Prediction Papers}
-The application of using past values to predict future values has been widely implemented for years, 
-one of the earliest uses of autoregressive models used for time series was in the 1920s from U.G.Yule\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
-There is a strong monetary incentive to produce research on how best to predict financial indicators as the correct predictions can allow organizations and individuals to not only profit but also avoid loss.
-This results in a myriad of papers being written, experimenting with a variety of techniques to predict future values, most of which we can learn from to help structure our models.
+According to "Analysis of Financial Time Series" by Ruey S. Tsay 
+"Financial time series analysis is concerned with the theory and practice of asset valuation over time."\cite{tsay2005analysis}
+There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention. 
 The predominant analysis strategies for predicting financial market behaviour are fundamental analysis and technical analysis\cite{Harrington_2003}.
-\par Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
-Additionally, fundamental analysis frequently makes use of techniques such as sentiment analysis that often deal with unstructured data.
-The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939}.
-According to Tom Seegmiller "Financial efficiency measures how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
-\par Technical analysis attempts to identify opportunities and predict investments by viewing movements and trends in market data.
-Unlike fundamental analysis, technical analysis does not take into account many of the same fundamentals that can help indicate an asset's current value for example quarterly revenue.
-This is partially because it is often argued that technical indicators such as inflation or a stock's value are already priced in according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
+\subsubsection{Fundamental Analysis} 
+Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
+Additionally, fundamental analysis frequently makes use of techniques - such as sentiment analysis - that often deal with unstructured data.
+The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939},
+which according to Tom Seegmiller is defined as
+"... how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
+\subsubsection{Technical Analysis}
+Technical analysis\cite{achelis2001technical} attempts to identify opportunities and predict investments by viewing movements and trends in market data alongside using a variety of technical indicators.
+Unlike fundamental analysis, technical analysis does not take into account many of the same fundamentals that can help indicate an asset's current value such as quarterly revenue.
+This is partially because it is often argued that technical indicators such as inflation or a stock's value are already priced according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
 From this, we can come to the understanding that while fundamental analysis is the idea of looking at the current factors affecting an asset and using them to evaluate to asset's true value; 
 Technical analysis is built upon the idea that past performance can predict future performance.
 Traditionally, technical analysis has relied heavily on statistical models to forecast the future performance of assets\cite{rockefeller2019technical}.
-However, with the increase of big data and the internet, ever larger amounts of potential financial predictive data are continually being produced.
-Simple statistical models may struggle to produce accurate future predictions when faced with big data sets containing complex characteristics\cite{Akbilgic2014ANH}.
-This makes machine learning a great tool for technical analysis as we can feed our models large amounts of historical data without the need for much additional context.
+Furthermore, the application of using past values to predict future values has been widely implemented for years, 
+with one of the earliest uses of autoregressive models being used to predict time series created by U.G.Yule in the 1920s\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
+However, with the increase of big data and the internet, ever-larger amounts of financial predictive data are continually being produced.
+Nowadays, simple statistical models may struggle to produce accurate future predictions when faced with big data sets containing complex characteristics\cite{Akbilgic2014ANH}.
 
 \subsection{Machine Learning Papers} 
 This brings us to machine learning algorithms\cite{michalski2013machine}. 
-According to Mariette Awad et al. machine learning "is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information."\cite{Awad2015}
-Currently, there is an abundance of fresh machine learning papers constantly being produced in the field. \cite{8259424}
+According to Mariette Awad et al. machine learning "is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information"\cite{Awad2015}.
+Currently, there is a massive abundance of fresh machine learning papers constantly being produced in the field. \cite{8259424}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{articleGrowth.png}
@@ -47,9 +55,10 @@ Currently, there is an abundance of fresh machine learning papers constantly bei
     \label{fig:articleGrowth}
 \end{figure}
 As you can see in figure \ref{fig:articleGrowth} articles on machine learning posted to arXiV (an archive for scholarly articles) have more than doubled every two years.
-Additionally, in 2018 the number of articles released reached 100 per day and by the end of the year, summing to equal more than 33,000.
-In the years since the number of articles released has continued to increase\cite{Dean2019TheDL}.
-Naturally, to read this many articles is impossible, however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop our predictive models. 
+Additionally, in 2018 the number of articles released reached 100 per day, summing to more than 33,000 by the end of the year.
+The number of articles released has steadily continued to increase in the years since\cite{Dean2019TheDL}.
+Naturally, to read this many articles is impossible, 
+however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop our predictive models. 
 \par By utilising machine learning techniques in financial forecasting we can endeavor to improve upon the performance of traditional statistical models.
 
 \subsection{Inflation Papers}
@@ -57,16 +66,10 @@ Naturally, to read this many articles is impossible, however, the sheer quantity
 \section{Problem Domain} 
 \subsection{Inflation a continuation of "Inflation Papers"}
 \subsection{Existing Models}
-According to "Analysis of Financial Time Series" by Ruey S. Tsay "Financial time series analysis concerned with the theory and practice fo asset valuation over time."\cite{tsay2005analysis}
-There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention. 
-Among these is the trading discipline of technical analysis\cite{achelis2001technical}. 
-Technical analysis uses a variety of technical indicators and patterns in market data to evaluate and make predictions on investments and FTS.
-There are three main categories of technical analysis which are statistical models, Machine Learning (ML) models, and hybrid models. 
-Statistical models 
-Machine learning models
-Hybrid models 
-\subsubsection{None Machine Learning Models}
-\subsubsection{Machine Learning Models}
+\subsection{Machine Learning Models}
+\paragraph{Artificial Neural Networks}
+\paragraph{Support Vector Regression}
+\paragraph{Random Forest}
 \subsection{Gap Anaylsis}
 \subsubsection{Financial Markets and The Current State of Inflation}
 \subsubsection{Machine Learning vs Traditional Methods for Financial Forecasting}

@@ -9,18 +9,22 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Motivation}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Available Literature and Context}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{6}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Problem Domain}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Existing Models}{6}{subsection.2.3.2}%
-\contentsline {subsubsection}{None Machine Learning Models}{7}{section*.7}%
-\contentsline {subsubsection}{Machine Learning Models}{7}{section*.8}%
-\contentsline {subsection}{\numberline {2.3.3}Gap Anaylsis}{7}{subsection.2.3.3}%
-\contentsline {subsubsection}{Financial Markets and The Current State of Inflation}{7}{section*.9}%
-\contentsline {subsubsection}{Machine Learning vs Traditional Methods for Financial Forecasting}{7}{section*.10}%
-\contentsline {subsubsection}{Feature Comparison}{7}{section*.11}%
+\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{5}{subsection.2.2.1}%
+\contentsline {subsubsection}{Fundamental Analysis}{5}{section*.7}%
+\contentsline {subsubsection}{Technical Analysis}{5}{section*.8}%
+\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{7}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Problem Domain}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Existing Models}{7}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Machine Learning Models}{7}{subsection.2.3.3}%
+\contentsline {paragraph}{Artificial Neural Networks}{7}{section*.9}%
+\contentsline {paragraph}{Support Vector Regression}{7}{section*.10}%
+\contentsline {paragraph}{Random Forest}{7}{section*.11}%
+\contentsline {subsection}{\numberline {2.3.4}Gap Anaylsis}{7}{subsection.2.3.4}%
+\contentsline {subsubsection}{Financial Markets and The Current State of Inflation}{7}{section*.12}%
+\contentsline {subsubsection}{Machine Learning vs Traditional Methods for Financial Forecasting}{7}{section*.13}%
+\contentsline {subsubsection}{Feature Comparison}{7}{section*.14}%
 \contentsline {section}{\numberline {2.4}Summary and Conclusion}{7}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Main chapters}{8}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Conclusion}{9}{chapter.4}%
