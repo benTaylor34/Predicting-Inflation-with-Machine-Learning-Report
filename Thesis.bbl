@@ -14,6 +14,33 @@ Mariette Awad and Rahul Khanna.
 \newblock {\em Machine Learning}, pages 1--18.
 \newblock Apress, Berkeley, CA, 2015.
 
+\bibitem{breiman1996bagging}
+Leo Breiman.
+\newblock Bagging predictors.
+\newblock {\em Machine learning}, 24:123--140, 1996.
+
+\bibitem{breiman2001random}
+Leo Breiman.
+\newblock Random forests.
+\newblock {\em Machine learning}, 45:5--32, 2001.
+
+\bibitem{Cao2001184}
+Lijuan Cao and Francis~E.H. Tay.
+\newblock Financial forecasting using support vector machines.
+\newblock {\em Neural Computing and Applications}, 10(2):184 – 192, 2001.
+\newblock Cited by: 272.
+
+\bibitem{ciaburro2018hand}
+G.~Ciaburro, V.K. Ayyadevara, and A.~Perrier.
+\newblock {\em Hands-On Machine Learning on Google Cloud Platform: Implementing
+  smart and efficient analytics using Cloud ML Engine}.
+\newblock Packt Publishing, 2018.
+
+\bibitem{cortes1995support}
+Corinna Cortes and Vladimir Vapnik.
+\newblock Support-vector networks.
+\newblock {\em Machine learning}, 20:273--297, 1995.
+
 \bibitem{8259424}
 Jeff Dean, David Patterson, and Cliff Young.
 \newblock A new golden age in computer architecture: Empowering the
@@ -26,9 +53,21 @@ Jeffrey Dean.
   architecture and chip design.
 \newblock {\em ArXiv}, abs/1911.05289, 2019.
 
+\bibitem{HANSEN1999345}
+Bruce~E. Hansen.
+\newblock Threshold effects in non-dynamic panels: Estimation, testing, and
+  inference.
+\newblock {\em Journal of Econometrics}, 93(2):345--368, 1999.
+
 \bibitem{Harrington_2003}
 Cynthia Harrington.
 \newblock Fundamental vs. technical analysis, 2003.
+
+\bibitem{ho1995random}
+Tin~Kam Ho.
+\newblock Random decision forests.
+\newblock In {\em Proceedings of 3rd international conference on document
+  analysis and recognition}, volume~1, pages 278--282. IEEE, 1995.
 
 \bibitem{michalski2013machine}
 Ryszard~Stanislaw Michalski, Jaime~Guillermo Carbonell, and Tom~M Mitchell.
@@ -46,10 +85,35 @@ Barbara Rockefeller.
 \newblock {\em Technical analysis for dummies}.
 \newblock John Wiley \& Sons, 2019.
 
+\bibitem{Rosenblatt_1957_6098}
+F.~Rosenblatt.
+\newblock The perceptron - a perceiving and recognizing automaton.
+\newblock Technical Report 85-460-1, Cornell Aeronautical Laboratory, Ithaca,
+  New York, January 1957.
+
+\bibitem{sadrfaridpour2020amlsvm}
+Ehsan Sadrfaridpour, Korey Palmer, and Ilya Safro.
+\newblock Aml-svm: Adaptive multilevel learning with support vector machines,
+  2020.
+
 \bibitem{Seegmiller_2023}
 Tom Seegmiller.
 \newblock 10 metrics to measure the financial efficiency of your organization,
   Sep 2023.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock {\em The journal of machine learning research}, 15(1):1929--1958,
+  2014.
+
+\bibitem{TANG2022363}
+Yajiao Tang, Zhenyu Song, Yulin Zhu, Huaiyu Yuan, Maozhang Hou, Junkai Ji,
+  Cheng Tang, and Jianqiang Li.
+\newblock A survey on machine learning models for financial time series
+  forecasting.
+\newblock {\em Neurocomputing}, 512:363--380, 2022.
 
 \bibitem{thomsett2006getting}
 Michael~C Thomsett.
@@ -66,6 +130,12 @@ Ahmed.~S. Wafi, Hassan Hassan, and Adel Mabrouk.
 \newblock Fundamental analysis models in financial markets – review study.
 \newblock {\em Procedia Economics and Finance}, 30:939--947, 2015.
 \newblock IISES 3rd and 4th Economics and Finance Conference.
+
+\bibitem{wei2012svm}
+Zhongyuan Wei.
+\newblock {\em A SVM approach in forecasting the moving direction of Chinese
+  stock indices}.
+\newblock Lehigh University, 2012.
 
 \bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
 G.~Udny Yule.

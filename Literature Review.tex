@@ -9,6 +9,8 @@ finding supporting arguments that can guide our work and help us to avoid, as mu
 redundancy in our and others' works. 
 Having completed the literature review, we should have a strong foundation to start and guide our project.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Available Literature and Context}
 There is certainly a strong monetary incentive to produce research on how best to predict financial indicators. 
 The correct predictions can not only allow organizations and individuals to profit greatly but also to avoid loss.
@@ -24,8 +26,14 @@ Additionally, it is pertinent to survey the current literature on inflation: its
 \subsection{Financial Indicator Prediction Papers}
 According to "Analysis of Financial Time Series" by Ruey S. Tsay 
 "Financial time series analysis is concerned with the theory and practice of asset valuation over time."\cite{tsay2005analysis}
-There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention. 
+There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention, the taxonomy of which is shown in figure \ref{fig:FTSForecastingMethods}. 
 The predominant analysis strategies for predicting financial market behaviour are fundamental analysis and technical analysis\cite{Harrington_2003}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{FTSForecastingMethods.png}
+    \caption[FTS Forecasting Methods]{FTS Forecasting Methods. \par \textit{Figure from page 3 of 'A survey on machine learning models for financial time series forecasting by Yajiao Tang et al.'}\cite{TANG2022363}}
+    \label{fig:FTSForecastingMethods}
+\end{figure}
 \subsubsection{Fundamental Analysis} 
 Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
 Additionally, fundamental analysis frequently makes use of techniques - such as sentiment analysis - that often deal with unstructured data.
@@ -59,21 +67,145 @@ Additionally, in 2018 the number of articles released reached 100 per day, summi
 The number of articles released has steadily continued to increase in the years since\cite{Dean2019TheDL}.
 Naturally, to read this many articles is impossible, 
 however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop our predictive models. 
-\par By utilising machine learning techniques in financial forecasting we can endeavor to improve upon the performance of traditional statistical models.
 
 \subsection{Inflation Papers}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Problem Domain} 
+This section of the literature review will go more in-depth into the area that this report will tackle as well as which methods could potentially be used.
 \subsection{Inflation a continuation of "Inflation Papers"}
-\subsection{Existing Models}
+
 \subsection{Machine Learning Models}
-\paragraph{Artificial Neural Networks}
-\paragraph{Support Vector Regression}
-\paragraph{Random Forest}
-\subsection{Gap Anaylsis}
-\subsubsection{Financial Markets and The Current State of Inflation}
-\subsubsection{Machine Learning vs Traditional Methods for Financial Forecasting}
-\subsubsection{Feature Comparison}
+By utilising machine learning techniques in financial forecasting we can endeavor to improve upon the performance of traditional statistical models.
+Generally, the goal of FTS forecasting can be placed into two main categories:
+1. Price prediction
+2. Price movement prediction (this includes volatility predictions)
+These two goals also reflect two types of machine-learning problems:
+1. Regression
+2. Classification.
+This paper will focus mainly on the price prediction/regression categories regarding inflation.
+This means that we will aim to predict future values of inflation as opposed to whether inflation will increase or decrease.
+Naturally, the areas we study will be with this regression problem in mind.
+We shall now cover some of the potential ML forecasting models that can aid us in predicting inflation.
+\subsubsection{Artificial Neural Networks}
+An artificial neural network is a machine learning model that is made up of an interconnected group of nodes (also known as neurons) organised into layers.
+The model's inspiration stems from how neurons in the human brain interact with one another.
+In 1957 Frank Rosenblatt invented the perceptron, one of if not the first implementations of an artificial neural network \cite{Rosenblatt_1957_6098}.
+\par
+ANNs are composed of 3 types of layers: the input, hidden, and output layers.
+The input layer receives input data and passes it through to the first hidden layer.
+Hidden layers receive weighted inputs, perform an activation function on said input, and then pass the new data to the next layer.
+The output layer receives data from the final hidden layer and then produces the resulting prediction.
+The neurons within an ANN can either be excited or inhibited. 
+Neurons are connected between layers and the strength of these connections (the weight) is decided by how excited or inhibited a neuron is.
+Each neuron in the hidden and output layers contains biases and activation functions 
+(with the activation function in the output layer typically being different from the one in the hidden layer).
+Activation values are passed from node to node through the connections in the network.
+When a neuron receives the activation value, it sums and modifies it based on the neuron's activation function and bias.
+The predicted results can then be compared to the true values and the weights and biases of the network are updated accordingly.
+Artificial neural networks can be modified with a variety of techniques to alter their accuracy. 
+One of these alterations is changing the activation function of the neurons.
+Figure \ref{fig:CmnAcFc} shows some common activation functions. Other commonly used activation functions include sigmoid, Guassian, and leaky ReLU.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{CmnAcFc.png}
+    \caption[Common Activation Functions]{Common Activation Functions \cite{ciaburro2018hand}}
+    \label{fig:CmnAcFc}
+\end{figure}
+\par ANNs have many advantages:
+\begin{itemize}
+    \item Thanks to the many interconnected neurons, ANNs have strong learning capabilities\cite{HANSEN1999345}.
+    \item ANNs do not have a fixed structural equation making them very adaptable.
+    \item ANNs can be finely tuned with many changes to the network in order to find the best-fitting model. For example, changing the number of hidden layers, the number of nodes in a layer, the activation functions, and so on.
+\end{itemize}
+\par ANNs also come with some disadvantages:
+\begin{itemize}
+    \item The higher complexity of ANNs means that they require more resources than traditional statistical models.
+    \item Due to the nature of the hidden layers, ANNs can be hard to interpret.
+    \item ANNs can be overfitted\cite{srivastava2014dropout}.
+\end{itemize}
+\subsubsection{Support Vector Regression}
+Created by Vladimir Vapnik and Alexey Chervonenkis in the 1960s and later built upon further by Vapnik et al. with the addition of the kernel trick and soft margin \cite{cortes1995support},
+Support Vector Regression and Support Vector Machines are supervised learning methods used for regression and classification respectively.
+Both models use non-linear mapping to transform the dimension of the input data. 
+Then utilise a hyperplane in order to either best fit or categorize the data.
+The hyperplane for these models is found by using an $\varepsilon$-insensitive tube, meaning that any errors within the range of the tube are ignored. 
+This is unlike a standard line of best fit that takes into account the $\varepsilon$ (distance) of all points to the line, 
+instead, only errors outside of the tube are considered pertinent.
+The hyperplane is then placed in a way in which the sum of all points outside of the tube is minimised.
+The points outside of the tube are called support vectors hence the name support vector regressions. 
+\par Advantages of Support Vector Regression:
+\begin{itemize}
+    \item SVRs are simple and easy to implement as well as producing easily interpretable results.
+    \item SVRs require less computational resources than other models.
+    \item SVRs can maintain stability despite noisy input data thanks to the $\varepsilon$-incentive tube\cite{wei2012svm}.
+\end{itemize}
+\par Disadvantages of Support Vector Regression:
+\begin{itemize}
+    \item Deciding a suitable kernel function can cause difficulty \cite{Cao2001184}.
+    \item SVRs may struggle with big data\cite{sadrfaridpour2020amlsvm}.
+\end{itemize}
+\subsubsection{Random Forest}
+The first random forest (RF) algorithm was created by Tin Kam Ho in 1995\cite{ho1995random} which was later developed upon by Leo Breiman\cite{breiman2001random}.
+The random forest model makes predictions by consulting multiple decision trees.
+Each tree is trained on a random subset of data taken from the training set, this is called bagging or bootstrap aggregation.
+The final prediction is an average taken from all of the trees' predictions.
+\par Advantages of random forest:
+\begin{itemize}
+    \item Random forest can prevent overfitting by combining the results of several weak learners instead of using one powerful learner\cite{breiman1996bagging}.
+    \item Rf models have good prediction accuracy as the result is an average making it unlikely to be an outlier.
+    \item Rfs are stable as changes to the data set may affect one tree but are unlikely to affect many trees.
+\end{itemize}
+\par Disadvantages of random forest:
+\begin{itemize}
+    \item Rfs suffer from increased training time. This is due to the fact that to make a prediction you need predictions from all of the trees to get an average.
+\end{itemize}
+\subsection{Regression Metrics and Model Evaluation}
+Evaluating a model is extremely important not only to know the quality of your model's predictions but also in order to make improvements to the model to achieve a more desirable result.
+Evaluation metrics can be used to evaluate the performance of the model.
+Some useful metrics that can be applied to measure a model's performance are: 
+Mean absolute error (MAE), Mean squared error (MSE), Mean absolute percentage error (MAPE), Root mean absolute error (RMAE), Normalised mean square error (NMSE), Root mean squared error (RMSE), Relative root mean squared error (RRMSE), Correlation coefficient of prediction (R)
+The most commonly used metrics are MSE, MAE, MAPE, and R.
 
+\begin{center}
+\fbox{\begin{varwidth}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centerline{$\mathit{MAE}=\frac{1}{n} \sum_{i=1}^n |Y_{i}-X_i|$} 
+\centerline{$n$ is the number of data points.}
+\centerline{$Y_{i}$ is the ith true value.}
+\centerline{$X_i$ is the ith predicted value.}
+\end{varwidth}}
+\end{center}
 
+\begin{center}
+\fbox{\begin{varwidth}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centerline{$\mathit{MSE}=\frac{1}{n} \sum_{i=1}^n (Y_{i}-X_{i})^2$} 
+\centerline{$n$ is the number of data points.}
+\centerline{$Y_{i}$ is the ith true value.}
+\centerline{$X_i$ is the ith predicted value.}
+\end{varwidth}}
+\end{center}
+    
+\begin{center}
+\fbox{\begin{varwidth}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centerline{$\mathit{MAPE}=\frac{1}{n} \sum_{i=1}^n |\frac{Y_i - X_i}{Y_i}| $} 
+\centerline{$n$ is the number of data points}
+\centerline{$Y_i$ is the true value.}
+\centerline{$X_i$ is the predicted value.}
+\end{varwidth}}
+\end{center}
+
+\begin{center}
+\fbox{\begin{varwidth}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centerline{$\mathit{R}=\frac{\sum_{i=1}^n(Y_i - \bar{Y})(X_i-\bar{X})}{\sqrt{\sum_{i=1}^n(X_i-\bar{X})^2\sum_{i=1}^n(Y_i-\bar{Y})^2}}$} 
+\centerline{$X_i$ and $Y_i$ are the data points.}
+\centerline{$\bar{X}$ is the mean of the x-value and $\bar{Y}$ the mean of the y values.}
+\end{varwidth}}
+\end{center}
+
+FOR MSE, MAE, and MAPE a lower result indicates a more accurate model, and when a model has no error the value will be zero.
+R is always between -1 and 1, when R=0 it indicates that there is no linear relationship between the values.
+If R is -1 then there is a perfect negative linear relationship and if R is 1 then there is a perfect positive linear relationship. 
+These formulas can be used to understand the predictive skills of a model.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary and Conclusion}

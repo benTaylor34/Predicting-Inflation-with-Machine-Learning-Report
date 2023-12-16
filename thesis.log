@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  14 DEC 2023 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  16 DEC 2023 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,43 +291,49 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks23
 \@floatcapt=\box54
+) (C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box55
+\sift@deathcycles=\count288
+\@vwid@loff=\dimen177
+\@vwid@roff=\dimen178
 ) (C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count289
+\l__pdf_internal_box=\box56
 ) (Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen177
-\scratchbox=\box56
-\nofMPsegments=\count290
-\nofMParguments=\count291
+\scratchcounter=\count290
+\scratchdimen=\dimen179
+\scratchbox=\box57
+\nofMPsegments=\count291
+\nofMParguments=\count292
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen178
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen180
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
 \everyMPtoPDFconversion=\toks25
 ) (C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -377,19 +383,19 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 31.
 (Thesis.out) (Thesis.out)
 \@outlinefile=\write3
 \openout3 = `Thesis.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 31.
+(Font)              <17.28> on input line 33.
  [1
 color push 0 g 0 G
 color pop
@@ -404,7 +410,7 @@ color pop
 ] (Abstract.tex
 Chapter 0.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 7--33
+Underfull \hbox (badness 10000) in paragraph at lines 7--35
 
  []
 
@@ -500,10 +506,6 @@ color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -522,6 +524,14 @@ color pop
 color push 0 g 0 G
 color pop
 
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -575,9 +585,40 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) (Introduction.tex [2
+] [2
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (Introduction.tex [3
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -588,7 +629,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 1.
-) (Literature Review.tex [3
+) (Literature Review.tex [4
 color push 0 g 0 G
 color pop
 
@@ -598,43 +639,15 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-[4
+<images/FTSForecastingMethods.png, id=195, 534.99875pt x 466.74374pt>
+File: images/FTSForecastingMethods.png Graphic file (type png)
+<use images/FTSForecastingMethods.png>
+Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
+(pdftex.def)             Requested size: 312.62466pt x 272.74843pt.
+[5
 color push 0 g 0 G
 color pop
 
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-<images/articleGrowth.png, id=194, 636.57825pt x 372.1905pt>
-File: images/articleGrowth.png Graphic file (type png)
-<use images/articleGrowth.png>
-Package pdftex.def Info: images/articleGrowth.png  used on input line 53.
-(pdftex.def)             Requested size: 312.62466pt x 182.78383pt.
- [5
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -644,7 +657,7 @@ color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
+color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
@@ -653,8 +666,60 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.71 \paragraph
-               {Support Vector Regression}
+l.54 
+     
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./images/FTSForecastingMethods.png (PNG copy)>]
+<images/articleGrowth.png, id=218, 636.57825pt x 372.1905pt>
+File: images/articleGrowth.png Graphic file (type png)
+<use images/articleGrowth.png>
+Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
+(pdftex.def)             Requested size: 312.62466pt x 182.78383pt.
+ [7
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [8
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.91 \subsubsection
+                   {Artificial Neural Networks}
 color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color pop
@@ -666,7 +731,118 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./images/articleGrowth.png>]) [7
+ <./images/articleGrowth.png>]
+<images/CmnAcFc.png, id=237, 397.485pt x 469.755pt>
+File: images/CmnAcFc.png Graphic file (type png)
+<use images/CmnAcFc.png>
+Package pdftex.def Info: images/CmnAcFc.png  used on input line 112.
+(pdftex.def)             Requested size: 312.62466pt x 369.47528pt.
+ [9
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [10
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.138 \par
+           Advantages of Support Vector Regression:
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./images/CmnAcFc.png>]
+Overfull \hbox (3.33221pt too wide) in paragraph at lines 142--143
+[]\OT1/cmr/m/n/12 SVRs can main-tain sta-bil-ity des-pite noisy in-put data thanks to the $\OML/cmm/m/it/12 "$\OT1/cmr/m/n/12 -incentive
+ []
+
+[11
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [12
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -675,7 +851,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-[8
+[14
 color push 0 g 0 G
 color pop
 
@@ -685,7 +861,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 4.
-[9
+[15
 color push 0 g 0 G
 color pop
 
@@ -695,7 +871,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 5.
-[10
+[16
 color push 0 g 0 G
 color pop
 
@@ -709,20 +885,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4389F6FBDC26DADC5755A1436CF7AC46;3294.
+(rerunfilecheck)             Checksum: E35E03536E8CD8C4FAF2BE526AB67315;3298.
  ) 
 Here is how much of TeX's memory you used:
- 11580 strings out of 475248
- 188595 string characters out of 5758757
- 1928785 words of memory out of 5000000
- 32849 multiletter control sequences out of 15000+600000
- 564842 words of font info for 58 fonts, out of 8000000 for 9000
+ 11691 strings out of 475248
+ 190868 string characters out of 5758757
+ 1930785 words of memory out of 5000000
+ 32937 multiletter control sequences out of 15000+600000
+ 565880 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,435b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (16 pages, 358993 bytes).
+ 75i,15n,79p,435b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Thesis.pdf (22 pages, 630854 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

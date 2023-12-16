@@ -1,31 +1,27 @@
 \babel@toc {british}{}\relax 
 \contentsline {chapter}{Abstract}{ii}{section*.1}%
 \contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Aims and Objectives}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Potential Risks and Constraints}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Methodology}{3}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Motivation}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Available Literature and Context}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{5}{subsection.2.2.1}%
-\contentsline {subsubsection}{Fundamental Analysis}{5}{section*.7}%
-\contentsline {subsubsection}{Technical Analysis}{5}{section*.8}%
-\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{7}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Problem Domain}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Existing Models}{7}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Machine Learning Models}{7}{subsection.2.3.3}%
-\contentsline {paragraph}{Artificial Neural Networks}{7}{section*.9}%
-\contentsline {paragraph}{Support Vector Regression}{7}{section*.10}%
-\contentsline {paragraph}{Random Forest}{7}{section*.11}%
-\contentsline {subsection}{\numberline {2.3.4}Gap Anaylsis}{7}{subsection.2.3.4}%
-\contentsline {subsubsection}{Financial Markets and The Current State of Inflation}{7}{section*.12}%
-\contentsline {subsubsection}{Machine Learning vs Traditional Methods for Financial Forecasting}{7}{section*.13}%
-\contentsline {subsubsection}{Feature Comparison}{7}{section*.14}%
-\contentsline {section}{\numberline {2.4}Summary and Conclusion}{7}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Main chapters}{8}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Conclusion}{9}{chapter.4}%
-\contentsline {chapter}{\numberline {5}References}{10}{chapter.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Aims and Objectives}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Potential Risks and Constraints}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Methodology}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Motivation}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Available Literature and Context}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{6}{subsection.2.2.1}%
+\contentsline {subsubsection}{Fundamental Analysis}{6}{section*.7}%
+\contentsline {subsubsection}{Technical Analysis}{7}{section*.8}%
+\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{8}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Problem Domain}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{8}{subsection.2.3.2}%
+\contentsline {subsubsection}{Artificial Neural Networks}{9}{section*.9}%
+\contentsline {subsubsection}{Support Vector Regression}{11}{section*.10}%
+\contentsline {subsubsection}{Random Forest}{11}{section*.11}%
+\contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{12}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Summary and Conclusion}{13}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Main chapters}{14}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Conclusion}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}References}{16}{chapter.5}%
