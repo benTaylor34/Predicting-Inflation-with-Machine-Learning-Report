@@ -14,6 +14,10 @@ Mariette Awad and Rahul Khanna.
 \newblock {\em Machine Learning}, pages 1--18.
 \newblock Apress, Berkeley, CA, 2015.
 
+\bibitem{Beckett_2023}
+David Beckett.
+\newblock Consumer price inflation, uk: October 2023, Nov 2023.
+
 \bibitem{breiman1996bagging}
 Leo Breiman.
 \newblock Bagging predictors.
@@ -36,6 +40,11 @@ G.~Ciaburro, V.K. Ayyadevara, and A.~Perrier.
   smart and efficient analytics using Cloud ML Engine}.
 \newblock Packt Publishing, 2018.
 
+\bibitem{clapham1939bank}
+John~Harold Clapham.
+\newblock {\em The bank of England}.
+\newblock Number~7. CUP Archive, 1939.
+
 \bibitem{cortes1995support}
 Corinna Cortes and Vladimir Vapnik.
 \newblock Support-vector networks.
@@ -52,6 +61,23 @@ Jeffrey Dean.
 \newblock The deep learning revolution and its implications for computer
   architecture and chip design.
 \newblock {\em ArXiv}, abs/1911.05289, 2019.
+
+\bibitem{TheEconomist}
+The Economist.
+\newblock Our big mac index shows how burger prices are changing.
+
+\bibitem{HouseOfCommons}
+Brigid Francis-Devine.
+\newblock Rising cost of living in the uk.
+\newblock
+  \url{https://commonslibrary.parliament.uk/research-briefings/cbp-9428/},
+  2023.
+\newblock [Accessed 17-12-2023].
+
+\bibitem{hammond1981alexander}
+Nicholas Geoffrey~Lempri{\`e}re Hammond.
+\newblock {\em Alexander the Great}.
+\newblock Chatto \& Windus London, 1981.
 
 \bibitem{HANSEN1999345}
 Bruce~E. Hansen.
@@ -79,6 +105,24 @@ John~J Murphy.
 \newblock {\em Technical analysis of the financial markets: A comprehensive
   guide to trading methods and applications}.
 \newblock Penguin, 1999.
+
+\bibitem{telegraphBankEnglands}
+Eir Nolsøe.
+\newblock {B}ank of {E}ngland’s {C}ovid money-printing spree ‘drove up
+  inflation’ --- telegraph.co.uk.
+\newblock
+  \url{https://www.telegraph.co.uk/business/2023/04/18/bank-of-england-covid-money-printing-drove-up-inflation/#:~:text=During%20the%20pandemic%2C%20the%20Bank,to%20a%20record%20%C2%A3895bn.},
+  2023.
+\newblock [Accessed 17-12-2023].
+
+\bibitem{Oner_2019}
+Ceyda Oner.
+\newblock Inflation: Prices on the rise, Jul 2019.
+
+\bibitem{Parkin2016}
+Michael Parkin.
+\newblock {\em Inflation}, pages 1--10.
+\newblock Palgrave Macmillan UK, London, 2016.
 
 \bibitem{rockefeller2019technical}
 Barbara Rockefeller.

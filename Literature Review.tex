@@ -69,13 +69,39 @@ Naturally, to read this many articles is impossible,
 however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop our predictive models. 
 
 \subsection{Inflation Papers}
+According to Ceyda Oner at the International Monetary Fund 
+"Inflation is the rate of increase in prices over a given period of time."\cite{Oner_2019}
+Often inflation is used to broadly indicate a countries of the global state of price fluctuation, 
+however, inflation can also be used for certain services, goods, or food.
+Inflation affects everyone leading to an abundance of different papers linking to the topic.
+The papers focusing on inflation cover a variety of topics such as inflation's various effects, forecasting inflation, the causes and trends of inflation, and more. \cite{Parkin2016}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Problem Domain} 
 This section of the literature review will go more in-depth into the area that this report will tackle as well as which methods could potentially be used.
-\subsection{Inflation a continuation of "Inflation Papers"}
-
+\subsection{UK Inflation}
+Inflation has been around since money has been used with one of the earliest recordings of inflation being caused by the death of Alexander the Great in around 300 BC\cite{hammond1981alexander}.
+Because of inflation's pervasiveness and its intrinsic link to both macro and microeconomics, there is a surplus of literature surrounding the subject.
+This report will focus on inflation in the UK as opposed to global inflation.
+Several indicators can be used to measure inflation, the most common of which are Consumer Price Index (CPI), Consumer Price Index with Housing (CPIH), and Retail Price Index (RPI).
+There are also more novel measurements of inflation as well such as viewing the Big Mac index\cite{TheEconomist} and recording its change over time. 
+\par
+In the UK, inflation is the responsibility of the Bank of England who set monetary policy eight times a year with the goal of controlling and stablising inflation.
+The Bank of England (BoE) calculates inflation using their own in-house models\cite{clapham1939bank}.
+The BoE are not transparent with the specifics of the models or exactly how they calculate inflation, however, they state their models do factor in market expectations.
+In October 2022 inflation rates reached a peak of 11.1\% the highest in over 40 years.
+Yet by October 2023, the annual rate was the lowest since October 2021 at 4.7\%\cite{Beckett_2023}.
+Granted this is still higher than the targeted 2\% imposed on the BoE by the government.
+According to a research briefing published by the House of Commons Library, the main causes for the extremely high current inflation were: 
+Covid-19 lockdowns causing supply chain disruptions and Russia's invasion of Ukraine causing increased energy prices due to the UK's prior reliance on Russian fuel\cite{HouseOfCommons}.
+Additionally, several pundits have suggested the BoE's slow reaction to combating high inflation rates and their increased money-printing during the pandemic\cite{telegraphBankEnglands}.
+The main way that the BoE combats inflation is through the manipulation of interest rates.
+The general premise is that as inflation rates grow, the growth of inflation should slow and inflation should eventually decrease. 
+This is because increased interest rates mean the overall spending in the economy lessens as money is instead being spent on the increased interest.
+\par
+Through this project we hope to be able to forecast future inflation through the use of machine learning models.
+%%% talk about current uk inflation
+%%% talk about bank of englands job to handle inflatrion and how they calculate it
 \subsection{Machine Learning Models}
 By utilising machine learning techniques in financial forecasting we can endeavor to improve upon the performance of traditional statistical models.
 Generally, the goal of FTS forecasting can be placed into two main categories:
@@ -161,6 +187,7 @@ The final prediction is an average taken from all of the trees' predictions.
 \begin{itemize}
     \item Rfs suffer from increased training time. This is due to the fact that to make a prediction you need predictions from all of the trees to get an average.
 \end{itemize}
+
 \subsection{Regression Metrics and Model Evaluation}
 Evaluating a model is extremely important not only to know the quality of your model's predictions but also in order to make improvements to the model to achieve a more desirable result.
 Evaluation metrics can be used to evaluate the performance of the model.
@@ -209,3 +236,13 @@ If R is -1 then there is a perfect negative linear relationship and if R is 1 th
 These formulas can be used to understand the predictive skills of a model.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary and Conclusion}
+Through this literature review, we have covered a sample of the literature on machine learning methods, financial time series forecasting, and inflation.
+There is a multitude of literature available in these areas due to the potential monetary gain as well as the new and emerging technologies being explored in the fields.
+Therefore, it would be nearly impossible to extensively cover all of the relevant articles to this project.
+Instead, the main focus was on understanding the most common techniques used to predict FTS and which machine learning models are often applied.
+We also covered the UK's relationship with inflation, who is tasked with controlling it, and how they attempt to do so as well as some of the factors contributing to it.
+\par
+Having completed the literature review we are now equipped with general knowledge of the problem of inflation, its causes, and how it is controlled.
+This will help us to select appropriate data to train and build our models on. 
+Furthermore, due to reviewing current literature in the field of FTS forecasting and machine learning, 
+we have the knowledge of which available models may be best suited to forecasting inflation as well as an understanding of how to evaluate the models we choose to use.

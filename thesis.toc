@@ -15,13 +15,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{7}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{8}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Problem Domain}{8}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Inflation a continuation of "Inflation Papers"}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{8}{subsection.2.3.2}%
-\contentsline {subsubsection}{Artificial Neural Networks}{9}{section*.9}%
-\contentsline {subsubsection}{Support Vector Regression}{11}{section*.10}%
-\contentsline {subsubsection}{Random Forest}{11}{section*.11}%
-\contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{12}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Summary and Conclusion}{13}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Main chapters}{14}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Conclusion}{15}{chapter.4}%
-\contentsline {chapter}{\numberline {5}References}{16}{chapter.5}%
+\contentsline {subsection}{\numberline {2.3.1}UK Inflation}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{9}{subsection.2.3.2}%
+\contentsline {subsubsection}{Artificial Neural Networks}{10}{section*.9}%
+\contentsline {subsubsection}{Support Vector Regression}{12}{section*.10}%
+\contentsline {subsubsection}{Random Forest}{12}{section*.11}%
+\contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{13}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Summary and Conclusion}{14}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Main chapters}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Conclusion}{16}{chapter.4}%
+\contentsline {chapter}{\numberline {5}References}{17}{chapter.5}%
