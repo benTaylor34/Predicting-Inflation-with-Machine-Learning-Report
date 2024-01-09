@@ -1,6 +1,6 @@
-PWD c:\Users\Ben\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report
+PWD c:\Users\Ben\OneDrive\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report
 INPUT C:\Users\Ben\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Ben\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report\Thesis.tex
+INPUT c:\Users\Ben\OneDrive\Documents\GitHub\Predicting-Inflation-with-Machine-Learning-Report\Thesis.tex
 OUTPUT Thesis.log
 INPUT .\luthesis.cls
 INPUT luthesis.cls
