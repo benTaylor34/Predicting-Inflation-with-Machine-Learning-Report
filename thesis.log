@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  9 JAN 2024 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  9 JAN 2024 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -410,7 +410,7 @@ color pop
 ] (Abstract.tex
 Chapter 0.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 7--35
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
 
  []
 
@@ -669,22 +669,59 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 1.
-) (Literature Review.tex [4
+[4
 color push 0 g 0 G
 color pop
 
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (Literature Review.tex [5
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=210, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=229, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
 (pdftex.def)             Requested size: 312.62466pt x 272.74843pt.
-[5
+[6
 color push 0 g 0 G
 color pop
 
@@ -692,7 +729,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [6
+] [7
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -722,12 +759,12 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=233, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=253, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
 (pdftex.def)             Requested size: 312.62466pt x 182.78383pt.
- [7
+ [8
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -750,7 +787,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [8
+] [9
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -775,7 +812,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./images/articleGrowth.png>] [9
+ <./images/articleGrowth.png>] [10
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -795,12 +832,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=264, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=283, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 138.
 (pdftex.def)             Requested size: 312.62466pt x 369.47528pt.
- [10
+ [11
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -811,7 +848,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [11
+] [12
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -851,7 +888,7 @@ Overfull \hbox (3.33221pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/12 SVRs can main-tain sta-bil-ity des-pite noisy in-put data thanks to the $\OML/cmm/m/it/12 "$\OT1/cmr/m/n/12 -incentive
  []
 
-[12
+[13
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -884,7 +921,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [13
+] [14
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -905,7 +942,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) [14
+]) [15
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -914,16 +951,6 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-[15
-color push 0 g 0 G
-color pop
-
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-Chapter 4.
 [16
 color push 0 g 0 G
 color pop
@@ -933,8 +960,18 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Chapter 5.
+Chapter 4.
 [17
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 5.
+[18
 color push 0 g 0 G
 color pop
 
@@ -948,20 +985,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 00ADD923ECCA78EF9B19C6B250A879D2;3116.
+(rerunfilecheck)             Checksum: D521465B89F2F3E644757DEC68B6C7AC;2981.
  ) 
 Here is how much of TeX's memory you used:
- 11712 strings out of 475248
- 191348 string characters out of 5758757
+ 11730 strings out of 475248
+ 191533 string characters out of 5758757
  1931785 words of memory out of 5000000
- 32948 multiletter control sequences out of 15000+600000
+ 32950 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,409b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (23 pages, 652634 bytes).
+Output written on Thesis.pdf (24 pages, 657590 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
  184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
