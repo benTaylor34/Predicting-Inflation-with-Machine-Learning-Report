@@ -1,2 +1,16 @@
 \chapter{Data Selection and Preprocessing}
-\section{Importance of data selection and preprocessing}
+\section{Data Selection}
+The saying "garbage in garbage out" succinctly states the importance of selecting data for machine learning models.
+It does not matter how powerful a model is if the data selected is poor or inappropriate.
+Selecting data is a key step to building effective machine-learning models.
+Thankfully, there are plenty of large open-source data sets available online, yet picking an appropriate set may still present a challenge.
+The dataset that will be used for this project is the United Kingdom subset of "World Development Indicators"\cite{WBI}.
+My reason for selecting this set is due to its large number of metrics, reliable provider, and the fact that it is open-source.
+The dataset is classified as public under the access to information classification policy. 
+The World Bank is known for reliable and accurate data which should avoid issues of bias, insufficient data, or poor quality.
+The original UK dataset contains over 1400 metrics with data running from 1960-2022 including 2 metrics for inflation (CPI and GDP deflator (the rate of price change in the economy as a whole)).
+However, due to the all-encompassing nature of the dataset, it will need to be cleaned and many columns will need to be removed to improve the set's relevance.
+
+\section{Data Preprocessing}
+Often, datasets have several outstanding issues or properties that make them imperfect for use in a machine-learning model.
+Data preprocessing is the process of making changes to and cleaning a dataset before using it in a model.
