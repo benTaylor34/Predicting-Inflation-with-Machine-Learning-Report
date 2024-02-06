@@ -78,6 +78,12 @@ Brigid Francis-Devine.
   2023.
 \newblock [Accessed 17-12-2023].
 
+\bibitem{GCTest}
+C.~W.~J. Granger.
+\newblock Investigating causal relations by econometric models and
+  cross-spectral methods.
+\newblock {\em Econometrica}, 37(3):424--438, 1969.
+
 \bibitem{hammond1981alexander}
 Nicholas Geoffrey~Lempri{\`e}re Hammond.
 \newblock {\em Alexander the Great}.
@@ -184,6 +190,16 @@ Zhongyuan Wei.
 \newblock {\em A SVM approach in forecasting the moving direction of Chinese
   stock indices}.
 \newblock Lehigh University, 2012.
+
+\bibitem{inflationStationaryOrNot}
+Daniela Hristova~* Wojciech W.~Charemza and Peter Burridge.
+\newblock Is inflation stationary?
+\newblock {\em Applied Economics}, 37(8):901--903, 2005.
+
+\bibitem{wooldridge2009introductory}
+Jeffrey~Marc Wooldridge.
+\newblock {\em Introductory Econometrics: A Modern Approach}.
+\newblock ISE - International Student Edition. South-Western, 2009.
 
 \bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
 G.~Udny Yule.

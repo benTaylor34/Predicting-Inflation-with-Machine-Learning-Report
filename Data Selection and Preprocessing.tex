@@ -1,4 +1,4 @@
-\chapter{Data Selection and Preprocessing}
+\chapter{Data Selection and Pre-processing}
 \section{Data Selection}
 The saying "garbage in garbage out" succinctly states the importance of selecting data for machine learning models.
 It does not matter how powerful a model is if the data selected is poor or inappropriate.
@@ -11,6 +11,47 @@ The World Bank is known for reliable and accurate data which should avoid issues
 The original UK dataset contains over 1400 metrics with data running from 1960-2022 including 2 metrics for inflation (CPI and GDP deflator (the rate of price change in the economy as a whole)).
 However, due to the all-encompassing nature of the dataset, it will need to be cleaned and many columns will need to be removed to improve the set's relevance.
 
-\section{Data Preprocessing}
+\section{Data Pre-processing}
 Often, datasets have several outstanding issues or properties that make them imperfect for use in a machine-learning model.
-Data preprocessing is the process of making changes to and cleaning a dataset before using it in a model.
+Data pre-processing is the process of making changes to and cleaning a dataset before using it in a model.
+\subsection{Cleaning the Data}
+There were numerous outstanding issues with the original dataset taken from the World Bank.
+Several steps were taken to clean the initial dataset taken from the World Bank.
+An example of this is that almost all indicators in the set had null values from years where data was not collected.
+As part of the cleaning process, any indicators that met the following criteria were dropped from the dataset:
+\begin{itemize}
+    \item Indicators with 20 or more years of missing data.
+    \item Duplicate indicators.
+    \item Indicators that were constant throughout the years (e.g. "secondary education duration")
+    \item Indicators with 5 or fewer years of unique data.
+    \item Indicators with no data in the last 5 years.
+\end{itemize}
+This reduced the number of indicators from 1458 to 396.
+Next all remaining null values were replaced with zeros to improve readability.
+Finally, a Granger causality test was carried out on the data.
+\subsection{Granger Causality}
+Granger causality is a statistical concept in economics used to show if time series A is useful at forecasting time series B.
+Clive Granger originally proposed the test in 1969 in the article "Investigating Causal Relations by Econometric Models and Cross-spectral Methods\cite{GCTest}.
+The test only shows predictive causality and not true causality.
+Additionally, the test only provides information about forecasting ability and not the actual causal relationship.
+Another potential issue with the use of the Granger test in the context of inflation is that the test works best on stationary data, 
+yet whether inflation is best treated as stationary or non-stationary data is currently inconclusive\cite{inflationStationaryOrNot}.
+But for our purposes, these limitations are fine as we only want a loose idea on how useful our data will be for forecasting.
+\subsubsection{Granger Testing The Data}
+With two indicators X and Y, X causes Y if a series of tests on lagged values of X produce a p-value of less than 0.05.
+The closer the p-value is to zero the more likely it is for X to granger cause Y.
+Lagged values are values from a time series shifted forwards or backward in time.
+In the case of the Granger test, Jeffery Woolriddge proposes that fewer lags should be used for annual data compared to quarterly or monthly data in order to not lose degrees of freedom\cite{wooldridge2009introductory}.
+The Granger test was run on the remaining indicators comparing them each to CPI.
+The function ran 5 lags to see if data has a potential causal relationship with inflation within 5 years.
+All indicators that did not produce a p-value of less than 0.05 within the 5 lags were dropped from the dataset.
+We know that the data dropped does not Granger cause CPI so is unlikely to be useful in forecasting CPI.
+However, this does not mean that the retained data has a causal relationship with inflation. 
+It simply means that at some point during the 5 lags a p-value<0.05 was produced and thus the data has the potential to be useful in forecasting CPI.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
+    \caption[The function written to Granger test the data.]{The function written to Granger test the data.}
+    \label{fig:GrangerTestFunction}
+\end{figure}
+With this test complete the dataset has now dropped from 1458 indicators to 182.
