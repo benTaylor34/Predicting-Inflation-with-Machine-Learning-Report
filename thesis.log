@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  6 FEB 2024 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  12 FEB 2024 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,7 +504,13 @@ color pop
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
+color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
 color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -753,7 +759,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=264, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=269, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
@@ -796,7 +802,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=288, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=293, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -869,7 +875,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=318, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=323, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 138.
@@ -979,7 +985,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) [15
+]) (Data Selection, Preprocessing and Transformation.tex [15
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -988,54 +994,54 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-(Data Selection and Preprocessing.tex [16
+[16
 color push 0 g 0 G
 color pop
 
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
-Chapter 4.
+<images/GrangerTestFunction.png, id=376, 588.39825pt x 242.70676pt>
+File: images/GrangerTestFunction.png Graphic file (type png)
+<use images/GrangerTestFunction.png>
+Package pdftex.def Info: images/GrangerTestFunction.png  used on input line 56.
+(pdftex.def)             Requested size: 312.62466pt x 128.95615pt.
+
+Overfull \hbox (32.95547pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  DATA SELECTION, PREPROCESSING AND TRANSFORMATION \OT1/cmr/m/n/12 17
+ []
+
 [17
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+])
+Overfull \hbox (32.95547pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  DATA SELECTION, PREPROCESSING AND TRANSFORMATION \OT1/cmr/m/n/12 18
+ []
 
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-<images/GrangerTestFunction.png, id=375, 588.39825pt x 242.70676pt>
-File: images/GrangerTestFunction.png Graphic file (type png)
-<use images/GrangerTestFunction.png>
-Package pdftex.def Info: images/GrangerTestFunction.png  used on input line 53.
-(pdftex.def)             Requested size: 312.62466pt x 128.95615pt.
- [18
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]) [19
+[18
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -1043,10 +1049,10 @@ color pop
 color push 0 g 0 G
 color push 0 g 0 G
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.53 \chapter
+l.56 \chapter
              {Conclusion}
 color pop
 color pop
@@ -1055,8 +1061,8 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/GrangerTestFunction.png>]
-Chapter 5.
-[20
+Chapter 4.
+[19
 color push 0 g 0 G
 color pop
 
@@ -1065,8 +1071,8 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Chapter 6.
-[21
+Chapter 5.
+[20
 color push 0 g 0 G
 color pop
 
@@ -1080,20 +1086,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7B2A41161075D65535E387BE2A2D14D5;3783.
+(rerunfilecheck)             Checksum: EA98C4BA30C769C687E86A04DC64364E;4154.
  ) 
 Here is how much of TeX's memory you used:
- 11772 strings out of 475248
- 192623 string characters out of 5758757
+ 11773 strings out of 475248
+ 192772 string characters out of 5758757
  1931785 words of memory out of 5000000
- 32974 multiletter control sequences out of 15000+600000
+ 32975 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,409b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,426b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (28 pages, 696277 bytes).
+Output written on Thesis.pdf (27 pages, 697403 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
+ 490 PDF objects out of 1000 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
