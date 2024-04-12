@@ -5,56 +5,65 @@ It does not matter how powerful a model is if the data selected is poor or inapp
 Selecting data is a key step to building effective machine-learning models.
 Thankfully, there are plenty of large open-source data sets available online, despite how time-consuming and expensive gathering data may be.
 Yet picking an appropriate set may still present a challenge.
-The data that will be used for this project is taken from the United Kingdom subset of the World Bank's "World Development Indicators"\cite{WBI}.
-My reason for selecting this set is due to its large variety of indicators, the reliable provider, and the fact that it is open-source (the dataset is classified as public under the access to information classification policy). 
-The World Bank is known for reliable and accurate data which should avoid issues of bias, insufficient data, or poor quality.
-The original UK dataset contains over 1400 unique metrics with data running from 1960 to 2022 including 2 indicators for inflation (CPI and GDP Price Deflator).
-However, due to the all-encompassing nature of the dataset, it will need to be cleaned and many columns will need to be removed to improve the set's relevance to our goal.
+During the project, several datasets were tested, for example, various Kaggle datasets and the "World Development Indicators" by the World Bank \cite{WBI}.
+The dataset that was finally settled on was the UK financial statistics from OECD (The Organisation for Economic Co-operation and Development)\cite{OECD}.
+The reason for selecting this set is due to its large variety of indicators, the reliable provider, and the fact that it is open-source 
+(the dataset is classified as public under the access to information classification policy). 
+
+Initially, datasets from Kaggle were tested but they lacked a sufficient number of data points for multivariate machine learning analysis of inflation.
+Data from the World Bank was also preprocessed and tested with basic models.
+The World Bank is known for reliable and accurate data which should avoid issues of bias, or poor quality.
+However, the dataset contained only yearly data dating from the 1960s, 
+thus, although the set had a large number of interesting features, the number of data points was insufficient for a machine-learning model.
+Additionally, due to the large number of features (over 1400), it would need a sufficient amount of cleaning/preprocessing.
+Due to the issues encountered with other datasets, the OECD dataset was selected to be used.
+The first main benefit of the OECD dataset is that the data is taken monthly so there are a lot more data points than datasets that collect data annually.
+The second benefit is that the dataset contains a moderate number of features to choose from (not too many that the features need to be drastically reduced (as was the case with the World Bank dataset)).
 
 \section{Data Pre-processing and Transformation}
 Often, datasets have several outstanding issues or properties that make them imperfect for use in a machine-learning model.
 Data pre-processing often includes steps such as data cleaning (handling outliers, noise, or missing values) and data integration (combining data from multiple sources). 
 Data transformation is the task of molding the data to an appropriate size and dimensionality.
-Both of these processes are done to make a dataset that contains data formatted in a manner that suits our models and objectives.
-Poorly processed data can be difficult for both machines and humans to use and can lead to results. 
+Both of these processes are to create a dataset that is formatted in a manner that suits our models and objectives.
+Poorly processed data can be difficult for both machines and humans to use and can lead to poor results. 
 \subsection{Cleaning the Data}
-There were numerous outstanding issues with the original dataset taken from the World Bank and thus several steps were taken to clean the data.
-An example of this is that almost all indicators in the set had null values from years where data was not collected.
-As part of the cleaning process, any indicators that met the following criteria were dropped from the dataset:
+There were some outstanding issues with the original dataset taken from OECD and thus several steps were taken to clean the data.
+These issues included:
 \begin{itemize}
-    \item Indicators with 30 or more years of missing data.
-    \item Duplicate indicators.
-    \item Indicators that were constant throughout the years (e.g. "secondary education duration")
-    \item Indicators with 5 or fewer years of unique data.
-    \item Indicators with no data in the last 5 years.
+    \item Features containing missing data.
+    \item Incorrect format of the dataset (required transformation).
+    \item Duplicate features.
+    \item Unnecessary/erroneous data.
+    \item A large amount of metadata that needed to be removed.
 \end{itemize}
-This reduced the number of indicators from 1458 to 396.
-Next all remaining null values were replaced with zeros to improve readability.
+Any data points that fell under these issues were removed/cleaned and all null values were replaced with zeros to improve readability.
 
-Finally, a Granger causality test was carried out on the data.
+Finally, a Granger causality test was carried out on the data to gather a better understanding of our data and its correlation to the target feature (CPI).
 \subsection{Granger Causality}
 Granger causality is a statistical concept in economics used to show if time series A is useful at forecasting time series B.
 Clive Granger originally proposed the test in 1969 in the article "Investigating Causal Relations by Econometric Models and Cross-spectral Methods\cite{GCTest}.
 The test only shows predictive causality and not true causality.
 Additionally, the test only provides information about forecasting ability and not the actual causal relationship.
-Another potential issue with the use of the Granger test in the context of inflation is that the test works best on stationary data, 
-yet whether inflation is best treated as stationary or non-stationary data is currently inconclusive\cite{inflationStationaryOrNot}.
-But for our purposes, these limitations are fine as we only want a loose idea of how useful our data will be for forecasting.
+Another issue with the use of the Granger test in the context of inflation is that the test works best on stationary data.
+Whether inflation is best treated as stationary or non-stationary data is currently inconclusive\cite{inflationStationaryOrNot}.
+But for our purposes, these limitations are fine as we only want to understand an indication of how useful the data will be for inflation forecasting.
 \subsubsection{Granger Testing The Data}
 With two indicators X and Y, X causes Y if a series of tests on lagged values of X produce a p-value of less than 0.05.
 The closer the p-value is to zero the more likely it is for X to granger cause Y.
 Lagged values are values from a time series shifted forwards or backward in time.
 In the case of the Granger test, Jeffery Woolriddge proposes that fewer lags should be used for annual data compared to quarterly or monthly data in order to not lose degrees of freedom\cite{wooldridge2009introductory}.
-The Granger test was run on the remaining indicators comparing them each to CPI.
-The function ran 5 lags to see if data has a potential causal relationship with inflation within 5 years.
-All indicators that did not produce a p-value of less than 0.05 within the 5 lags were dropped from the dataset.
-We know that the data dropped does not Granger cause CPI so is unlikely to be useful in forecasting CPI.
-However, this does not mean that the retained data has a causal relationship with inflation. 
-It simply means that at some point during the 5 lags a p-value<0.05 was produced and thus the data has the potential to be useful in forecasting CPI.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
-    \caption[The function written to Granger test the data.]{The function written to Granger test the data.}
-    \label{fig:GrangerTestFunction}
-\end{figure}
-With this test complete the dataset has now dropped from 1458 indicators to 182.
+The Granger test was run on the preprocessed indicators comparing each of them to CPI.
+The function ran 12 lags to see if data has a potential causal relationship with inflation within the past year.
+This means that if at some point during the last 12 lags a p-value<0.05 was produced the data will be labeled as having the potential to be useful in forecasting CPI.
+Of the 20 features tested, 9 produced results that indicate Granger Causality.
+These 9 were: 'Composite business confidence', 'Composite consumer confidence', 'Consumer prices', 'Long-term interest rates', 'Merchandise imports', 'Reference series (GDP)', 'Retail trade volume', 'Share prices', 'Unemployment'
+This indicates that almost half of the features have the potential to predict CPI.
+This, however, does not mean that the 9 features found to Granger Cause CPI cause inflation as the Granger Causality test is only a measure of the potential of one value to cause another.
+Furthermore, just because a value does not Granger Cause inflation does not mean that the feature is not useful in predicting inflation. 
+We now have a better understanding of the potential our dataset has to predict inflation.
+%%\begin{figure}[H]
+%%    \centering
+%%    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
+%%    \caption[The function written to Granger test the data.]{The function written to Granger test the data.}
+%%    \label{fig:GrangerTestFunction}
+%%\end{figure}
