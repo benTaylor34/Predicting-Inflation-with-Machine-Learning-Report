@@ -78,6 +78,11 @@ Brigid Francis-Devine.
   2023.
 \newblock [Accessed 17-12-2023].
 
+\bibitem{Google}
+Google.
+\newblock Using the python client library  |  ai platform training  | 
+  google cloud.
+
 \bibitem{GCTest}
 C.~W.~J. Granger.
 \newblock Investigating causal relations by econometric models and
@@ -104,6 +109,15 @@ Tin~Kam Ho.
 \newblock Random decision forests.
 \newblock In {\em Proceedings of 3rd international conference on document
   analysis and recognition}, volume~1, pages 278--282. IEEE, 1995.
+
+\bibitem{Hunter:2007}
+J.~D. Hunter.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock {\em Computing in Science \& Engineering}, 9(3):90--95, 2007.
+
+\bibitem{Huyen_2022}
+Chip Huyen.
+\newblock Design a machine learning system, 2022.
 
 \bibitem{michalski2013machine}
 Ryszard~Stanislaw Michalski, Jaime~Guillermo Carbonell, and Tom~M Mitchell.
@@ -138,6 +152,13 @@ Ceyda Oner.
 Michael Parkin.
 \newblock {\em Inflation}, pages 1--10.
 \newblock Palgrave Macmillan UK, London, 2016.
+
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
 
 \bibitem{rockefeller2019technical}
 Barbara Rockefeller.

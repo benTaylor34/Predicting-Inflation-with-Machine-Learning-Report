@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  12 APR 2024 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  17 APR 2024 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -407,14 +407,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (Abstract.tex
+]
 Chapter 0.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 8--36
-
- []
-
-[2
+(Abstract.tex [2
 color push 0 g 0 G
 color pop
 
@@ -426,6 +421,11 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 0.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 8--40
+
+ []
+
 [3
 color push 0 g 0 G
 color pop
@@ -504,7 +504,13 @@ color pop
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
+color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
 color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -541,6 +547,24 @@ color pop
  [5
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -557,6 +581,10 @@ color pop
 color push 0 g 0 G
 color pop
 
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -631,12 +659,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 120--127
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 \OT1/cmtt/m/n/12 18 / bank-[]of-[]england-[]covid-[]money-[]printing-[]drove-[]up-[]inflation / # :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--127
+Underfull \hbox (badness 10000) in paragraph at lines 134--141
 [] \OT1/cmtt/m/n/12 : text = During % 20the % 20pandemic % 2C % 20the % 20Bank ,[] to % 20a % 20record %
  []
 
@@ -665,6 +693,12 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
@@ -675,13 +709,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]) (Introduction.tex [3
-color push 0 g 0 G
-color pop
+] [3
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -700,6 +728,21 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (Introduction.tex [4
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -712,7 +755,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 1.
-[4
+[5
 color push 0 g 0 G
 color pop
 
@@ -720,7 +763,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) (Literature Review.tex [5
+]) (Literature Review.tex [6
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -759,12 +802,12 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=273, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=314, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
 (pdftex.def)             Requested size: 312.62466pt x 272.74843pt.
-[6
+[7
 color push 0 g 0 G
 color pop
 
@@ -772,7 +815,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [7
+] [8
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -802,12 +845,12 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=297, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=337, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
 (pdftex.def)             Requested size: 312.62466pt x 182.78383pt.
- [8
+ [9
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -830,7 +873,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [9
+] [10
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -855,7 +898,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./images/articleGrowth.png>] [10
+ <./images/articleGrowth.png>] [11
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -875,12 +918,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=327, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=367, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 138.
 (pdftex.def)             Requested size: 312.62466pt x 369.47528pt.
- [11
+ [12
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -891,7 +934,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [12
+] [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -931,7 +974,7 @@ Overfull \hbox (3.33221pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/12 SVRs can main-tain sta-bil-ity des-pite noisy in-put data thanks to the $\OML/cmm/m/it/12 "$\OT1/cmr/m/n/12 -incentive
  []
 
-[13
+[14
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -964,7 +1007,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [14
+] [15
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -985,7 +1028,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) (Requirements.tex [15
+]) (Design.tex [16
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -994,71 +1037,125 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-) (Data Selection, Preprocessing and Transformation.tex [16
+<images/machineLearningDesignPipeline.png, id=413, 233.673pt x 251.13824pt>
+File: images/machineLearningDesignPipeline.png Graphic file (type png)
+<use images/machineLearningDesignPipeline.png>
+Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
+(pdftex.def)             Requested size: 291.78174pt x 313.61163pt.
+
+Underfull \hbox (badness 3525) in paragraph at lines 9--9
+[]\OT1/cmr/m/it/12 Figure from https://huyenchip.com/machine-learning-systems-design/design-a-
+ []
+
+[17
 color push 0 g 0 G
 color pop
 
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.14 \section
+             {Project Setup}
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./images/machineLearningDesignPipeline.png>] [18
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [19
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [20
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [21
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [22
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (Implementation and Testing.tex [23
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
 Chapter 4.
-[17
+) [24
 color push 0 g 0 G
 color pop
 
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-Overfull \hbox (32.95547pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 4.  DATA SELECTION, PREPROCESSING AND TRANSFORMATION \OT1/cmr/m/n/12 18
- []
-
-[18
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-])
-Overfull \hbox (32.95547pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 4.  DATA SELECTION, PREPROCESSING AND TRANSFORMATION \OT1/cmr/m/n/12 19
- []
-
-[19
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
 Chapter 5.
-[20
+[25
 color push 0 g 0 G
 color pop
 
@@ -1068,7 +1165,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 6.
-[21
+[26
 color push 0 g 0 G
 color pop
 
@@ -1082,20 +1179,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 45AA1EF8ECF792309A3294C3D1D0E41B;4258.
+(rerunfilecheck)             Checksum: F38086325F9274B97DFF427C0E667239;4831.
  ) 
 Here is how much of TeX's memory you used:
- 11775 strings out of 475248
- 192718 string characters out of 5758757
+ 11814 strings out of 475248
+ 193331 string characters out of 5758757
  1931785 words of memory out of 5000000
- 32972 multiletter control sequences out of 15000+600000
+ 32993 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,426b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,409b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (28 pages, 675154 bytes).
+Output written on Thesis.pdf (33 pages, 723610 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: mybib.bib
 Warning--there's a number but no series in clapham1939bank
 Warning--empty journal in OECD
-You've used 39 entries,
+You've used 43 entries,
             2118 wiz_defined-function locations,
-            740 strings with 9562 characters,
-and the built_in function-call counts, 10626 in all, are:
-= -- 1022
-> -- 420
+            764 strings with 10249 characters,
+and the built_in function-call counts, 12075 in all, are:
+= -- 1150
+> -- 524
 < -- 6
-+ -- 178
-- -- 132
-* -- 614
-:= -- 1800
-add.period$ -- 116
-call.type$ -- 39
-change.case$ -- 171
++ -- 220
+- -- 170
+* -- 727
+:= -- 2051
+add.period$ -- 126
+call.type$ -- 43
+change.case$ -- 202
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 421
-empty$ -- 940
-format.name$ -- 132
-if$ -- 2241
+cite$ -- 45
+duplicate$ -- 457
+empty$ -- 1037
+format.name$ -- 170
+if$ -- 2524
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 40
-newline$ -- 194
-num.names$ -- 78
-pop$ -- 246
+int.to.str$ -- 43
+missing$ -- 42
+newline$ -- 212
+num.names$ -- 86
+pop$ -- 282
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 171
 quote$ -- 0
-skip$ -- 294
+skip$ -- 326
 stack$ -- 0
-substring$ -- 563
-swap$ -- 60
+substring$ -- 633
+swap$ -- 64
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 148
 warning$ -- 2
-while$ -- 106
-width$ -- 41
-write$ -- 407
+while$ -- 118
+width$ -- 45
+write$ -- 444
 (There were 2 warnings)

@@ -183,13 +183,13 @@ INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\Ben\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Abstract.tex
 INPUT .\Abstract.tex
 INPUT .\Abstract.tex
 INPUT .\Abstract.tex
 INPUT Abstract.tex
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Thesis.toc
 INPUT .\Thesis.toc
@@ -242,16 +242,22 @@ INPUT .\images\CmnAcFc.png
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti8.tfm
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
-INPUT .\Requirements.tex
-INPUT .\Requirements.tex
-INPUT .\Requirements.tex
-INPUT .\Requirements.tex
-INPUT Requirements.tex
-INPUT .\Data Selection, Preprocessing and Transformation.tex
-INPUT .\Data Selection, Preprocessing and Transformation.tex
-INPUT .\Data Selection, Preprocessing and Transformation.tex
-INPUT .\Data Selection, Preprocessing and Transformation.tex
-INPUT Data Selection, Preprocessing and Transformation.tex
+INPUT .\Design.tex
+INPUT .\Design.tex
+INPUT .\Design.tex
+INPUT .\Design.tex
+INPUT Design.tex
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\images\machineLearningDesignPipeline.png
+INPUT .\Implementation and Testing.tex
+INPUT .\Implementation and Testing.tex
+INPUT .\Implementation and Testing.tex
+INPUT .\Implementation and Testing.tex
+INPUT Implementation and Testing.tex
 INPUT Thesis.aux
 INPUT .\Thesis.out
 INPUT .\Thesis.out
