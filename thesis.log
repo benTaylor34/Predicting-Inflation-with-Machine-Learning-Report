@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  19 APR 2024 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  19 APR 2024 23:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -563,6 +563,10 @@ color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0 g 0 G
@@ -580,6 +584,24 @@ color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -597,6 +619,14 @@ color pop
 color push 0 g 0 G
 color pop
 
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -830,7 +860,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=340, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=374, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
@@ -873,7 +903,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=363, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=397, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -946,7 +976,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=393, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=427, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 138.
@@ -1065,7 +1095,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-<images/machineLearningDesignPipeline.png, id=439, 233.673pt x 251.13824pt>
+<images/machineLearningDesignPipeline.png, id=473, 233.673pt x 251.13824pt>
 File: images/machineLearningDesignPipeline.png Graphic file (type png)
 <use images/machineLearningDesignPipeline.png>
 Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
@@ -1111,7 +1141,18 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [20
+]
+<images/hist.png, id=493, 1720.7487pt x 880.9713pt>
+File: images/hist.png Graphic file (type png)
+<use images/hist.png>
+Package pdftex.def Info: images/hist.png  used on input line 98.
+(pdftex.def)             Requested size: 375.14705pt x 192.06676pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+[20
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1130,22 +1171,14 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [21
+]
+<images/corr.png, id=498, 1296.5238pt x 839.0547pt>
+File: images/corr.png Graphic file (type png)
+<use images/corr.png>
+Package pdftex.def Info: images/corr.png  used on input line 104.
+(pdftex.def)             Requested size: 375.14705pt x 242.7819pt.
+ [21
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1154,6 +1187,54 @@ color pop
 ] [22
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \subsection
+                 {Data Pre-processing and Transformation}
+color pop
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 \subsection
+                 {Data Pre-processing and Transformation}
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./images/hist.png> <./images/corr.png>] [23
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [24
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -1162,7 +1243,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) (Implementation and Testing.tex [23
+]) (Implementation and Testing.tex [25
 color push 0 g 0 G
 color pop
 color push 0  0.5  0 rg 0  0.5  0 RG
@@ -1174,51 +1255,10 @@ color pop
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-
- []
-
-[24
-color push 0 g 0 G
-color pop
-
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-
- []
-
-) [25
-color push 0 g 0 G
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-Chapter 5.
 [26
 color push 0 g 0 G
 color pop
@@ -1228,8 +1268,71 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Chapter 6.
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
 [27
+color push 0 g 0 G
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) [28
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 5.
+[29
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 6.
+[30
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 7.
+[31
 color push 0 g 0 G
 color pop
 
@@ -1243,20 +1346,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 810031FD11D0D1575FCB91C3AA0D219C;5300.
+(rerunfilecheck)             Checksum: 875B52449CE84EF8DF75F3CBBDD75776;6310.
  ) 
 Here is how much of TeX's memory you used:
- 11837 strings out of 475248
- 193696 string characters out of 5758757
+ 11875 strings out of 475248
+ 194296 string characters out of 5758757
  1931785 words of memory out of 5000000
- 33006 multiletter control sequences out of 15000+600000
+ 33032 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,409b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,531b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (34 pages, 733662 bytes).
+Output written on Thesis.pdf (38 pages, 1167485 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

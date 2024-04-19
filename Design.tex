@@ -77,12 +77,40 @@ The reason for selecting this set is due to its large variety of indicators, the
 Initially, datasets from Kaggle were tested but they lacked a sufficient number of data points for multivariate machine learning analysis of inflation.
 Data from the World Bank was also preprocessed and tested with basic models.
 The World Bank is known for reliable and accurate data which should avoid issues of bias, or poor quality.
-However, the dataset contained only yearly data dating from the 1960s, 
-thus, although the set had a large number of interesting features, the number of data points was insufficient for a machine-learning model.
-Additionally, due to the large number of features (over 1400), it would need a sufficient amount of cleaning/preprocessing.
-Due to the issues encountered with other datasets, the OECD dataset was selected to be used.
+However, the World Bank sourced a majority of its indicators annually dating back to the 1960s meaning that there would only be around 60 rows of data up to the present day.
+Thus, although the set had a large number of interesting features, the number of data points was insufficient for a machine-learning model.
+Additionally, due to the large number of features (over 1400), it would need a sufficient amount of cleaning/preprocessing in order to remove irrelevant features.
+\subsection{The Final Dataset}
+Due to the issues encountered with the other datasets, the OECD dataset was selected for use alongside monthly CPI data sourced from the World Bank.
 The first main benefit of the OECD dataset is that the data is taken monthly so there are a lot more data points than datasets that collect data annually.
+The features from the OECD dataset were taken from 1972 to 2022.
+Unfortunately, a few of the features had less data as they were taken from later than 1972 with the latest being taken in 1987. 
+However, as this is only a small fraction of the overall dataset, replacing the missing values with zeros is unlikely to have a profound effect on the final results.
 The second benefit is that the dataset contains a moderate number of features to choose from (not too many that the features need to be drastically reduced (as was the case with the World Bank dataset)).
+There were twenty different features in total (not including CPI), these features were: 
+composite business confidence, composite consumer confidence, composite leading indicator (CLI), consumer prices, hourly earnings, immediate interest rates call money interbank rate, long-term interest rates, M1, M3, merchandise exports, merchandise imports, nominal exchange rates, passenger car registrations, production volume, GDP, retail trade volume, share prices, short-term interest rates, and unemployment
+Histograms were plotted for each feature in order to assess their distributions.
+Understanding the distribution of a feature can give some insight as to whether to use normalisation (rescaling the data between two set values) or standardisation (setting the mean of the data to 0 and the standard deviation to 1) before giving the data to the machine learning models.
+In addition, a correlation matrix was formed for all of the features to determine if any features were overlapping.
+A correlation matrix gives us an indication of how the features relate to each other one on one.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{hist.png}
+    \caption[A Histogram of Each Feature in the Dataset.]{A histogram of each feature in the dataset}
+    \label{fig:hist}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{corr.png}
+    \caption[A Correlation Matrix for the Features in the Dataset.]{Correlation Matrix for the Features in the Dataset}
+    \label{fig:corr}
+\end{figure}
+
+The histograms display a variety of different distributions, this is understandable as many time series do not follow a normal distribution.
+The distributions indicate that normalisation may be preferable to standardisation as normalisation is preferable when several features do not have a Gaussian (normal) distribution.
+This is because normalisation will preserve the distribution of the data by rescaling the data where as standardisation makes the asssumption that the date has a Gaussian distribution and may modify the data's distribution if it is not already Gaussian.
+As the distribution of the dataset will remain non-normal, some precautions may need to be observed when using models that assume a normal distribution (such as linear regression).
+
 
 \subsection{Data Pre-processing and Transformation}
 Often, datasets have several outstanding issues or properties that make them imperfect for use in a machine-learning model.

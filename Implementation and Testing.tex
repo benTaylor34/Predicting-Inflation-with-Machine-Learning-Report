@@ -1,4 +1,8 @@
 \chapter{Implementation and Testing}
+The goal of the project is to implement a machine learning model that has the ability to predict inflation.
+In order to find the most suitable model, several different models were implemented and their results were compared.
+This chapter of the report will cover how the models were implemeneted, which models were implemented, how the models were tuned and tested, as well as some of the issues encountered in the implementation process.
+This chapter will not cover the results of the models, their comparisons, or their evaluations.
 \section{Tools}
 \subsection{Coding Environemnt}
 The IDE used for this project was Jupyter Notebook provided through the use of Anaconda.
@@ -11,6 +15,7 @@ Jupyter Notebook provides visualisation as output from individual cells.
 This was useful for debugging throughout the project.
 Both Matplotlib and Seaborn were used for further graphical visualisation.
 \subsection{libraries}
+The project's code was written in Python and several libraries were used to assisst the coding process.\\
 
 NumPy\cite{harris2020array} and Pandas\cite{reback2020pandas} - These libraries were used for data manipulation and cleaning.
 NumPy provides several tools for dealing with multidimensional arrays. 
@@ -22,8 +27,29 @@ It provides several functions and nodes that are useful when creating a neural n
 Using pre-written functions written by a reliable source both saves time and resources during development.
 Keras is built on top of TensorFlow and aims to provide a simplified and more user-friendly interface for creating and training machine learning models.\\
 
-SciKitLearn\cite{scikit-learn} - Sklearn is a machine learning library that provides a wide range of easy-to-implement machine learning models and metrics.
+SciKit-Learn\cite{scikit-learn} - Sklearn is a machine learning library that provides a wide range of easy-to-implement machine learning models and metrics.
 Its extensive documentation makes it easy to learn and implement.\\
 
 Matplotlib\cite{Hunter:2007} and Seaborn\cite{Waskom2021} - Matplotlib and Seaborn were used for all graphical data visualisation.
 These libraries provide a plethora of graphing options along with plenty of community support.
+
+\section{Data Preperation}
+Features relating to inflation were sourced from the OECD Databank and Monthly CPI indicators were taken from the World Banks online statisiics.
+All of this data is relating to the United Kingdom's general economic indicators.
+The data was compiled into a tabular format to facilitate the use of the Pandas library and to streamline further data manipulation tasks.
+By using a pandas dataframe several functions can be used to quickly assess the state of the data such as the head or shape functions.
+This is useful in the context of machine learning as model layers require inputs of certain types or shapes.
+
+\section{The Machine Learning Models}
+Five different models were implemented and tested for the predictive ability on the same data set.
+The different machine learning models were linear regression, random forest, support vector regression, long short-term memory netork, and a custom artificial neural network.
+The reason for these five models was because they are some of the most common models used for regression analysis and, as found in the literature, many of the models are used for economic indicator analysis (such as stock predictions).
+Three of the five models were implemented with the Scikit-learn library.
+These were linear regression, random forest, and support vector regression.
+The remaining two models were implemeted through the use of TensorFlow and Keras.
+\subsection{Univariate Implementation}
+Before Implementing each model with the full dataset that contained twenty different features, some of the simple models were implemented.
+This was a quick implementation to test if predicting inflation soley based of its passed values would suffice.
+As expected, the results of this experiment were lack luster likely due to inflation's complexity and that fact that many outside factors effect it.
+\subsection{Multivariate Analysis}
+On the topic of outside factors effecting inflation, the currated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
