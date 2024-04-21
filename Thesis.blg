@@ -6,49 +6,47 @@ The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: mybib.bib
 Warning--entry type for "reback2020pandas" isn't style-file defined
---line 1103 of file mybib.bib
-Warning--I didn't find a database entry for "traintestsplit"
-Warning--there's a number but no series in clapham1939bank
+--line 1101 of file mybib.bib
 Warning--empty journal in OECD
 You've used 50 entries,
             2118 wiz_defined-function locations,
-            805 strings with 12853 characters,
-and the built_in function-call counts, 16544 in all, are:
-= -- 1488
+            803 strings with 12838 characters,
+and the built_in function-call counts, 16522 in all, are:
+= -- 1483
 > -- 1053
-< -- 6
+< -- 5
 + -- 431
 - -- 374
-* -- 1178
-:= -- 2880
-add.period$ -- 145
+* -- 1174
+:= -- 2877
+add.period$ -- 144
 call.type$ -- 50
 change.case$ -- 324
 chr.to.int$ -- 0
-cite$ -- 52
+cite$ -- 51
 duplicate$ -- 517
 empty$ -- 1185
 format.name$ -- 374
-if$ -- 3326
+if$ -- 3320
 int.to.chr$ -- 0
 int.to.str$ -- 50
 missing$ -- 45
 newline$ -- 245
 num.names$ -- 100
-pop$ -- 417
+pop$ -- 419
 preamble$ -- 1
 purify$ -- 286
 quote$ -- 0
-skip$ -- 381
+skip$ -- 382
 stack$ -- 0
 substring$ -- 681
-swap$ -- 71
-text.length$ -- 6
+swap$ -- 70
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 176
-warning$ -- 2
+warning$ -- 1
 while$ -- 135
 width$ -- 52
-write$ -- 513
-(There were 4 warnings)
+write$ -- 512
+(There were 2 warnings)

@@ -14,7 +14,7 @@ Furthermore, Anaconda provides Jupyter Notebook integration which is beneficial 
 Jupyter Notebook provides visualisation as output from individual cells.
 This was useful for debugging throughout the project.
 Both Matplotlib and Seaborn were used for further graphical visualisation.
-\subsection{libraries}
+\subsection{Libraries}
 The project's code was written in Python and several libraries were used to assist the coding process.\\
 
 NumPy\cite{harris2020array} and Pandas\cite{reback2020pandas} - These libraries were used for data manipulation and cleaning.
@@ -55,13 +55,12 @@ It is common practice to split a dataset into training and testing splits.
 The training split is then used for training the machine learning model and the testing split is used for testing the model's performance on unseen data.
 If the model was tested on data it had already been trained on it would become difficult to evaluate the model's generalization (its ability to perform on new/unseen data).
 The difficulty in deciding the size of the training and testing splits lies in the fact that too small a training split and our model may not perform well but too small a testing split and our performance metrics will have a greater variance. 
-The project dataset was split into 80\% training data and 20\% testing data following the advice from the article: A scaling law for the validation-set training-set size ratio by Isabelle Guyon\cite{traintestsplit}.
-
-
-As the dataset is time series data it is likely to contain some temporal dependency.
+The project dataset was split into 80\% training data and 20\% as this is a common split and the models will not utilize a validation set.
+As the dataset is made up of time series data, splitting the data carelessly can lead to suboptimal results.
+This is because time series data often has temporal dependencies.
 Temporal dependency is when data contains stronger associations between events that happened within the same time period.
-To preserve the temporal dependency of the data
-The dataset was then split using the "train\textunderscore test\textunderscore split" function from sklearn.
+To preserve the temporal dependency of the data the dataset will not be shuffled (randomised) when it is split into the training and testing sets.
+The dataset was split using the "train\textunderscore test\textunderscore split" function from sklearn.
 
 
 \section{The Machine Learning Models}
