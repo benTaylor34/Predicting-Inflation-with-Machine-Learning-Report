@@ -47,9 +47,12 @@
 \contentsline {section}{\numberline {4.2}Data Preperation}{28}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Normalising the Data}{29}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Splitting the Data into Training and Testing Splits}{29}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Inflation's Historic Outliers}{30}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}The Machine Learning Models}{30}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Univariate Implementation}{30}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Multivariate Analysis}{30}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{32}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{33}{chapter.7}%
+\contentsline {subsection}{\numberline {4.3.1}Univariate Implementation}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Multivariate Analysis}{31}{subsection.4.3.2}%
+\contentsline {subsubsection}{The Features and Dataset}{31}{section*.15}%
+\contentsline {subsubsection}{The Models Used for Multivariate Analysis}{32}{section*.16}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{35}{chapter.7}%

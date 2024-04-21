@@ -3,6 +3,9 @@ The goal of the project is to implement a machine-learning model that has the ab
 In order to find the most suitable model, several different models were implemented and their results were compared.
 This chapter of the report will cover how the models were implemented, which models were implemented, how the models were tuned and tested, as well as some of the issues encountered in the implementation process.
 This chapter will not cover the results of the models, their comparisons, or their evaluations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Tools}
 \subsection{Coding Environemnt}
 The IDE used for this project was Jupyter Notebook provided through the use of Anaconda.
@@ -10,10 +13,12 @@ Anaconda is a platform that includes a packet manager, this makes it easy to con
 Each environment in Anaconda is isolated which allows version control and preventing conflicts between the installed versions and packages of different projects.
 This is valuable when working on multiple projects simultaneously.
 Furthermore, Anaconda provides Jupyter Notebook integration which is beneficial as it is a common IDE for data science and has an active community making it easy to learn.
+
 \subsection{Visualisation}
 Jupyter Notebook provides visualisation as output from individual cells.
 This was useful for debugging throughout the project.
 Both Matplotlib and Seaborn were used for further graphical visualisation.
+
 \subsection{Libraries}
 The project's code was written in Python and several libraries were used to assist the coding process.\\
 
@@ -36,12 +41,15 @@ These libraries provide a plethora of graphing options along with plenty of comm
 Sktime\cite{Loning2022-mg} - Sktime is a library for machine learning with time series data. 
 This was used to implement the univariate time series forecasting of inflation.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Data Preperation}
 Features relating to inflation were sourced from the OECD Databank and Monthly CPI indicators were taken from the World Bank's online statistics.
 All of this data is relating to the United Kingdom's general economic indicators.
 The data was compiled into a tabular format to facilitate the use of the Pandas library and to streamline further data manipulation tasks.
 By using a pandas dataframe several functions can be used to quickly assess the state of the data such as the head or shape functions.
 This is useful in the context of machine learning as model layers require inputs of certain types or shapes.
+
 \subsection{Normalising the Data}
 Normalisation, also known as feature scaling, is used to rescale data between a given range. 
 The importance of normalisation is due to the fact that many of the features may have varying ranges, this could lead to features with a large range having a greater impact on the result.
@@ -50,6 +58,7 @@ Additionally, normalisation increases the speed at which gradient descent conver
 Normalising the data is often done either in the range [0,1] or [-1,1].
 The dataset for this project was normalised between the range of [0,1] with the use of the MinMaxScaler from the sklearn library.
 There are several benefits to scaling to a small range such as reducing the impact of outliers and increasing the speed of the algorithms.\\
+
 \subsection{Splitting the Data into Training and Testing Splits}
 It is common practice to split a dataset into training and testing splits.
 The training split is then used for training the machine learning model and the testing split is used for testing the model's performance on unseen data.
@@ -62,6 +71,32 @@ Temporal dependency is when data contains stronger associations between events t
 To preserve the temporal dependency of the data the dataset will not be shuffled (randomised) when it is split into the training and testing sets.
 The dataset was split using the "train\textunderscore test\textunderscore split" function from sklearn.
 
+\subsection{Inflation's Historic Outliers}
+The history of inflation is riddled with outliers caused by unexpected or unprecidented events.
+Covid-19, or Russia's declaration of war on Ukraine to name a few.
+However, the UK's largest spike of inflation in recent history happened in the 1970s due to spikes in oil prices and a steep rise in wages. 
+The result of which is inflation reaching as high as 25%. 
+Although the purpose of predicting inflation is to also be able to foresee such large events, including an outlier of this magnitude in our training data will likely have a negative impact on our models predictive ability as well as its generalization. 
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{totalCPI.png}
+        \label{fig:totalCPI}
+    \end{minipage}%
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{limitedCPI.png}
+        \label{fig:limitedCPI}
+    \end{minipage}
+    \caption[History of CPI vs History of CPI Excluding the First 150 Datapoints.]{History of CPI vs History of CPI Excluding the First 150 Datapoints.}
+\end{figure}
+As such, after training and testing the models on the entire dataset and comparing the results to those of models trained on a subset of the data, the decision was made to remove the first 150 datapoints from the dataset.
+This would remove the large outlying time period of the 70s whilest still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
+Removing the first 150 datapoints reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The Machine Learning Models}
 Five different models were implemented and tested for the predictive ability on the same data set.
@@ -80,6 +115,19 @@ Of the three models, random forest regression produced the best results although
 
 
 \subsection{Multivariate Analysis}
+\subsubsection{The Features and Dataset}
 On the topic of outside factors affecting inflation, the curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
 The OECD features are macroeconomic indicators that focus on broad trends from the UK with global implications.
-Macroeconomic indicators are better predictors of inflation as inflation happens on a macro scale.
+Macroeconomic features were selected as inflation is itself happens on a macro scale thus it stands to reason that macro features will likely predict inflation better than micro ones.
+
+Upon analyis of the features selected for the dataset (as seen in figures \ref{fig:corr} and \ref{fig:hist}) very few features share a strong correlation or similar distribution to inflation.
+This could be worrying as it may indicate that, although on an intuitive surface level that many of these features should contribute to inflation, the features may not possess a strong ability to predict inflation.
+However, the lack of obvoius correlation shown in many points of the heatmap figure does not completely rule out the fact that two points correlate or have the abilty to aid in predicting one another.
+This is due to the fact that the heatmap figure was generate using a pairwise pearson correlation function.
+Although pairwise pearson correlation can often give a good representation of the correlation of two features it may not always be accurate.
+Pearson correlation attempts to draw a line of best fit between two features, meaning that if the two features do not share a linear correlation then pearson correlation may not produce a strong result.
+As the relationship between inflation and its causes are extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute it.
+So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are innapropriate to use in our models.
+
+\subsubsection{The Models Used for Multivariate Analysis}
+All five of the previously states models were implemented for multivariate analysis.
