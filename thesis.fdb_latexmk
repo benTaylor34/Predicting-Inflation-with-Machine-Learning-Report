@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis"] 1713735503 "Thesis.aux" "Thesis.bbl" "Thesis" 1713735607 0
+["bibtex Thesis"] 1713739028 "Thesis.aux" "Thesis.bbl" "Thesis" 1713739071 0
   "./mybib.bib" 1713635226 27121 4e655979dd3ad8c0f20e80fbb9b9c99c ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Thesis.aux" 1713735606 13090 b5e395716993607dc3b3b5481381b56c "pdflatex"
+  "Thesis.aux" 1713739070 13214 deaedd4f51b95d497fbd2b86d0ce71de "pdflatex"
   (generated)
   "Thesis.bbl"
   "Thesis.blg"
   (rewritten before read)
-["pdflatex"] 1713735604 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1713735607 0
+["pdflatex"] 1713739068 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1713739071 0
   "Abstract.tex" 1704811898 870 a1ddea8272baa0a8ffdbd05d0dfe9a9c ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702665882 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1702604695 14064 f3f25c56dec3a3862ffc6f64a9ebbed9 ""
@@ -115,26 +115,26 @@
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1686255640 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
-  "Design.tex" 1713564101 17999 53a8f538d68ab417c1005b2c37babd34 ""
-  "Implementation and Testing.tex" 1713735603 12016 279dfa7979d65cecd0d8814d993f9e49 ""
+  "Design.tex" 1713737714 18013 5d3490a5e9ff4cf3487e137e21739d46 ""
+  "Implementation and Testing.tex" 1713739068 14348 5b5e3bb025789158b74fda75d68927bd ""
   "Introduction.tex" 1704823767 3225 5fd7421f77c7c300943ee12ee63b45b1 ""
   "Literature Review.tex" 1713635183 20705 dcce0d0d963da346d467ea8d23f3b453 ""
-  "Thesis.aux" 1713735606 13090 b5e395716993607dc3b3b5481381b56c "pdflatex"
-  "Thesis.bbl" 1713735503 10481 a4b7084e42dc0d2d178748a2e24a0528 "bibtex Thesis"
-  "Thesis.lof" 1713735606 1020 92eeaa89152e5f21f868b9f655706dbd "pdflatex"
-  "Thesis.lot" 1713735606 210 20bfa68759a7ee15c5b65944706356eb "pdflatex"
-  "Thesis.out" 1713735606 7029 9b34991375bb54ec6c02ecc6c53546a7 "pdflatex"
+  "Thesis.aux" 1713739070 13214 deaedd4f51b95d497fbd2b86d0ce71de "pdflatex"
+  "Thesis.bbl" 1713739029 10481 a4b7084e42dc0d2d178748a2e24a0528 "bibtex Thesis"
+  "Thesis.lof" 1713739070 1020 92eeaa89152e5f21f868b9f655706dbd "pdflatex"
+  "Thesis.lot" 1713739070 210 20bfa68759a7ee15c5b65944706356eb "pdflatex"
+  "Thesis.out" 1713739070 7059 fd471ee6b5a817e4ba9be955c10d292d "pdflatex"
   "Thesis.tex" 1713558791 1462 90cd19cd972df68603e9d73ff5fc81d9 ""
-  "Thesis.toc" 1713735606 4646 a23d8d781cfcf8987eb00bb5f2b6cda1 "pdflatex"
+  "Thesis.toc" 1713739070 4729 6639b53e92c841006cd44b3d816f32d4 "pdflatex"
   "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" 1713558791 1462 90cd19cd972df68603e9d73ff5fc81d9 ""
   "images/CmnAcFc.png" 1702603201 69918 902bdb946acbdd75eb319430aaf0e701 ""
   "images/FTSForecastingMethods.png" 1702597362 117604 59d46c9467c61dff410e9bf624bb6e1c ""
   "images/articleGrowth.png" 1702500711 244954 e2db17ee82a14bb699108dfab2e437e2 ""
   "images/corr.png" 1713561957 365246 dcb2ca43ca697197982e241c16040dcb ""
   "images/hist.png" 1713562036 151313 a7a0911593465b7dab803b29d56de2f0 ""
-  "images/limitedCPI.png" 1713733997 27138 b151ce1638750726b6f996ae44256e61 ""
+  "images/limitedCPI.png" 1713736765 33224 d02e6bd055477ec3dcbcb61d0f528ebb ""
   "images/machineLearningDesignPipeline.png" 1713369352 39967 61d93fc46036570ee9d39b8b1c900e64 ""
-  "images/totalCPI.png" 1713733642 25999 8354070cfcaf7bf394fa6ed77d1ca698 ""
+  "images/totalCPI.png" 1713736732 30734 96e54d4f0aed9bca721ba84739a34c5d ""
   "luthesis.cls" 1702302145 18683 527bd744182e41c68852015711651364 ""
   (generated)
   "Thesis.aux"

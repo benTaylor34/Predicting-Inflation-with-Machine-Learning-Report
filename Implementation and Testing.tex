@@ -95,7 +95,6 @@ As such, after training and testing the models on the entire dataset and compari
 This would remove the large outlying time period of the 70s whilest still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
 Removing the first 150 datapoints reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The Machine Learning Models}
@@ -107,16 +106,18 @@ These were linear regression, random forest, and support vector regression.
 The remaining two models were implemented through the use of TensorFlow and Keras.
 
 \subsection{Univariate Implementation}
-Before Implementing each model with the full dataset that contained twenty different features, some of the simple models were implemented.
-The models that were implemented were linear regression, random forest with 20 trees (as this produced the best results), and support vector regression.
+Univariate analysis is the practice of analysising a single variable to understand its patterns and characteristics.
+Univariate analysis does not involve relationships or causes from other variables.
+Before Implementing each machine learning model with the full dataset, a subset of the models were trained and tested using inflation as the only variable.
+The models that were implemented were linear regression, random forest regression (using 20 trees), and support vector regression.
 This was a quick implementation to test if predicting inflation solely based on its past values would suffice.
-As expected, the results of this experiment were lackluster likely due to inflation's complexity and the fact that many outside factors affect it.
+As expected, the results produced were lackluster, likely due to inflation's complexity and the fact that many outside factors affect it.
 Of the three models, random forest regression produced the best results although the quality of the predictions was still not satisfactory. 
 
-
-\subsection{Multivariate Analysis}
+\subsection{Multivariate Implementation}
+Multivariate analysis is the practice of compiling multiple unique data variables in order to create a more holistic forecast of a related variable.
 \subsubsection{The Features and Dataset}
-On the topic of outside factors affecting inflation, the curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
+The curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
 The OECD features are macroeconomic indicators that focus on broad trends from the UK with global implications.
 Macroeconomic features were selected as inflation is itself happens on a macro scale thus it stands to reason that macro features will likely predict inflation better than micro ones.
 
@@ -130,4 +131,20 @@ As the relationship between inflation and its causes are extremely complex, with
 So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are innapropriate to use in our models.
 
 \subsubsection{The Models Used for Multivariate Analysis}
-All five of the previously states models were implemented for multivariate analysis.
+All five of the previously stated models (see 3.3.1 Model Selection) were implemented for multivariate analysis.
+Linear regression, random forest regression, and support vector regression were implemented with the help of the respective sklearn libraries.
+Long short-term memory network (LSTM) and the custom neural network(NN) were implemented with the use of TensorFlow and Keras.
+The custom neural network, somewhat expectedly, produced the best predictions.
+The results of each model will be explored further in the following chapter.
+
+\subsubsection{Hyperparameter Optimisation}
+Both the LSTM and custom NN underwent hyperparameter optimisation in order to produce the best performance for each model.
+The hyperparameter optimisation was done through a grid search technique.
+The grid search method is done by exhaustively searching a manually specified set of hyperparameters.
+The purpose for optimising the hyperparameters in this was is to ensure that the hyperparameters are the best possible values within the given subset.
+The downside to optimising hyperparameters using a grid search technique is that it is computationally expensive.
+This is because the model needs to be trained and tested on every possible combination of hyperparameters in order to asertain which combination is optimal.
+Grid search is not the only algorithm for hyperparameter optimisation, alternatives to the grid search method are a random search algorithm and a gradient descent algorithm.
+Random search randomly samples combinations of parameters so it is less computationally expensive but it is unlikely to produce an optimal combination.
+Gradient descent optimisation updates hyperparameters to minimise the result of a loss function but there is a chance of the algorithm getting stuck in a local minima which may not be the global mimum of the function, thus producing a sub optimal result.
+Because of these factors, the grid search technique was chosen due to the fact that it is more comprehensive than the other algorithms and is guaranteed to produce the optimal combination of hyperparameters from the given set. 
