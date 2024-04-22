@@ -49,12 +49,14 @@
 \contentsline {subsection}{\numberline {4.2.2}Splitting the Data into Training and Testing Splits}{30}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Inflation's Historic Outliers}{31}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}The Machine Learning Models}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Univariate Implementation}{32}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Multivariate Implementation}{32}{subsection.4.3.2}%
-\contentsline {subsubsection}{The Features and Dataset}{32}{section*.15}%
-\contentsline {subsubsection}{The Models Used for Multivariate Analysis}{33}{section*.16}%
-\contentsline {subsection}{\numberline {4.3.3}Model Architecture}{33}{subsection.4.3.3}%
-\contentsline {subsubsection}{Hyperparameter Optimisation}{33}{section*.17}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{35}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{37}{chapter.7}%
+\contentsline {section}{\numberline {4.4}Univariate Implementation}{32}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Multivariate Implementation}{32}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}The Features and Dataset}{32}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{33}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Model Architecture}{33}{subsection.4.5.3}%
+\contentsline {subsubsection}{Aritficial Neural Network Model Architecture}{33}{section*.15}%
+\contentsline {subsubsection}{LSTM Model Architecture}{35}{section*.16}%
+\contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{35}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{38}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{39}{chapter.7}%
