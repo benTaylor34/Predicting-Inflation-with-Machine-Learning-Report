@@ -46,6 +46,14 @@ Leo Breiman.
 \newblock Random forests.
 \newblock {\em Machine learning}, 45:5--32, 2001.
 
+\bibitem{machinelearningmasteryChooseActivation}
+Jason Brownlee.
+\newblock {H}ow to {C}hoose an {A}ctivation {F}unction for {D}eep {L}earning -
+  {M}achine{L}earning{M}astery.com --- machinelearningmastery.com.
+\newblock
+  \url{https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/}.
+\newblock [Accessed 22-04-2024].
+
 \bibitem{Cao2001184}
 Lijuan Cao and Francis~E.H. Tay.
 \newblock Financial forecasting using support vector machines.

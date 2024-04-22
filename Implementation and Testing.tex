@@ -164,7 +164,7 @@ A dense layer is a layer where every neuron in the layer connects to every neuro
 Each dense layer contains an activation function.
 The purpose of activation functions is covered in the 'Artificial Neural Networks' section of the literature review.
 The hidden layers of the network utilise ReLU activation functions while the output uses a linear activation function.
-These functions were selected based on the advice offered in the article 'How to Choose an Activation Function for Deep Learning' by Jason Brownlee, PhD.%\cite{Brownlee_2021}.
+These functions were selected based on the advice offered in the article 'How to Choose an Activation Function for Deep Learning' by Jason Brownlee, PhD\cite{machinelearningmasteryChooseActivation}.
 The article states the most common activation function for hidden layers is the ReLU function due to being simple to implement and being less susceptible to vanishing gradient issues compared to other functions.
 The output layer uses a linear activation function.
 The linear activation function allows the model to produce an output that is a linear combination of its inputs.
@@ -181,9 +181,13 @@ The final dense layer only contains an output shape of 1, this is the predicted 
 \subsubsection{LSTM Model Architecture}
 An LSTM network is a type of recurrent neural network that is designed to excel in predicting sequential data (including time series data).
 The LSTM for this project was implemented through the use of TensorFlow and Keras.
-%%%
-%%%
-%%%
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{LSTMSummary.png}
+%     \caption[LSTM Model Architecture Summary.]{LSTM Model Architecture Summary.}
+%     \label{fig:LSTMSummary}
+% \end{figure}
+% Figure \ref{fig:LSTMSummary} shows the structure of the LSTM model, including each layer's output shape, and parameters.
 The input shape of the LSTM differs from that of the ANN.
 This is because the ANN takes just one row of the X and y variables (X is the features being used to predict and y is the CPI value from the same time period of the given features).
 Whereas the LSTM model takes 12 consecutive rows of data, this is the equivalent of taking in a year's worth of data all at the same time.

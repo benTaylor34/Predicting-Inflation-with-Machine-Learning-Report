@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  22 APR 2024 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  22 APR 2024 18:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,13 +695,31 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (Thesis.bbl [1
+] (Thesis.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+[]\OT1/cmr/m/n/12 Jason Brown-lee.  How to Choose an Ac-tiv-a-tion Func-tion for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+\OT1/cmr/m/n/12 Deep Learn-ing - Ma-chineLearn-ing-Mas-tery.com --- ma-chinelearn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+\OT1/cmr/m/n/12 ing-mas-tery.com.  [][]$\OT1/cmtt/m/n/12 https : / / machinelearningmastery . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+\OT1/cmtt/m/n/12 choose-[]an-[]activation-[]function-[]for-[]deep-[]learning/$[][]\OT1/cmr/m/n/12 .  [Ac-cessed
+ []
+
+[1
 color push 0 g 0 G
 color pop
 
 
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -727,12 +745,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 1436) in paragraph at lines 93--99
+Underfull \hbox (badness 1436) in paragraph at lines 101--107
 []\OT1/cmr/m/n/12 Brigid Francis-Devine.  Rising cost of liv-ing in the uk.  [][]$\OT1/cmtt/m/n/12 https : / /
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 93--99
+Underfull \hbox (badness 1297) in paragraph at lines 101--107
 \OT1/cmtt/m/n/12 commonslibrary . parliament . uk / research-[]briefings / cbp-[]9428/$[][]\OT1/cmr/m/n/12 , 2023.
  []
 
@@ -743,6 +761,12 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -772,17 +796,17 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 1728) in paragraph at lines 159--167
+Underfull \hbox (badness 1728) in paragraph at lines 167--175
 []\OT1/cmr/m/n/12 Markus "L^^?oning, Franz Kir^^Saly, Tony Bag-nall, Mat-thew Middle-hurst,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--187
+Underfull \hbox (badness 10000) in paragraph at lines 188--195
 \OT1/cmtt/m/n/12 18 / bank-[]of-[]england-[]covid-[]money-[]printing-[]drove-[]up-[]inflation / # :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--187
+Underfull \hbox (badness 10000) in paragraph at lines 188--195
 [] \OT1/cmtt/m/n/12 : text = During % 20the % 20pandemic % 2C % 20the % 20Bank ,[] to % 20a % 20record %
  []
 
@@ -806,10 +830,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -853,6 +873,10 @@ color pop
 color push 0 g 0 G
 color pop
 ]) (Introduction.tex [5
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -912,7 +936,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=419, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=422, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
@@ -955,7 +979,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=442, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=445, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -1028,7 +1052,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=473, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=476, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 141.
@@ -1147,7 +1171,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-<images/machineLearningDesignPipeline.png, id=518, 233.673pt x 251.13824pt>
+<images/machineLearningDesignPipeline.png, id=521, 233.673pt x 251.13824pt>
 File: images/machineLearningDesignPipeline.png Graphic file (type png)
 <use images/machineLearningDesignPipeline.png>
 Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
@@ -1194,7 +1218,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/hist.png, id=538, 1720.7487pt x 880.9713pt>
+<images/hist.png, id=541, 1720.7487pt x 880.9713pt>
 File: images/hist.png Graphic file (type png)
 <use images/hist.png>
 Package pdftex.def Info: images/hist.png  used on input line 98.
@@ -1224,7 +1248,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/corr.png, id=543, 1296.5238pt x 839.0547pt>
+<images/corr.png, id=546, 1296.5238pt x 839.0547pt>
 File: images/corr.png Graphic file (type png)
 <use images/corr.png>
 Package pdftex.def Info: images/corr.png  used on input line 104.
@@ -1369,12 +1393,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--61
 
  []
 
-<images/totalCPI.png, id=596, 406.8801pt x 327.3831pt>
+<images/totalCPI.png, id=599, 406.8801pt x 327.3831pt>
 File: images/totalCPI.png Graphic file (type png)
 <use images/totalCPI.png>
 Package pdftex.def Info: images/totalCPI.png  used on input line 84.
 (pdftex.def)             Requested size: 166.73378pt x 134.15799pt.
-<images/limitedCPI.png, id=597, 400.3758pt x 327.3831pt>
+<images/limitedCPI.png, id=600, 400.3758pt x 327.3831pt>
 File: images/limitedCPI.png Graphic file (type png)
 <use images/limitedCPI.png>
 Package pdftex.def Info: images/limitedCPI.png  used on input line 89.
@@ -1415,7 +1439,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/ANNSummary.png, id=616, 389.65575pt x 226.446pt>
+<images/ANNSummary.png, id=619, 389.65575pt x 226.446pt>
 File: images/ANNSummary.png Graphic file (type png)
 <use images/ANNSummary.png>
 Package pdftex.def Info: images/ANNSummary.png  used on input line 152.
@@ -1443,6 +1467,8 @@ l.178
 color pop
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1501,17 +1527,17 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: FC1E6F79C11925E2B2A9942250310115;7873.
  ) 
 Here is how much of TeX's memory you used:
- 11938 strings out of 475248
- 195479 string characters out of 5758757
+ 11940 strings out of 475248
+ 195562 string characters out of 5758757
  1931785 words of memory out of 5000000
- 33074 multiletter control sequences out of 15000+600000
+ 33075 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,531b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (46 pages, 1262600 bytes).
+Output written on Thesis.pdf (46 pages, 1263717 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 185 named destinations out of 1000 (max. 500000)
+ 763 PDF objects out of 1000 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 
