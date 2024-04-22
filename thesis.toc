@@ -57,6 +57,7 @@
 \contentsline {subsubsection}{Aritficial Neural Network Model Architecture}{33}{section*.15}%
 \contentsline {subsubsection}{LSTM Model Architecture}{35}{section*.16}%
 \contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{36}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{37}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{38}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{39}{chapter.7}%
+\contentsline {section}{\numberline {4.6}Testing and Model Results}{37}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{38}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{40}{chapter.7}%
