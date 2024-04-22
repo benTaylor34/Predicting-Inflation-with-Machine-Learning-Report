@@ -181,12 +181,12 @@ The final dense layer only contains an output shape of 1, this is the predicted 
 \subsubsection{LSTM Model Architecture}
 An LSTM network is a type of recurrent neural network that is designed to excel in predicting sequential data (including time series data).
 The LSTM for this project was implemented through the use of TensorFlow and Keras.
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{LSTMSummary.png}
-%     \caption[LSTM Model Architecture Summary.]{LSTM Model Architecture Summary.}
-%     \label{fig:LSTMSummary}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{LSTMSummary.png}
+    \caption[LSTM Model Architecture Summary.]{LSTM Model Architecture Summary.}
+    \label{fig:LSTMSummary}
+\end{figure}
 % Figure \ref{fig:LSTMSummary} shows the structure of the LSTM model, including each layer's output shape, and parameters.
 The input shape of the LSTM differs from that of the ANN.
 This is because the ANN takes just one row of the X and y variables (X is the features being used to predict and y is the CPI value from the same time period of the given features).

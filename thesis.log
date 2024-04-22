@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  22 APR 2024 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  22 APR 2024 18:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,6 +680,10 @@ color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color pop
 color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -936,7 +940,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=422, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=424, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 33.
@@ -979,7 +983,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=445, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=447, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -1052,7 +1056,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=476, 397.485pt x 469.755pt>
+<images/CmnAcFc.png, id=478, 397.485pt x 469.755pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 141.
@@ -1171,7 +1175,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-<images/machineLearningDesignPipeline.png, id=521, 233.673pt x 251.13824pt>
+<images/machineLearningDesignPipeline.png, id=523, 233.673pt x 251.13824pt>
 File: images/machineLearningDesignPipeline.png Graphic file (type png)
 <use images/machineLearningDesignPipeline.png>
 Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
@@ -1218,7 +1222,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/hist.png, id=541, 1720.7487pt x 880.9713pt>
+<images/hist.png, id=543, 1720.7487pt x 880.9713pt>
 File: images/hist.png Graphic file (type png)
 <use images/hist.png>
 Package pdftex.def Info: images/hist.png  used on input line 98.
@@ -1248,7 +1252,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/corr.png, id=546, 1296.5238pt x 839.0547pt>
+<images/corr.png, id=548, 1296.5238pt x 839.0547pt>
 File: images/corr.png Graphic file (type png)
 <use images/corr.png>
 Package pdftex.def Info: images/corr.png  used on input line 104.
@@ -1393,12 +1397,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--61
 
  []
 
-<images/totalCPI.png, id=599, 406.8801pt x 327.3831pt>
+<images/totalCPI.png, id=601, 406.8801pt x 327.3831pt>
 File: images/totalCPI.png Graphic file (type png)
 <use images/totalCPI.png>
 Package pdftex.def Info: images/totalCPI.png  used on input line 84.
 (pdftex.def)             Requested size: 166.73378pt x 134.15799pt.
-<images/limitedCPI.png, id=600, 400.3758pt x 327.3831pt>
+<images/limitedCPI.png, id=602, 400.3758pt x 327.3831pt>
 File: images/limitedCPI.png Graphic file (type png)
 <use images/limitedCPI.png>
 Package pdftex.def Info: images/limitedCPI.png  used on input line 89.
@@ -1439,7 +1443,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/ANNSummary.png, id=619, 389.65575pt x 226.446pt>
+<images/ANNSummary.png, id=621, 389.65575pt x 226.446pt>
 File: images/ANNSummary.png Graphic file (type png)
 <use images/ANNSummary.png>
 Package pdftex.def Info: images/ANNSummary.png  used on input line 152.
@@ -1474,14 +1478,30 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./images/ANNSummary.png>]) [35
+ <./images/ANNSummary.png>]
+<images/LSTMSummary.png, id=634, 383.63326pt x 203.5605pt>
+File: images/LSTMSummary.png Graphic file (type png)
+<use images/LSTMSummary.png>
+Package pdftex.def Info: images/LSTMSummary.png  used on input line 186.
+(pdftex.def)             Requested size: 333.46758pt x 176.944pt.
+ [35
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.202 
+      
+color pop
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [36
+ <./images/LSTMSummary.png>]) [36
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1527,17 +1547,17 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: FC1E6F79C11925E2B2A9942250310115;7873.
  ) 
 Here is how much of TeX's memory you used:
- 11940 strings out of 475248
- 195562 string characters out of 5758757
+ 11951 strings out of 475248
+ 195833 string characters out of 5758757
  1931785 words of memory out of 5000000
- 33075 multiletter control sequences out of 15000+600000
+ 33085 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,531b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (46 pages, 1263717 bytes).
+Output written on Thesis.pdf (46 pages, 1275391 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 454 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 768 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 
