@@ -53,6 +53,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Multivariate Implementation}{31}{subsection.4.3.2}%
 \contentsline {subsubsection}{The Features and Dataset}{31}{section*.15}%
 \contentsline {subsubsection}{The Models Used for Multivariate Analysis}{32}{section*.16}%
+\contentsline {subsection}{\numberline {4.3.3}Model Architecture}{32}{subsection.4.3.3}%
 \contentsline {subsubsection}{Hyperparameter Optimisation}{32}{section*.17}%
 \contentsline {chapter}{\numberline {5}Results and Evaluation}{34}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Conclusion}{35}{chapter.6}%
