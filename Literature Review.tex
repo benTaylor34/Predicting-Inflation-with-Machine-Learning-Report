@@ -126,7 +126,10 @@ The output layer receives data from the final hidden layer and then produces the
 The neurons within an ANN can either be excited or inhibited. 
 Neurons are connected between layers and the strength of these connections (the weight) is decided by how excited or inhibited a neuron is.
 Each neuron in the hidden and output layers contains biases and activation functions 
-(with the activation function in the output layer typically being different from the one in the hidden layer).
+(with the activation function in the output layer typically being different from the ones used in the hidden layer).
+Activation functions are used to introduce non-linearity into a neural network.
+The purpose of this is to enable a network to model more complex patterns in the data.
+Activation functions can also be used to keep inputs within a specified range to decrease the processing time required for a network to run.
 Activation values are passed from node to node through the connections in the network.
 When a neuron receives the activation value, it sums and modifies it based on the neuron's activation function and bias.
 The predicted results can then be compared to the true values and the weights and biases of the network are updated accordingly.
