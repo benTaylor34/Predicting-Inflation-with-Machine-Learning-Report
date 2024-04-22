@@ -161,14 +161,21 @@ We now have a better understanding of the potential our dataset has to predict i
 %%\end{figure}
 \section{Modelling and Training}
 \subsection{Model Selection}
-The models that will be compared for their ability to predict inflation are a Random forest model, a support vector regression model, a linear regression model, a long-short-term memory model, and a custom neural network model
-These models were selected through the literature review due to their common use in similar regression problems.
-Several of these models can be implemented through the use of libraries such as Scikit-learn\cite{scikit-learn}.
+The models that will be compared for their ability to predict inflation are a Random forest model, a support vector regression model, a linear regression model, a long short-term memory model, and a custom neural network model
+Random forest regression, support vector regression, and artificial neural networks are all models that were selected through the literature review due to their common use in similar regression problems.
+\\Linear regression was added to the list of models to be implemented as it is an extremely simple model that focuses on plotting a single line of best fit through the data.
+Including linear regression will provide a comparison to the results of a simple model, as well as potentially indicate any unexpected linear relationships between inflation and any of the dataset's features.
+\\A long short-term memory network (LSTM) will also be implemented. 
+LSTMs are a type of recurrent neural network (RNN). 
+The architecture of RNNs enables them to preserve an internal memory state that helps them to model temporal dependencies in the data.
+This characteristic means that RNNs excel at processing sequential data such as time series data.
+As the values of inflation are time series data, an LSTM could potentially provide good results despite the seeming lack of literature relating LSTMs to economic time series prediction.
+\\Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
 Implementing a model through a high-level library lets the user create an already well-documented and tested model with only a few lines of code.
-This saves time while also providing additional support, if necessary, from the community and documentation.
+This saves both time and resources (as the model implemented form the library is likely to have been optimised) while also providing additional support, if necessary, from the community and documentation.
 \subsection{Model Training}
 The models will be created using Python and several of its supported libraries and written in a Jupyter Notebook.
-The reason for using a Jupyter Notebook is that the cell structure allows for the steps to be run separately and the results to be displayed in real time without the entire file being run.
+The reason for using a Jupyter Notebook is that the cell structure allows for the steps to be run separately and the results to be displayed in real-time without the entire file being run.
 This makes experimenting with hyperparameters and training models much more convenient.
 As the results of each cell are displayed separately this also improves the ability to quickly create and display visualisations through tools such as Matplotlib \cite{Hunter:2007}.
 Jupyter also supports multiple languages and libraries enabling users to work in the preferred environment.

@@ -72,11 +72,11 @@ To preserve the temporal dependency of the data the dataset will not be shuffled
 The dataset was split using the "train\textunderscore test\textunderscore split" function from sklearn.
 
 \subsection{Inflation's Historic Outliers}
-The history of inflation is riddled with outliers caused by unexpected or unprecidented events.
+The history of inflation is riddled with outliers caused by unexpected or unprecedented events.
 Covid-19, or Russia's declaration of war on Ukraine to name a few.
 However, the UK's largest spike of inflation in recent history happened in the 1970s due to spikes in oil prices and a steep rise in wages. 
-The result of which is inflation reaching as high as 25%. 
-Although the purpose of predicting inflation is to also be able to foresee such large events, including an outlier of this magnitude in our training data will likely have a negative impact on our models predictive ability as well as its generalization. 
+The result of this is inflation reaching as high as 25%. 
+Although the purpose of predicting inflation is to also be able to foresee such large events, including an outlier of this magnitude in our training data will likely harm our model's predictive ability as well as its generalization. 
 \begin{figure}[H]
     \centering
     \begin{minipage}{.5\textwidth}
@@ -91,9 +91,9 @@ Although the purpose of predicting inflation is to also be able to foresee such 
     \end{minipage}
     \caption[History of CPI vs History of CPI Excluding the First 150 Datapoints.]{History of CPI vs History of CPI Excluding the First 150 Datapoints.}
 \end{figure}
-As such, after training and testing the models on the entire dataset and comparing the results to those of models trained on a subset of the data, the decision was made to remove the first 150 datapoints from the dataset.
-This would remove the large outlying time period of the 70s whilest still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
-Removing the first 150 datapoints reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
+As such, after training and testing the models on the entire dataset and comparing the results to those of models trained on a subset of the data, the decision was made to remove the first 150 data points from the dataset.
+This would remove the large outlying period of the 70s while still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
+Removing the first 150 data points reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -105,8 +105,8 @@ Three of the five models were implemented with the Scikit-learn library.
 These were linear regression, random forest, and support vector regression.
 The remaining two models were implemented through the use of TensorFlow and Keras.
 
-\subsection{Univariate Implementation}
-Univariate analysis is the practice of analysising a single variable to understand its patterns and characteristics.
+\section{Univariate Implementation}
+Univariate analysis is the practice of analysing a single variable to understand its patterns and characteristics.
 Univariate analysis does not involve relationships or causes from other variables.
 Before Implementing each machine learning model with the full dataset, a subset of the models were trained and tested using inflation as the only variable.
 The models that were implemented were linear regression, random forest regression (using 20 trees), and support vector regression.
@@ -114,23 +114,23 @@ This was a quick implementation to test if predicting inflation solely based on 
 As expected, the results produced were lackluster, likely due to inflation's complexity and the fact that many outside factors affect it.
 Of the three models, random forest regression produced the best results although the quality of the predictions was still not satisfactory. 
 
-\subsection{Multivariate Implementation}
+\section{Multivariate Implementation}
 Multivariate analysis is the practice of compiling multiple unique data variables in order to create a more holistic forecast of a related variable.
-\subsubsection{The Features and Dataset}
+\subsection{The Features and Dataset}
 The curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
 The OECD features are macroeconomic indicators that focus on broad trends from the UK with global implications.
-Macroeconomic features were selected as inflation is itself happens on a macro scale thus it stands to reason that macro features will likely predict inflation better than micro ones.
+Macroeconomic features were selected as inflation itself happens on a macro scale thus it stands to reason that macro features will likely predict inflation better than micro ones.
 
-Upon analyis of the features selected for the dataset (as seen in figures \ref{fig:corr} and \ref{fig:hist}) very few features share a strong correlation or similar distribution to inflation.
-This could be worrying as it may indicate that, although on an intuitive surface level that many of these features should contribute to inflation, the features may not possess a strong ability to predict inflation.
-However, the lack of obvoius correlation shown in many points of the heatmap figure does not completely rule out the fact that two points correlate or have the abilty to aid in predicting one another.
-This is due to the fact that the heatmap figure was generate using a pairwise pearson correlation function.
-Although pairwise pearson correlation can often give a good representation of the correlation of two features it may not always be accurate.
-Pearson correlation attempts to draw a line of best fit between two features, meaning that if the two features do not share a linear correlation then pearson correlation may not produce a strong result.
-As the relationship between inflation and its causes are extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute it.
-So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are innapropriate to use in our models.
+Upon analysis of the features selected for the dataset (as seen in figures \ref{fig:corr} and \ref{fig:hist}) very few features share a strong correlation or similar distribution to inflation.
+This could be worrying as it may indicate that, although on an intuitive surface level, many of these features should contribute to inflation, the features may not possess a strong ability to predict inflation.
+However, the lack of obvious correlation shown in many points of the heatmap figure does not completely rule out the fact that two points correlate or have the ability to aid in predicting one another.
+This is due to the fact that the heatmap figure was generated using a pairwise Pearson correlation function.
+Although pairwise Pearson correlation can often give a good representation of the correlation of two features it may not always be accurate.
+Pearson correlation attempts to draw a line of best fit between two features, meaning that if the two features do not share a linear correlation then Pearson correlation may not produce a strong result.
+As the relationship between inflation and its causes is extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute to it.
+So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are inappropriate to use in our models.
 
-\subsubsection{The Models Used for Multivariate Analysis}
+\subsection{The Models Used for Multivariate Analysis}
 All five of the previously stated models (see 3.3.1 Model Selection) were implemented for multivariate analysis.
 Linear regression, random forest regression, and support vector regression were implemented with the help of the respective sklearn libraries.
 Long short-term memory network (LSTM) and the custom neural network(NN) were implemented with the use of TensorFlow and Keras.
@@ -138,17 +138,87 @@ The custom neural network, somewhat expectedly, produced the best predictions.
 The results of each model will be explored further in the following chapter.
 
 \subsection{Model Architecture}
-The architecture of a model is the structure of the model including the types of layers, number of nodes and connections between layers as well as the input and output of the model.
+The architecture of a model is the structure of the model including the types of layers, number of nodes, and connections between layers as well as the input and output of the model.
+This subsection will cover the architecture of the LSTM model and the custom neural network model.
+The linear regression, random forest regression, and support vector regression models will not be covered in this section as they are algorithm-based models. 
+The parameters used for these three models were sklearn's default recommended parameters outlined in the sklearn documentation 
+\subsubsection{Aritficial Neural Network Model Architecture}
+An artificial neural network (ANN) is a machine learning model inspired by the human brain.
+ANNs feed data through layers of interconnected artificial neurons (nodes) in order to compute complex problems.
+ANNs can vary in size and shape as well as the different types of nodes they contain.
+After some research and experimentation with various structures, the structure shown in figure \ref{fig:ANNSummary} was implemented.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{NNSummary.png}
+    \caption[ANN Model Architecture Summary.]{ANN Model Architecture Summary.}
+    \label{fig:ANNSummary}
+\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.3\textwidth]{ann_model.png}
+%     \caption[ANN Model Architecture.]{ANN Model Architecture.}
+%     \label{fig:ANNSummary}
+% \end{figure}
+Figure \ref{fig:ANNSummary} shows the structure of the ANN model, including each layer's output shape, and parameters.
+The layer column of the figure indicates which types of neural network layers were implemented.
+The output shape column states the shape of the data, this also indicates the number of nodes in a layer.
+After hyperparameter optimisation, it was found that for this particular model, sixteen nodes per layer produced the best results.
+The params column is the result of the inputs * weights + bias.
 
+The structure of the ANN model contains three dense layers (an input layer, a hidden layer, and an output layer) each with a dropout layer in between.
+A dense layer is a layer where every neuron in the layer connects to every neuron in the previous layer.
+Each dense layer contains an activation function.
+The purpose of activation functions is covered in the 'Artificial Neural Networks' section of the literature review.
+The hidden layers of the network utilise ReLU activation functions while the output uses a linear activation function.
+These functions were selected based on the advice offered in the article 'How to Choose an Activation Function for Deep Learning' by Jason Brownlee, PhD\cite{Brownlee_2021}.
+The article states the most common activation function for hidden layers is the ReLU function due to being simple to implement and being less susceptible to vanishing gradient issues compared to other functions.
+The output layer uses a linear activation function.
+The linear activation function allows the model to produce an output that is a linear combination of its inputs.
+This does not introduce any additional non-linearity as the goal is to predict a continuous value so there is no need to apply constraints through another activation function.
 
-\subsubsection{Hyperparameter Optimisation}
+Dropout layers set the input values of some nodes in the layer to 0 at the specified dropout rate. 
+Setting a limited number of inputs to 0 or 'dropping' them prevents the model from overfitting (becoming too familiar with the training data and losing generalization).
+However, the dropout rate needs to be monitored as a dropout rate that is too high may lead to a model that trains poorly on the data.
+Dropout rates are only applied during the training process to prevent overfitting, they are not applied during the testing or prediction process.
+After hyperparameter optimisation, the most successful dropout rate was found to be 0.1 (or 10\%). 
+
+The final dense layer only contains an output shape of 1, this is the predicted value of inflation given the inputs.
+
+\subsubsection{LSTM Model Architecture}
+An LSTM network is a type of recurrent neural network that is designed to excel in predicting sequential data (including time series data).
+The LSTM for this project was implemented through the use of TensorFlow and Keras.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{LSTMSummary.png}
+    \caption[LSTM Model Architecture Summary.]{LSTM Model Architecture Summary.}
+    \label{fig:LSTMSummary}
+\end{figure}
+Figure \ref{fig:LSTMSummary} shows the structure of the LSTM model, including each layer's output shape, and parameters.
+The input shape of the LSTM differs from that of the ANN.
+This is because the ANN takes just one row of the X and y variables (X is the features being used to predict and y is the CPI value from the same time period of the given features).
+Whereas the LSTM model takes 12 consecutive rows of data, this is the equivalent of taking in a year's worth of data all at the same time.
+The reasoning for this is that the LSTM model contains hidden cells that store past values in order to predict future values.
+This should, in theory, improve the LSTM model's ability to predict sequential data.
+
+The LSTM was not coded with any additional activation functions. 
+This is due to the fact that the Keras' LSTM implementation already contains multiple activation functions.
+This is due to the hidden state and the cell states of each LSTM cell both containing activation functions (sigmoid and tanh respectively).
+The hidden state contains the memorised past data and the cell state contains the current data being given to the cell.
+Thus adding an additonal activation function to the output is not necessary as there is already ample non-linearity being implemented.
+
+The final layer of the LSTM is a dense layer. 
+This layer serves as the output by compiling the results from all the nodes in the previous layer into a single node.
+
+\subsection{Hyperparameter Optimisation}
 Both the LSTM and custom NN underwent hyperparameter optimisation in order to produce the best performance for each model.
 The hyperparameter optimisation was done through a grid search technique.
 The grid search method is done by exhaustively searching a manually specified set of hyperparameters.
-The purpose for optimising the hyperparameters in this was is to ensure that the hyperparameters are the best possible values within the given subset.
+The purpose of optimising the hyperparameters in this way is to ensure that the hyperparameters are the best possible values within the given subset.
 The downside to optimising hyperparameters using a grid search technique is that it is computationally expensive.
-This is because the model needs to be trained and tested on every possible combination of hyperparameters in order to asertain which combination is optimal.
+This is because the model needs to be trained and tested on every possible combination of hyperparameters in order to ascertain which combination is optimal.
 Grid search is not the only algorithm for hyperparameter optimisation, alternatives to the grid search method are a random search algorithm and a gradient descent algorithm.
 Random search randomly samples combinations of parameters so it is less computationally expensive but it is unlikely to produce an optimal combination.
-Gradient descent optimisation updates hyperparameters to minimise the result of a loss function but there is a chance of the algorithm getting stuck in a local minima which may not be the global mimum of the function, thus producing a sub optimal result.
-Because of these factors, the grid search technique was chosen due to the fact that it is more comprehensive than the other algorithms and is guaranteed to produce the optimal combination of hyperparameters from the given set. 
+Gradient descent optimisation updates hyperparameters to minimise the result of a loss function but there is a chance of the algorithm getting stuck in a local minimum which may not be the global minimum of the function, thus producing a sub-optimal result.
+Because of these factors, the grid search technique was chosen because it is more comprehensive than the other algorithms and is guaranteed to produce the optimal combination of hyperparameters from the given set. 
+\subsubection{Number of nodes}
+The number of nodes in each layer was tested 
