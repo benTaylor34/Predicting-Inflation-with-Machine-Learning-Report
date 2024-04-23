@@ -236,16 +236,25 @@ For the LSTM model, it was found that the ideal hyperparameters were 32 nodes pe
 These hyperparameters were used as the default for the respective models going forward.
 
 \section{Testing and Model Results}
-Throughout the implementation process, the code was continuously tested this includes both unit testing (testing a single piece of code) and integration testing (testing multiple pieces of code work together as intended).
+\subsection{Testing Objectives}
+Before beginning testing it is beneficial to understand what the objectives of the tests are.
+The main objectives are: identifying any errors or bugs in the code, ensuring the results are of an acceptable standard, and identifying potential areas of improvement.
+\subsection{Identifying Errors}
+Throughout the implementation process, the code was continuously tested to ensure it was working as expected.
+This included both unit testing (testing a single piece of code) and integration testing (testing that multiple pieces of code work together as intended).
 Continuous testing was made easier by the fact that Jupyter Notebook allows the user to divide their code into cells and run the cells individually.
+Being able to see the output of an individual cell makes unit testing much faster as the entire code does not need to be run.
+This is particularly true for machine learning projects as training the algorithm can often be time-consuming.
+\subsection{Quality Assurance}
+Another purpose of testing is to ensure that the outputs of the code are of a high enough quality regardless of whether they are the correct output or not.
+This is particularly important as the value of a machine learning model rests on the quality of results it produces.
 
-
-
-
-
+\subsection{The Testing Set}
+The testing set was made up of the final 20\% of the unshuffled data.
+Splitting the initial data into training and testing sets means that the model's generalization can be tested on the previously unseen testing data.
+As the testing set was not shuffled, it provides a better perspective on how the models will perform on unseen future data as future data will be sequential.
 
 %%%%TODO:
-- hyper parameters optimisation focusing on each hyper parameters
 - testing section 
 - decide whether or not to include the results in the implementation section or in the evaluation section
 - include results in implementation then compare results in the evaluation
