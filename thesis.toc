@@ -65,6 +65,9 @@
 \contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{38}{subsection.4.6.4}%
 \contentsline {chapter}{\numberline {5}Results and Evaluation}{40}{chapter.5}%
 \contentsline {section}{\numberline {5.1}The Models'Results}{40}{section.5.1}%
-\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{41}{section*.17}%
-\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{43}{chapter.7}%
+\contentsline {subsubsection}{Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{40}{section*.17}%
+\contentsline {subsubsection}{LSTM Network Model Predictions}{41}{section*.18}%
+\contentsline {subsubsection}{Aritficial Neural Network Predictions}{41}{section*.19}%
+\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{42}{section*.20}%
+\contentsline {chapter}{\numberline {6}Conclusion}{43}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{44}{chapter.7}%

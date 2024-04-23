@@ -16,5 +16,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces LSTM Model Architecture Summary.}}{35}{figure.4.3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces A Comparison of the Predictions of Linear Regression, Random Forest Regression, and Support Vector Regression Models.}}{40}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Predictions from the Artificial Neural-Network Trained on the Entire Dataset.}}{41}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Predictions from the Artificial Neural-Network Trained on a subset of the Dataset.}}{42}{figure.5.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
