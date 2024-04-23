@@ -19,13 +19,24 @@ This report's project setup shall focus mainly on the goals, evaluation, and con
 As the title of the project outlines, the goal of the project is to predict inflation using machine learning.
 This project will evaluate the use of various machine learning methods and assess their ability to predict inflation.
 Further aims and objectives are outlined in Chapter 1. Introduction.
+\subsection{Expected Model Performance}
+As multiple models will be implemented in this project, it is unlikely that all models will perform to the same ability.
+Thus it is important to have a rough prediction as to which models will perform better or worse.
+By making these predictions it will prevent additional time from being wasted on optimizing or making changes to models that show less potential.
+This does not mean that these models should not be implemented properly but rather it means that the limited time for the implementation of the project should focus on the models with the best potential to predict inflation.
+Although all the models that will be implemented should be able to predict inflation to some degree, certain models have a higher likelihood of better performance.
+The models that are predicted to have the best performance are the LSTM and the ANN.
+This is due to their increased complexity and the fact that they can be modified more easily, giving more control over the architecture of the model.
+The models that are predicted to perform worse are the linear regression model, the random forest model, and the support vector regression model.
+This is due to their simplicity and the fact that inflation is a complex variable to predict and so is likely to require more complex models to create an accurate prediction.
+This means that throughout the design and implementation, more time will be allocated to tweaking and improving the performance of the LSTM and ANN models as they are predicted to have a higher potential.
 \subsection{Evaluation}
 Evaluation outlines how the system's performance shall be evaluated: what metrics shall be used, what visualisations shall be produced, and so on.
 The models created in this project will be regression models attempting to predict an exact value of inflation.
 Thus the methods selected to evaluate the models should be suited for regression and continuous values.
 So methods like confusion matrixes that are better suited for classification would not be a good choice.
 As stated in the literature review, the most common regression metrics were MSE, MAE, MAPE, and R/ R².
-As each of these metrics are straightforward to implement, they will all be used for evaluating the models created.
+As each of these metrics is straightforward to implement, they will all be used for evaluating the models created.
 Furthermore, visualisations displaying each model's predictions alongside the values they were attempting to predict will be produced.
 This will aid the view in understanding the model's effectiveness beyond numerical metrics.
 Where appropriate, certain models should produce loss functions as these will be able to guide hyperparameter optimisation, such as selecting the correct number of epochs to train a model.
@@ -108,7 +119,7 @@ A correlation matrix gives us an indication of how the features relate to each o
 
 The histograms display a variety of different distributions, this is understandable as many time series do not follow a normal distribution.
 The distributions indicate that normalisation may be preferable to standardisation as normalisation is preferable when several features do not have a Gaussian (normal) distribution.
-This is because normalisation will preserve the distribution of the data by rescaling the data where as standardisation makes the asssumption that the date has a Gaussian distribution and may modify the data's distribution if it is not already Gaussian.
+This is because normalisation will preserve the distribution of the data by rescaling the data where as standardisation makes the assumption that the data has a Gaussian distribution and may modify the data's distribution if it is not already Gaussian.
 As the distribution of the dataset will remain non-normal, some precautions may need to be observed when using models that assume a normal distribution (such as linear regression).
 
 
@@ -172,10 +183,10 @@ This characteristic means that RNNs excel at processing sequential data such as 
 As the values of inflation are time series data, an LSTM could potentially provide good results despite the seeming lack of literature relating LSTMs to economic time series prediction.
 \\Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
 Implementing a model through a high-level library lets the user create an already well-documented and tested model with only a few lines of code.
-This saves both time and resources (as the model implemented form the library is likely to have been optimised) while also providing additional support, if necessary, from the community and documentation.
+This saves both time and resources (as the model implemented from the library is likely to have been optimised) while also providing additional support, if necessary, from the community and documentation.
 \subsection{Model Training}
 The models will be created using Python and several of its supported libraries and written in a Jupyter Notebook.
-The reason for using a Jupyter Notebook is that the cell structure allows for the steps to be run separately and the results to be displayed in real-time without the entire file being run.
+The reason for using a Jupyter Notebook is that the cell structure allows for the steps to be run separately and the results to be displayed in real time without the entire file being run.
 This makes experimenting with hyperparameters and training models much more convenient.
 As the results of each cell are displayed separately this also improves the ability to quickly create and display visualisations through tools such as Matplotlib \cite{Hunter:2007}.
 Jupyter also supports multiple languages and libraries enabling users to work in the preferred environment.

@@ -25,20 +25,21 @@
 \contentsline {chapter}{\numberline {3}Design}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Project Setup}{19}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Goals}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Evaluation}{19}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Constraints}{19}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Data pipeline}{20}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The Systems Input and Output}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.1.2}Expected Model Performance}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Evaluation}{20}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Constraints}{20}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Data pipeline}{21}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Systems Input and Output}{21}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Data Selection}{21}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}The Final Dataset}{22}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Data Pre-processing and Transformation}{24}{subsection.3.2.4}%
 \contentsline {subsubsection}{Issues With The OECD Dataset}{24}{section*.12}%
-\contentsline {subsubsection}{Granger Causality}{24}{section*.13}%
+\contentsline {subsubsection}{Granger Causality}{25}{section*.13}%
 \contentsline {subsubsection}{Granger Testing The Data}{25}{section*.14}%
-\contentsline {section}{\numberline {3.3}Modelling and Training}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Model Selection}{25}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.3}Modelling and Training}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Model Selection}{26}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Model Training}{26}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Serving}{26}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Serving}{27}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Implementation and Testing}{28}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tools}{28}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Coding Environemnt}{28}{subsection.4.1.1}%
