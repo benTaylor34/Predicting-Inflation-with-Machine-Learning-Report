@@ -64,5 +64,7 @@
 \contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{38}{subsection.4.6.3}%
 \contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{38}{subsection.4.6.4}%
 \contentsline {chapter}{\numberline {5}Results and Evaluation}{40}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{42}{chapter.7}%
+\contentsline {section}{\numberline {5.1}The Models'Results}{40}{section.5.1}%
+\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{41}{section*.17}%
+\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{43}{chapter.7}%

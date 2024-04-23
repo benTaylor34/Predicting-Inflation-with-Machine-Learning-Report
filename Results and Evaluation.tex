@@ -1,0 +1,32 @@
+\chapter{Results and Evaluation}
+This chapter covers the overall evaluation of the products developed.
+This includes a comparison and evaluation of the results produced by the models as well as a reflection of what could be done differently if the project were to start over.
+
+\section{The Models'Results}
+The table of regression metrics in the previous chapter showed how the linear regression, random forest, and support vector regression algorithms all performed worse prediction methods than the mean of the data (as shown in the r-squared score).
+Although this was a disappointing result, it was somewhat expected as inflation is an extremely complex variable and simpler algorithms will likely struggle to form an understanding of its properties.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{threemodelsres.png}
+    \caption[A Comparison of the Predictions of Linear Regression, Random Forest Regression, and Support Vector Regression Models.]{A Comparison of the Predictions of Linear Regression, Random Forest Regression, and Support Vector Regression Models.}
+    \label{fig:threemodelsres}
+\end{figure}
+Figure \ref{fig:threemodelsres} shows the predictions of each model compared to the actual normalised value (shown in black).
+It can be seen that all three models struggle to accurately predict inflation.
+In particular around the 65th-70th month mark all three models predict an increase inflation where there is actually a decrease.
+This seems to be due to a linear property indicating that inflation was likely to increase, however, possibly due to factors outside of the feature set, the increase was held off.
+
+According to the metric testing, the LSTM's results were an improvement upon the results of the previous three models, however it still struggled to accurately predict inflation.
+This is seen futher in the graph comparing the LSTM's predictions to the actual values.
+The predictions fail to predict the more erratic highs and lows of inflation, instead producing a much smoother curve.
+This could potentially be due to the number of past values the LSTM is given.
+As it stores 12 past values it may struggle to predict the sharp gains and losses of inflation.
+\subsubsection{Training and Testing the Models on the Entire Data vs on a Subset}
+% %TODO
+% - talk about overfitting/training, how many epochs used and how we know it wasnt overtrianed.
+% - talk about the whole set fs the set without hte first 150 points
+% - compare the results of each model
+% - which was best, which was worst
+% - is this the same as was predicted?
+% - why did the good ones do good and the bad do bad
+% - what could be improved next time?

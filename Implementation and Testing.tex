@@ -265,39 +265,44 @@ This is particularly important as the value of a machine learning model rests on
 For quality assurance testing, several regression metrics were used such as MAE, RMSE, MAPE, and R-squared.
 These metrics evaluate the effectiveness of the models.
 The metrics were calculated using the testing set against the models' predictions of the testing set.
+The ideal values for each metric are MAE=0, RMSE=0, MAPE=0, R-squared=1.
 \begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|}
     \hline
     Models                         & MAE    & RMSE   & MAPE          & R2        \\ \hline
-    Linear Regression              & 1.3733 & 2.3495 & 1.5564        & -4.4516   \\ \hline
-    Random Forest Regression       & 0.9299 & 1.1499 & 1.2844        & -0.3059   \\ \hline
-    Support Vector Regression      & 0.9968 & 1.2069 & 1.3483        & -0.4384   \\ \hline
+    Linear Regression              & 0.1526 & 0.2611 & 9188948002912 & -4.4515   \\ \hline
+    Random Forest Regression       & 0.1040 & 0.1272 & 1949910168334 & -0.2941   \\ \hline
+    Support Vector Regression      & 0.1537 & 0.1784 & 2210975015699 & -1.5471   \\ \hline
     Long Short-Term Memory         & 0.0288 & 0.0358 & 2053180149089 & 0.1630    \\ \hline
     Artificial Neural Network      & 0.0146 & 0.0191 & 1554485762650 & 0.9741    \\ \hline
     \end{tabular}
 \end{table}
+
 Of the models shown, linear regression performs the worst and the artificial neural network performs the best.
 However, there are some strange outliers within the regression metrics.
 To understand these outliers better there will be a brief overview of each metric.\\
 MAE (Mean Absolute Error) measures the sum of absolute errors divided by the number of observations.
-The closer the MAE is to 0 the better the performance is.\\
+The value of MAE is a positive real number.\\
 RMSE (Root Mean Square Error) is the square root of the MSE which is the average of the squared difference between actual values and predicted values.
 RMSE was used as it is easier to interpret than MSE because MSE is in squared units.
-The closer an RMSE value is to 0 the better the performance is.\\
+An RMSE value will be a positive real number.\\
 MAPE (Mean Absolute Percentage Error) is the average of the absolute percentage error of each observation.
 MAPE values are on a scale of 0 to 1 with 0 being a 0\% deviation between the predicted and the actual values.
-Yet the two best-performing models both produced exceptionally high MAPE values despite the fact that they would be expected to produce the lowest values.
+Yet all of the models, including the two best-performing models, produced exceptionally high MAPE values despite the fact that they would be expected to produce the lower values.
 The reason for this is that if values are 0 or close enough to 0, it can cause the MAPE calculation to divide by 0 which is undefined.
-The sklearn metric deals with this by instead producing an arbitrarily high output.
+The sklearn metric deals with this by producing an arbitrarily high output.
 Including MAPE as a metric proves to be ineffective in this case as normalising the data between the the range [0,1] most likely caused this error.\\
 Another of the errors appears in the r-squared collum, where it produces negative values for some of the models.
 R-squared measures the proportion of the variance for a dependent variable that is predicted by an independent variable, this is also known as the coefficient of determination.
 Despite what the name suggests, R-squared is not always squared so a negative value is not necessarily an error.
-Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean deviation of the data.\\
+Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean of the data.\\
 
-
-%%%%TODO:
-
-% - decide whether or not to include the results in the implementation section or in the evaluation section
-% - include results in implementation then compare results in the evaluation
+% %TODO
+% - talk about overfitting/training, how many epochs used and how we know it wasnt overtrianed.
+% - talk about the whole set fs the set without hte first 150 points
+% - compare the results of each model
+% - which was best, which was worst
+% - is this the same as was predicted?
+% - why did the good ones do good and the bad do bad
+% - what could be improved next time?
