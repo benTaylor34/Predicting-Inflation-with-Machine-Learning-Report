@@ -1,10 +1,11 @@
 \chapter{Implementation and Testing}
 The goal of the project is to implement a machine-learning model that has the ability to predict inflation.
 In order to find the most suitable model, several different models were implemented and their results were compared.
-This chapter of the report will cover how the models were implemented, which models were implemented, how the models were tuned and tested, as well as some of the issues encountered in the implementation process.
-This chapter will not cover the results of the models, their comparisons, or their evaluations.
+This chapter of the report will cover: 
+which models were implemented, how they were implemented, how the models were tuned and tested, the results produced by the models, and some of the issues encountered in the implementation process.
+This chapter will not contain the evaluation of the models' results or a comparison of the results.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Tools}
 \subsection{Coding Environemnt}
@@ -239,6 +240,12 @@ These hyperparameters were used as the default for the respective models going f
 \subsection{Testing Objectives}
 Before beginning testing it is beneficial to understand what the objectives of the tests are.
 The main objectives are: identifying any errors or bugs in the code, ensuring the results are of an acceptable standard, and identifying potential areas of improvement.
+Identifying and analysing areas of improvement will be carried out in chapter 5.
+
+\subsection{The Testing Set}
+The testing set is the set of previously unseen data that the models will be tested on.
+The set was made up of the final 20\% of the original unshuffled data.
+As the testing set was not shuffled, it provides a better perspective on how the models will perform for future inflation data as it will also be sequential.
 
 \subsection{Identifying Errors}
 Throughout the implementation process, the code was continuously tested to ensure it was working as expected.
@@ -255,16 +262,42 @@ This meant that the errors produced during the implementation of the project had
 \subsection{Quality Assurance}
 Another purpose of testing is to ensure that the outputs of the code are of a high enough quality regardless of whether they are the correct output or not.
 This is particularly important as the value of a machine learning model rests on the quality of results it produces.
-For quality assurance testing, several regression metrics were used.
-These metrics evaluate the effectiveness of a model.
+For quality assurance testing, several regression metrics were used such as MAE, RMSE, MAPE, and R-squared.
+These metrics evaluate the effectiveness of the models.
+The metrics were calculated using the testing set against the models' predictions of the testing set.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    Models                         & MAE    & RMSE   & MAPE          & R2        \\ \hline
+    Linear Regression              & 1.3733 & 2.3495 & 1.5564        & -4.4516   \\ \hline
+    Random Forest Regression       & 0.9299 & 1.1499 & 1.2844        & -0.3059   \\ \hline
+    Support Vector Regression      & 0.9968 & 1.2069 & 1.3483        & -0.4384   \\ \hline
+    Long Short-Term Memory         & 0.0288 & 0.0358 & 2053180149089 & 0.1630    \\ \hline
+    Artificial Neural Network      & 0.0146 & 0.0191 & 1554485762650 & 0.9741    \\ \hline
+    \end{tabular}
+\end{table}
+Of the models shown, linear regression performs the worst and the artificial neural network performs the best.
+However, there are some strange outliers within the regression metrics.
+To understand these outliers better there will be a brief overview of each metric.\\
+MAE (Mean Absolute Error) measures the sum of absolute errors divided by the number of observations.
+The closer the MAE is to 0 the better the performance is.\\
+RMSE (Root Mean Square Error) is the square root of the MSE which is the average of the squared difference between actual values and predicted values.
+RMSE was used as it is easier to interpret than MSE because MSE is in squared units.
+The closer an RMSE value is to 0 the better the performance is.\\
+MAPE (Mean Absolute Percentage Error) is the average of the absolute percentage error of each observation.
+MAPE values are on a scale of 0 to 1 with 0 being a 0\% deviation between the predicted and the actual values.
+Yet the two best-performing models both produced exceptionally high MAPE values despite the fact that they would be expected to produce the lowest values.
+The reason for this is that if values are 0 or close enough to 0, it can cause the MAPE calculation to divide by 0 which is undefined.
+The sklearn metric deals with this by instead producing an arbitrarily high output.
+Including MAPE as a metric proves to be ineffective in this case as normalising the data between the the range [0,1] most likely caused this error.\\
+Another of the errors appears in the r-squared collum, where it produces negative values for some of the models.
+R-squared measures the proportion of the variance for a dependent variable that is predicted by an independent variable, this is also known as the coefficient of determination.
+Despite what the name suggests, R-squared is not always squared so a negative value is not necessarily an error.
+Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean deviation of the data.\\
 
-\subsection{The Testing Set}
-The testing set was made up of the final 20\% of the unshuffled data.
-Splitting the initial data into training and testing sets means that the model's generalization can be tested on the previously unseen testing data.
-As the testing set was not shuffled, it provides a better perspective on how the models will perform on unseen future data as future data will be sequential.
 
 %%%%TODO:
 
-- testing section 
-- decide whether or not to include the results in the implementation section or in the evaluation section
-- include results in implementation then compare results in the evaluation
+% - decide whether or not to include the results in the implementation section or in the evaluation section
+% - include results in implementation then compare results in the evaluation

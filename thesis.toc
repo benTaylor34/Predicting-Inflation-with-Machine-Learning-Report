@@ -60,9 +60,9 @@
 \contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{36}{subsection.4.5.4}%
 \contentsline {section}{\numberline {4.6}Testing and Model Results}{37}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Testing Objectives}{37}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Identifying Errors}{37}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Quality Assurance}{38}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}The Testing Set}{38}{subsection.4.6.4}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{39}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{41}{chapter.7}%
+\contentsline {subsection}{\numberline {4.6.2}The Testing Set}{37}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{38}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{38}{subsection.4.6.4}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{40}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {7}References}{42}{chapter.7}%
