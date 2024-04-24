@@ -76,8 +76,6 @@ INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\showframe.sty
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\showframe.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
@@ -199,16 +197,6 @@ INPUT .\Thesis.lof
 INPUT .\Thesis.lof
 INPUT Thesis.lof
 OUTPUT Thesis.lof
-INPUT .\Thesis.lot
-INPUT .\Thesis.lot
-INPUT Thesis.lot
-OUTPUT Thesis.lot
-INPUT .\Thesis.bbl
-INPUT .\Thesis.bbl
-INPUT Thesis.bbl
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
-INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
 INPUT .\Introduction.tex
@@ -221,12 +209,14 @@ INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT .\Literature Review.tex
 INPUT Literature Review.tex
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
 INPUT .\images\FTSForecastingMethods.png
 INPUT .\images\FTSForecastingMethods.png
 INPUT .\images\FTSForecastingMethods.png
 INPUT .\images\FTSForecastingMethods.png
 INPUT .\images\FTSForecastingMethods.png
 INPUT .\images\FTSForecastingMethods.png
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\images\articleGrowth.png
 INPUT .\images\articleGrowth.png
 INPUT .\images\articleGrowth.png
@@ -294,6 +284,18 @@ INPUT .\images\LSTMSummary.png
 INPUT .\images\LSTMSummary.png
 INPUT .\images\LSTMSummary.png
 INPUT .\images\LSTMSummary.png
+INPUT .\images\annlossboth.png
+INPUT .\images\annlossboth.png
+INPUT .\images\annlossboth.png
+INPUT .\images\annlossboth.png
+INPUT .\images\annlossboth.png
+INPUT .\images\annlossboth.png
+INPUT .\images\nntraining.png
+INPUT .\images\nntraining.png
+INPUT .\images\nntraining.png
+INPUT .\images\nntraining.png
+INPUT .\images\nntraining.png
+INPUT .\images\nntraining.png
 INPUT .\Results and Evaluation.tex
 INPUT .\Results and Evaluation.tex
 INPUT .\Results and Evaluation.tex
@@ -305,6 +307,18 @@ INPUT .\images\threemodelsres.png
 INPUT .\images\threemodelsres.png
 INPUT .\images\threemodelsres.png
 INPUT .\images\threemodelsres.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstmtotal.png
+INPUT .\images\lstm150.png
+INPUT .\images\lstm150.png
+INPUT .\images\lstm150.png
+INPUT .\images\lstm150.png
+INPUT .\images\lstm150.png
+INPUT .\images\lstm150.png
 INPUT .\images\anntotal.png
 INPUT .\images\anntotal.png
 INPUT .\images\anntotal.png
@@ -317,6 +331,10 @@ INPUT .\images\ann150.png
 INPUT .\images\ann150.png
 INPUT .\images\ann150.png
 INPUT .\images\ann150.png
+INPUT .\Thesis.bbl
+INPUT .\Thesis.bbl
+INPUT Thesis.bbl
+INPUT C:\Users\Ben\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
 INPUT Thesis.aux
 INPUT .\Thesis.out
 INPUT .\Thesis.out

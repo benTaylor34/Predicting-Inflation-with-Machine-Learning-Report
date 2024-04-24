@@ -102,25 +102,31 @@ There were twenty different features in total (not including CPI), these feature
 composite business confidence, composite consumer confidence, composite leading indicator (CLI), consumer prices, hourly earnings, immediate interest rates call money interbank rate, long-term interest rates, M1, M3, merchandise exports, merchandise imports, nominal exchange rates, passenger car registrations, production volume, GDP, retail trade volume, share prices, short-term interest rates, and unemployment
 Histograms were plotted for each feature in order to assess their distributions.
 Understanding the distribution of a feature can give some insight as to whether to use normalisation (rescaling the data between two set values) or standardisation (setting the mean of the data to 0 and the standard deviation to 1) before giving the data to the machine learning models.
-In addition, a correlation matrix was formed for all of the features to determine if any features were overlapping.
-A correlation matrix gives us an indication of how the features relate to each other one on one.\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{hist.png}
     \caption[A Histogram of Each Feature in the Dataset.]{A histogram of each feature in the dataset}
     \label{fig:hist}
 \end{figure}
+The histograms display a variety of different distributions, this is understandable as many time series do not follow a normal distribution.
+The distributions indicate that normalisation may be preferable to standardisation as normalisation is preferable when several features do not have a Gaussian (normal) distribution.
+This is because normalisation will preserve the distribution of the data by rescaling the data where as standardisation makes the assumption that the data has a Gaussian distribution and may modify the data's distribution if it is not already Gaussian.
+As the distribution of the dataset will remain non-normal, some precautions may need to be observed when using models that assume a normal distribution (such as linear regression).
+
+In addition, a correlation matrix was formed for all of the features to determine if any features were overlapping.
+A correlation matrix gives us an indication of how the features relate to each other one on one.\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{corr.png}
     \caption[A Correlation Matrix for the Features in the Dataset.]{Correlation Matrix for the Features in the Dataset}
     \label{fig:corr}
 \end{figure}
-
-The histograms display a variety of different distributions, this is understandable as many time series do not follow a normal distribution.
-The distributions indicate that normalisation may be preferable to standardisation as normalisation is preferable when several features do not have a Gaussian (normal) distribution.
-This is because normalisation will preserve the distribution of the data by rescaling the data where as standardisation makes the assumption that the data has a Gaussian distribution and may modify the data's distribution if it is not already Gaussian.
-As the distribution of the dataset will remain non-normal, some precautions may need to be observed when using models that assume a normal distribution (such as linear regression).
+Although, at first glance, the correlation matrix seems to show very little correlation between the features, this does not mean that the features are not correlated or cannot be used for predicting inflation. 
+This is due to the fact that the heatmap figure was generated using a pairwise Pearson correlation function.
+Although pairwise Pearson correlation can often give a good representation of the correlation of two features it may not always be accurate.
+Pearson correlation attempts to draw a line of best fit between two features, meaning that if the two features do not share a linear correlation then Pearson correlation may produce a poor result.
+As the relationship between inflation and its causes is extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute to it.
+So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are inappropriate to use in our models.
 
 
 \subsection{Data Pre-processing and Transformation}
@@ -161,7 +167,7 @@ This means that if at some point during the last 12 lags a p-value<0.05 was prod
 Of the 20 features tested, 9 produced results that indicate Granger Causality.
 These 9 were: 'Composite business confidence', 'Composite consumer confidence', 'Consumer prices', 'Long-term interest rates', 'Merchandise imports', 'Reference series (GDP)', 'Retail trade volume', 'Share prices', 'Unemployment'
 This indicates that almost half of the features have the potential to predict CPI.
-This, however, does not mean that the 9 features found to Granger Cause CPI cause inflation as the Granger Causality test is only a measure of the potential of one value to cause another.
+This, however, does not mean that the 9 features found to Granger Cause CPI definitely cause inflation as the Granger Causality test is only a measure of the potential of one value to cause another.
 Furthermore, just because a value does not Granger Cause inflation does not mean that the feature is not useful in predicting inflation. 
 We now have a better understanding of the potential our dataset has to predict inflation. 
 %%\begin{figure}[H]

@@ -1,299 +1,242 @@
 \begin{thebibliography}{10}
 
-\bibitem{tensorflow2015-whitepaper}
-Mart\'{i}n Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen,
-  Craig Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin,
-  Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
-  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
-  Levenberg, Dandelion Man\'{e}, Rajat Monga, Sherry Moore, Derek Murray, Chris
-  Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal
-  Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\'{e}gas,
-  Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and
-  Xiaoqiang Zheng.
-\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
-  2015.
-\newblock Software available from tensorflow.org.
+\bibitem{tsay2005analysis}
+R.~S. Tsay, {\em Analysis of financial time series}.
+\newblock John wiley \& sons, 2005.
+
+\bibitem{Harrington_2003}
+C.~Harrington, ``Fundamental vs. technical analysis,'' 2003.
+
+\bibitem{TANG2022363}
+Y.~Tang, Z.~Song, Y.~Zhu, H.~Yuan, M.~Hou, J.~Ji, C.~Tang, and J.~Li, ``A
+  survey on machine learning models for financial time series forecasting,''
+  {\em Neurocomputing}, vol.~512, pp.~363--380, 2022.
+
+\bibitem{thomsett2006getting}
+M.~C. Thomsett, {\em Getting started in fundamental analysis}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem{WAFI2015939}
+A.~S. Wafi, H.~Hassan, and A.~Mabrouk, ``Fundamental analysis models in
+  financial markets – review study,'' {\em Procedia Economics and Finance},
+  vol.~30, pp.~939--947, 2015.
+\newblock IISES 3rd and 4th Economics and Finance Conference.
+
+\bibitem{Seegmiller_2023}
+T.~Seegmiller, ``10 metrics to measure the financial efficiency of your
+  organization,'' Sep 2023.
 
 \bibitem{achelis2001technical}
-Steven~B Achelis.
-\newblock Technical analysis from a to z, 2001.
+S.~B. Achelis, ``Technical analysis from a to z,'' 2001.
+
+\bibitem{murphy1999technical}
+J.~J. Murphy, {\em Technical analysis of the financial markets: A comprehensive
+  guide to trading methods and applications}.
+\newblock Penguin, 1999.
+
+\bibitem{rockefeller2019technical}
+B.~Rockefeller, {\em Technical analysis for dummies}.
+\newblock John Wiley \& Sons, 2019.
+
+\bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
+G.~U. Yule, ``Why do we sometimes get nonsense-correlations between
+  time-series?--a study in sampling and the nature of time-series,'' {\em
+  Journal of the Royal Statistical Society}, vol.~89, no.~1, pp.~1--63, 1926.
 
 \bibitem{Akbilgic2014ANH}
-Oguz Akbilgic, Hamparsum Bozdogan, and Mehmet~Erdal Balaban.
-\newblock A novel hybrid rbf neural networks model as a forecaster.
-\newblock {\em Statistics and Computing}, 24:365--375, 2014.
+O.~Akbilgic, H.~Bozdogan, and M.~E. Balaban, ``A novel hybrid rbf neural
+  networks model as a forecaster,'' {\em Statistics and Computing}, vol.~24,
+  pp.~365--375, 2014.
+
+\bibitem{michalski2013machine}
+R.~S. Michalski, J.~G. Carbonell, and T.~M. Mitchell, {\em Machine learning: An
+  artificial intelligence approach}.
+\newblock Springer Science \& Business Media, 2013.
 
 \bibitem{Awad2015}
-Mariette Awad and Rahul Khanna.
-\newblock {\em Machine Learning}, pages 1--18.
-\newblock Apress, Berkeley, CA, 2015.
-
-\bibitem{WBI}
-World Bank.
-\newblock World devlopment indicators, 2023.
-
-\bibitem{Beckett_2023}
-David Beckett.
-\newblock Consumer price inflation, uk: October 2023, Nov 2023.
-
-\bibitem{breiman1996bagging}
-Leo Breiman.
-\newblock Bagging predictors.
-\newblock {\em Machine learning}, 24:123--140, 1996.
-
-\bibitem{breiman2001random}
-Leo Breiman.
-\newblock Random forests.
-\newblock {\em Machine learning}, 45:5--32, 2001.
-
-\bibitem{machinelearningmasteryChooseActivation}
-Jason Brownlee.
-\newblock {H}ow to {C}hoose an {A}ctivation {F}unction for {D}eep {L}earning -
-  {M}achine{L}earning{M}astery.com --- machinelearningmastery.com.
-\newblock
-  \url{https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/}.
-\newblock [Accessed 22-04-2024].
-
-\bibitem{Cao2001184}
-Lijuan Cao and Francis~E.H. Tay.
-\newblock Financial forecasting using support vector machines.
-\newblock {\em Neural Computing and Applications}, 10(2):192, 2001.
-\newblock Cited by: 272.
-
-\bibitem{chollet2015keras}
-Fran\c{c}ois Chollet et~al.
-\newblock Keras.
-\newblock \url{https://keras.io}, 2015.
-
-\bibitem{ciaburro2018hand}
-G.~Ciaburro, V.K. Ayyadevara, and A.~Perrier.
-\newblock {\em Hands-On Machine Learning on Google Cloud Platform: Implementing
-  smart and efficient analytics using Cloud ML Engine}.
-\newblock Packt Publishing, 2018.
-
-\bibitem{clapham1939bank}
-John~Harold Clapham.
-\newblock {\em The bank of England}.
-\newblock CUP Archive, 1939.
-
-\bibitem{cortes1995support}
-Corinna Cortes and Vladimir Vapnik.
-\newblock Support-vector networks.
-\newblock {\em Machine learning}, 20:273--297, 1995.
+M.~Awad and R.~Khanna, {\em Machine Learning}, pp.~1--18.
+\newblock Berkeley, CA: Apress, 2015.
 
 \bibitem{8259424}
-Jeff Dean, David Patterson, and Cliff Young.
-\newblock A new golden age in computer architecture: Empowering the
-  machine-learning revolution.
-\newblock {\em IEEE Micro}, 38(2):21--29, 2018.
+J.~Dean, D.~Patterson, and C.~Young, ``A new golden age in computer
+  architecture: Empowering the machine-learning revolution,'' {\em IEEE Micro},
+  vol.~38, no.~2, pp.~21--29, 2018.
 
 \bibitem{Dean2019TheDL}
-Jeffrey Dean.
-\newblock The deep learning revolution and its implications for computer
-  architecture and chip design.
-\newblock {\em ArXiv}, abs/1911.05289, 2019.
+J.~Dean, ``The deep learning revolution and its implications for computer
+  architecture and chip design,'' {\em ArXiv}, vol.~abs/1911.05289, 2019.
+
+\bibitem{Oner_2019}
+C.~Oner, ``Inflation: Prices on the rise,'' Jul 2019.
+
+\bibitem{Parkin2016}
+M.~Parkin, {\em Inflation}, pp.~1--10.
+\newblock London: Palgrave Macmillan UK, 2016.
+
+\bibitem{hammond1981alexander}
+N.~G.~L. Hammond, {\em Alexander the Great}.
+\newblock Chatto \& Windus London, 1981.
 
 \bibitem{TheEconomist}
-The Economist.
-\newblock Our big mac index shows how burger prices are changing.
+T.~Economist, ``Our big mac index shows how burger prices are changing.''
+
+\bibitem{clapham1939bank}
+J.~H. Clapham, {\em The bank of England}.
+\newblock CUP Archive, 1939.
+
+\bibitem{Beckett_2023}
+D.~Beckett, ``Consumer price inflation, uk: October 2023,'' Nov 2023.
 
 \bibitem{HouseOfCommons}
-Brigid Francis-Devine.
-\newblock Rising cost of living in the uk.
-\newblock
+B.~Francis-Devine, ``Rising cost of living in the uk.''
   \url{https://commonslibrary.parliament.uk/research-briefings/cbp-9428/},
   2023.
 \newblock [Accessed 17-12-2023].
 
-\bibitem{Google}
-Google.
-\newblock Using the python client library  |  ai platform training  | 
-  google cloud.
-
-\bibitem{GCTest}
-C.~W.~J. Granger.
-\newblock Investigating causal relations by econometric models and
-  cross-spectral methods.
-\newblock {\em Econometrica}, 37(3):424--438, 1969.
-
-\bibitem{hammond1981alexander}
-Nicholas Geoffrey~Lempri{\`e}re Hammond.
-\newblock {\em Alexander the Great}.
-\newblock Chatto \& Windus London, 1981.
-
-\bibitem{HANSEN1999345}
-Bruce~E. Hansen.
-\newblock Threshold effects in non-dynamic panels: Estimation, testing, and
-  inference.
-\newblock {\em Journal of Econometrics}, 93(2):345--368, 1999.
-
-\bibitem{Harrington_2003}
-Cynthia Harrington.
-\newblock Fundamental vs. technical analysis, 2003.
-
-\bibitem{harris2020array}
-Charles~R. Harris, K.~Jarrod Millman, St{\'{e}}fan~J. van~der Walt, Ralf
-  Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor,
-  Sebastian Berg, Nathaniel~J. Smith, Robert Kern, Matti Picus, Stephan Hoyer,
-  Marten~H. van Kerkwijk, Matthew Brett, Allan Haldane, Jaime~Fern{\'{a}}ndez
-  del R{\'{i}}o, Mark Wiebe, Pearu Peterson, Pierre G{\'{e}}rard-Marchant,
-  Kevin Sheppard, Tyler Reddy, Warren Weckesser, Hameer Abbasi, Christoph
-  Gohlke, and Travis~E. Oliphant.
-\newblock Array programming with {NumPy}.
-\newblock {\em Nature}, 585(7825):357--362, sep 2020.
-
-\bibitem{ho1995random}
-Tin~Kam Ho.
-\newblock Random decision forests.
-\newblock In {\em Proceedings of 3rd international conference on document
-  analysis and recognition}, volume~1, pages 278--282. IEEE, 1995.
-
-\bibitem{Hunter:2007}
-J.~D. Hunter.
-\newblock Matplotlib: A 2d graphics environment.
-\newblock {\em Computing in Science \& Engineering}, 9(3):90--95, 2007.
-
-\bibitem{Huyen_2022}
-Chip Huyen.
-\newblock Design a machine learning system, 2022.
-
-\bibitem{IoffeS15}
-Sergey Ioffe and Christian Szegedy.
-\newblock Batch normalization: Accelerating deep network training by reducing
-  internal covariate shift.
-\newblock {\em CoRR}, abs/1502.03167, 2015.
-
-\bibitem{Loning2022-mg}
-Markus "L{\"o}ning, Franz Kir{\'a}ly, Tony Bagnall, Matthew Middlehurst,
-  Sajaysurya Ganesh, George Oastler, Jason Lines, Martin Walter, {ViktorKaz},
-  Lukasz Mentel, {chrisholder}, Leonidas Tsaprounis, {RNKuhns}, Mirae Parker,
-  Taiwo Owoseni, Patrick Rockenschaub, {danbartl}, {jesellier},
-  {eenticott-shell}, Ciaran Gilbert, Guzal Bulatova, {Lovkush}, Patrick
-  Sch{\"a}fer, Stanislav Khrapov, Katie Buchhorn, Kejsi Take, Shivansh
-  Subramanian, Svea~Marie Meyer, {AidenRushbrooke}, and Beth" Rice.
-\newblock "sktime/sktime: v0.13.4", 2022.
-
-\bibitem{michalski2013machine}
-Ryszard~Stanislaw Michalski, Jaime~Guillermo Carbonell, and Tom~M Mitchell.
-\newblock {\em Machine learning: An artificial intelligence approach}.
-\newblock Springer Science \& Business Media, 2013.
-
-\bibitem{murphy1999technical}
-John~J Murphy.
-\newblock {\em Technical analysis of the financial markets: A comprehensive
-  guide to trading methods and applications}.
-\newblock Penguin, 1999.
-
 \bibitem{telegraphBankEnglands}
-Eir Nolsøe.
-\newblock {B}ank of {E}ngland’s {C}ovid money-printing spree ‘drove up
-  inflation’ --- telegraph.co.uk.
-\newblock
+E.~Nolsøe, ``{B}ank of {E}ngland’s {C}ovid money-printing spree ‘drove up
+  inflation’ --- telegraph.co.uk.''
   \url{https://www.telegraph.co.uk/business/2023/04/18/bank-of-england-covid-money-printing-drove-up-inflation/#:~:text=During%20the%20pandemic%2C%20the%20Bank,to%20a%20record%20%C2%A3895bn.},
   2023.
 \newblock [Accessed 17-12-2023].
 
+\bibitem{Rosenblatt_1957_6098}
+F.~Rosenblatt, ``The perceptron - a perceiving and recognizing automaton,''
+  Tech. Rep. 85-460-1, Cornell Aeronautical Laboratory, Ithaca, New York,
+  January 1957.
+
+\bibitem{ciaburro2018hand}
+G.~Ciaburro, V.~Ayyadevara, and A.~Perrier, {\em Hands-On Machine Learning on
+  Google Cloud Platform: Implementing smart and efficient analytics using Cloud
+  ML Engine}.
+\newblock Packt Publishing, 2018.
+
+\bibitem{HANSEN1999345}
+B.~E. Hansen, ``Threshold effects in non-dynamic panels: Estimation, testing,
+  and inference,'' {\em Journal of Econometrics}, vol.~93, no.~2, pp.~345--368,
+  1999.
+
+\bibitem{srivastava2014dropout}
+N.~Srivastava, G.~Hinton, A.~Krizhevsky, I.~Sutskever, and R.~Salakhutdinov,
+  ``Dropout: a simple way to prevent neural networks from overfitting,'' {\em
+  The journal of machine learning research}, vol.~15, no.~1, pp.~1929--1958,
+  2014.
+
+\bibitem{cortes1995support}
+C.~Cortes and V.~Vapnik, ``Support-vector networks,'' {\em Machine learning},
+  vol.~20, pp.~273--297, 1995.
+
+\bibitem{wei2012svm}
+Z.~Wei, {\em A SVM approach in forecasting the moving direction of Chinese
+  stock indices}.
+\newblock Lehigh University, 2012.
+
+\bibitem{Cao2001184}
+L.~Cao and F.~E. Tay, ``Financial forecasting using support vector machines,''
+  {\em Neural Computing and Applications}, vol.~10, no.~2, p.~192, 2001.
+\newblock Cited by: 272.
+
+\bibitem{sadrfaridpour2020amlsvm}
+E.~Sadrfaridpour, K.~Palmer, and I.~Safro, ``Aml-svm: Adaptive multilevel
+  learning with support vector machines,'' 2020.
+
+\bibitem{ho1995random}
+T.~K. Ho, ``Random decision forests,'' in {\em Proceedings of 3rd international
+  conference on document analysis and recognition}, vol.~1, pp.~278--282, IEEE,
+  1995.
+
+\bibitem{breiman2001random}
+L.~Breiman, ``Random forests,'' {\em Machine learning}, vol.~45, pp.~5--32,
+  2001.
+
+\bibitem{breiman1996bagging}
+L.~Breiman, ``Bagging predictors,'' {\em Machine learning}, vol.~24,
+  pp.~123--140, 1996.
+
+\bibitem{Huyen_2022}
+C.~Huyen, ``Design a machine learning system,'' 2022.
+
+\bibitem{Google}
+Google, ``Using the python client library  |  ai platform training  | 
+  google cloud.''
+
+\bibitem{WBI}
+W.~Bank, ``World devlopment indicators,'' 2023.
+
 \bibitem{OECD}
-OECD.
-\newblock Data warehouse.
-\newblock 2014.
+OECD, ``Data warehouse,'' 2014.
 
-\bibitem{Oner_2019}
-Ceyda Oner.
-\newblock Inflation: Prices on the rise, Jul 2019.
+\bibitem{GCTest}
+C.~W.~J. Granger, ``Investigating causal relations by econometric models and
+  cross-spectral methods,'' {\em Econometrica}, vol.~37, no.~3, pp.~424--438,
+  1969.
 
-\bibitem{reback2020pandas}
-The pandas~development team.
-\newblock pandas-dev/pandas: Pandas, feb 2020.
+\bibitem{inflationStationaryOrNot}
+D.~H.~. Wojciech W.~Charemza and P.~Burridge, ``Is inflation stationary?,''
+  {\em Applied Economics}, vol.~37, no.~8, pp.~901--903, 2005.
 
-\bibitem{Parkin2016}
-Michael Parkin.
-\newblock {\em Inflation}, pages 1--10.
-\newblock Palgrave Macmillan UK, London, 2016.
+\bibitem{wooldridge2009introductory}
+J.~M. Wooldridge, {\em Introductory Econometrics: A Modern Approach}.
+\newblock ISE - International Student Edition, South-Western, 2009.
 
 \bibitem{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
-  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
-\newblock Scikit-learn: Machine learning in {P}ython.
-\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay, ``Scikit-learn:
+  Machine learning in {P}ython,'' {\em Journal of Machine Learning Research},
+  vol.~12, pp.~2825--2830, 2011.
 
-\bibitem{rockefeller2019technical}
-Barbara Rockefeller.
-\newblock {\em Technical analysis for dummies}.
-\newblock John Wiley \& Sons, 2019.
+\bibitem{Hunter:2007}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing in
+  Science \& Engineering}, vol.~9, no.~3, pp.~90--95, 2007.
 
-\bibitem{Rosenblatt_1957_6098}
-F.~Rosenblatt.
-\newblock The perceptron - a perceiving and recognizing automaton.
-\newblock Technical Report 85-460-1, Cornell Aeronautical Laboratory, Ithaca,
-  New York, January 1957.
+\bibitem{harris2020array}
+C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, R.~Gommers, P.~Virtanen,
+  D.~Cournapeau, E.~Wieser, J.~Taylor, S.~Berg, N.~J. Smith, R.~Kern, M.~Picus,
+  S.~Hoyer, M.~H. van Kerkwijk, M.~Brett, A.~Haldane, J.~F. del R{\'{i}}o,
+  M.~Wiebe, P.~Peterson, P.~G{\'{e}}rard-Marchant, K.~Sheppard, T.~Reddy,
+  W.~Weckesser, H.~Abbasi, C.~Gohlke, and T.~E. Oliphant, ``Array programming
+  with {NumPy},'' {\em Nature}, vol.~585, pp.~357--362, sep 2020.
 
-\bibitem{sadrfaridpour2020amlsvm}
-Ehsan Sadrfaridpour, Korey Palmer, and Ilya Safro.
-\newblock Aml-svm: Adaptive multilevel learning with support vector machines,
-  2020.
+\bibitem{reback2020pandas}
+T.~pandas~development team, ``pandas-dev/pandas: Pandas,'' feb 2020.
 
-\bibitem{Seegmiller_2023}
-Tom Seegmiller.
-\newblock 10 metrics to measure the financial efficiency of your organization,
-  Sep 2023.
+\bibitem{tensorflow2015-whitepaper}
+M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
+  A.~Davis, J.~Dean, M.~Devin, S.~Ghemawat, I.~Goodfellow, A.~Harp, G.~Irving,
+  M.~Isard, Y.~Jia, R.~Jozefowicz, L.~Kaiser, M.~Kudlur, J.~Levenberg,
+  D.~Man\'{e}, R.~Monga, S.~Moore, D.~Murray, C.~Olah, M.~Schuster, J.~Shlens,
+  B.~Steiner, I.~Sutskever, K.~Talwar, P.~Tucker, V.~Vanhoucke, V.~Vasudevan,
+  F.~Vi\'{e}gas, O.~Vinyals, P.~Warden, M.~Wattenberg, M.~Wicke, Y.~Yu, and
+  X.~Zheng, ``{TensorFlow}: Large-scale machine learning on heterogeneous
+  systems,'' 2015.
+\newblock Software available from tensorflow.org.
 
-\bibitem{srivastava2014dropout}
-Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
-  Salakhutdinov.
-\newblock Dropout: a simple way to prevent neural networks from overfitting.
-\newblock {\em The journal of machine learning research}, 15(1):1929--1958,
-  2014.
-
-\bibitem{TANG2022363}
-Yajiao Tang, Zhenyu Song, Yulin Zhu, Huaiyu Yuan, Maozhang Hou, Junkai Ji,
-  Cheng Tang, and Jianqiang Li.
-\newblock A survey on machine learning models for financial time series
-  forecasting.
-\newblock {\em Neurocomputing}, 512:363--380, 2022.
-
-\bibitem{thomsett2006getting}
-Michael~C Thomsett.
-\newblock {\em Getting started in fundamental analysis}.
-\newblock John Wiley \& Sons, 2006.
-
-\bibitem{tsay2005analysis}
-Ruey~S Tsay.
-\newblock {\em Analysis of financial time series}.
-\newblock John wiley \& sons, 2005.
-
-\bibitem{WAFI2015939}
-Ahmed.~S. Wafi, Hassan Hassan, and Adel Mabrouk.
-\newblock Fundamental analysis models in financial markets – review study.
-\newblock {\em Procedia Economics and Finance}, 30:939--947, 2015.
-\newblock IISES 3rd and 4th Economics and Finance Conference.
+\bibitem{chollet2015keras}
+F.~Chollet {\em et~al.}, ``Keras.'' \url{https://keras.io}, 2015.
 
 \bibitem{Waskom2021}
-Michael~L. Waskom.
-\newblock seaborn: statistical data visualization.
-\newblock {\em Journal of Open Source Software}, 6(60):3021, 2021.
+M.~L. Waskom, ``seaborn: statistical data visualization,'' {\em Journal of Open
+  Source Software}, vol.~6, no.~60, p.~3021, 2021.
 
-\bibitem{wei2012svm}
-Zhongyuan Wei.
-\newblock {\em A SVM approach in forecasting the moving direction of Chinese
-  stock indices}.
-\newblock Lehigh University, 2012.
+\bibitem{Loning2022-mg}
+M.~"L{\"o}ning, F.~Kir{\'a}ly, T.~Bagnall, M.~Middlehurst, S.~Ganesh,
+  G.~Oastler, J.~Lines, M.~Walter, {ViktorKaz}, L.~Mentel, {chrisholder},
+  L.~Tsaprounis, {RNKuhns}, M.~Parker, T.~Owoseni, P.~Rockenschaub, {danbartl},
+  {jesellier}, {eenticott-shell}, C.~Gilbert, G.~Bulatova, {Lovkush},
+  P.~Sch{\"a}fer, S.~Khrapov, K.~Buchhorn, K.~Take, S.~Subramanian, S.~M.
+  Meyer, {AidenRushbrooke}, and B.~Rice, ``"sktime/sktime: v0.13.4",'' 2022.
 
-\bibitem{inflationStationaryOrNot}
-Daniela Hristova~* Wojciech W.~Charemza and Peter Burridge.
-\newblock Is inflation stationary?
-\newblock {\em Applied Economics}, 37(8):901--903, 2005.
+\bibitem{IoffeS15}
+S.~Ioffe and C.~Szegedy, ``Batch normalization: Accelerating deep network
+  training by reducing internal covariate shift,'' {\em CoRR},
+  vol.~abs/1502.03167, 2015.
 
-\bibitem{wooldridge2009introductory}
-Jeffrey~Marc Wooldridge.
-\newblock {\em Introductory Econometrics: A Modern Approach}.
-\newblock ISE - International Student Edition. South-Western, 2009.
-
-\bibitem{5c7b6f25-ed11-3745-8118-935d66a8f3d3}
-G.~Udny Yule.
-\newblock Why do we sometimes get nonsense-correlations between time-series?--a
-  study in sampling and the nature of time-series.
-\newblock {\em Journal of the Royal Statistical Society}, 89(1):1--63, 1926.
+\bibitem{machinelearningmasteryChooseActivation}
+J.~Brownlee, ``{H}ow to {C}hoose an {A}ctivation {F}unction for {D}eep
+  {L}earning - {M}achine{L}earning{M}astery.com ---
+  machinelearningmastery.com.''
+  \url{https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/}.
+\newblock [Accessed 22-04-2024].
 
 \end{thebibliography}

@@ -124,12 +124,9 @@ Macroeconomic features were selected as inflation itself happens on a macro scal
 
 Upon analysis of the features selected for the dataset (as seen in figures \ref{fig:corr} and \ref{fig:hist}) very few features share a strong correlation or similar distribution to inflation.
 This could be worrying as it may indicate that, although on an intuitive surface level, many of these features should contribute to inflation, the features may not possess a strong ability to predict inflation.
-However, the lack of obvious correlation shown in many points of the heatmap figure does not completely rule out the fact that two points correlate or have the ability to aid in predicting one another.
-This is due to the fact that the heatmap figure was generated using a pairwise Pearson correlation function.
-Although pairwise Pearson correlation can often give a good representation of the correlation of two features it may not always be accurate.
-Pearson correlation attempts to draw a line of best fit between two features, meaning that if the two features do not share a linear correlation then Pearson correlation may not produce a strong result.
-As the relationship between inflation and its causes is extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute to it.
-So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are inappropriate to use in our models.
+However, this is not the case as explored in the previous design chapter, the Pearson correlation calculated in the correlation matrix and the distribution of data shown in the histograms are not the be-all and end-all of value forecasting.
+This is demonstrated in the Granger causality tests carried out in the Design chapter as several features are shown to have the potential to predict inflation.
+Therefore, as the indication as to whether or not any of the features are redundant, all of the features will be kept in the dataset for training the models.
 
 \subsection{The Models Used for Multivariate Analysis}
 All five of the previously stated models (see 3.3.1 Model Selection) were implemented for multivariate analysis.
@@ -297,6 +294,45 @@ Another of the errors appears in the r-squared collum, where it produces negativ
 R-squared measures the proportion of the variance for a dependent variable that is predicted by an independent variable, this is also known as the coefficient of determination.
 Despite what the name suggests, R-squared is not always squared so a negative value is not necessarily an error.
 Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean of the data.\\
+
+\subsubsection{Ensuring the Models Do Not Over Train}
+Another part of quality assurance in machine learning is ensuring the models do not overtrain.
+Overtraining is when a model learns the training set so well that it impacts the model's overall generalisation.
+This is obviously negative, as the model's job is not to predict data it has already been given, but rather to predict data it has never seen before.
+During the implementation of the models, a few methods were used to ensure that overtraining was not happening.
+The first method was producing a loss graph that tracks the loss value over the number of epochs.
+The loss should gradually fall over time, however, if the loss begins to rise it can be an indication of overtraining.
+%graphs
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{annlossboth.png}
+    \caption[ANN Model Loss Over Time (epochs).]{ANN Model Loss Over Time (epochs).}
+    \label{fig:annlossboth}
+\end{figure}
+By observing \ref{fig:annlossboth} it can be seen that the loss plateaus after 50 to 60 epochs.
+This means that the model could be trained for much fewer epochs while still producing similar results and saving time.
+After the loss plateaus, at no point does it begin to rise, therefore we can assume that the model has not overtrained.
+
+The second method used to test for overtraining was by making the model predict the training data after it had already been trained.
+This will test the model's performance on data it has already seen.
+If it has not overtrained then it is likely that the model will not be 100\% accurate.
+If the model predictes the training data with near 100\% accuracy it may have overtrained.
+This method is less accurate than the previous method, however, it is quick and easy to produce after training the model.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{nntraining.png}
+    \caption[ANN Model's Predictions of Seen Data.]{ANN Model's Predictions of Seen Data.}
+    \label{fig:nntraining}
+\end{figure}
+Figure \ref{fig:nntraining} shows that the model was extremely effective at predicting the initial portion of the training data, but its accuracy tapers off towards the end of the data.
+This is possibly because the final portion of the training data has much finer increments in change compared to the large movements at the start of the data.
+The model is likely struggling with the change in momentum between the highly volatile first portion and the smaller changes in the second portion of the data.
+However, as the model does not seem to be able to predict the training data with nearly 100\% accuracy, then it is further indication that the model is unlikely to have overtrained.
+
+\section{Final User Friendly Model Implementation}
+%%talk about the feature selection model
+%show screen shots
+
 
 % %TODO
 % - talk about overfitting/training, how many epochs used and how we know it wasnt overtrianed.

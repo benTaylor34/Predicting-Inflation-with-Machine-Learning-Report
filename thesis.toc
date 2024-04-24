@@ -1,73 +1,74 @@
 \babel@toc {british}{}\relax 
 \contentsline {chapter}{Acknowledgements}{ii}{section*.1}%
 \contentsline {chapter}{Abstract}{iii}{section*.2}%
-\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivation}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Aims and Objectives}{6}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Aims}{6}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objectives}{7}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}Literature Review}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Motivation}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Available Literature and Context}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{9}{subsection.2.2.1}%
-\contentsline {subsubsection}{Fundamental Analysis}{9}{section*.7}%
-\contentsline {subsubsection}{Technical Analysis}{10}{section*.8}%
-\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{10}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{11}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Problem Domain}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}UK Inflation}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{12}{subsection.2.3.2}%
-\contentsline {subsubsection}{Artificial Neural Networks}{13}{section*.9}%
-\contentsline {subsubsection}{Support Vector Regression}{15}{section*.10}%
-\contentsline {subsubsection}{Random Forest}{15}{section*.11}%
-\contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{16}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Summary and Conclusion}{17}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Design}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Project Setup}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Goals}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Expected Model Performance}{19}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Evaluation}{20}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Constraints}{20}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Data pipeline}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The Systems Input and Output}{21}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Data Selection}{21}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}The Final Dataset}{22}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Data Pre-processing and Transformation}{24}{subsection.3.2.4}%
-\contentsline {subsubsection}{Issues With The OECD Dataset}{24}{section*.12}%
-\contentsline {subsubsection}{Granger Causality}{25}{section*.13}%
-\contentsline {subsubsection}{Granger Testing The Data}{25}{section*.14}%
-\contentsline {section}{\numberline {3.3}Modelling and Training}{26}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Model Selection}{26}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Model Training}{26}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Serving}{27}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Implementation and Testing}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tools}{28}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Coding Environemnt}{28}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Visualisation}{28}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Libraries}{29}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Data Preperation}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Normalising the Data}{30}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Splitting the Data into Training and Testing Splits}{30}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Inflation's Historic Outliers}{31}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}The Machine Learning Models}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Univariate Implementation}{32}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Multivariate Implementation}{32}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}The Features and Dataset}{32}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{33}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Model Architecture}{33}{subsection.4.5.3}%
-\contentsline {subsubsection}{Aritficial Neural Network Model Architecture}{33}{section*.15}%
-\contentsline {subsubsection}{LSTM Model Architecture}{35}{section*.16}%
-\contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{36}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Testing and Model Results}{37}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Testing Objectives}{37}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}The Testing Set}{37}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{38}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{38}{subsection.4.6.4}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{40}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The Models'Results}{40}{section.5.1}%
-\contentsline {subsubsection}{Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{40}{section*.17}%
-\contentsline {subsubsection}{LSTM Network Model Predictions}{41}{section*.18}%
-\contentsline {subsubsection}{Aritficial Neural Network Predictions}{41}{section*.19}%
-\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{42}{section*.20}%
-\contentsline {chapter}{\numberline {6}Conclusion}{43}{chapter.6}%
-\contentsline {chapter}{\numberline {7}References}{44}{chapter.7}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Aims and Objectives}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Aims}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objectives}{2}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Motivation}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Available Literature and Context}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Financial Indicator Prediction Papers}{4}{subsection.2.2.1}%
+\contentsline {subsubsection}{Fundamental Analysis}{4}{section*.5}%
+\contentsline {subsubsection}{Technical Analysis}{5}{section*.6}%
+\contentsline {subsection}{\numberline {2.2.2}Machine Learning Papers}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inflation Papers}{6}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Problem Domain}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}UK Inflation}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{Artificial Neural Networks}{8}{section*.7}%
+\contentsline {subsubsection}{Support Vector Regression}{10}{section*.8}%
+\contentsline {subsubsection}{Random Forest}{10}{section*.9}%
+\contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{11}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Summary and Conclusion}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Design}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Project Setup}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Goals}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Expected Model Performance}{14}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Evaluation}{15}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Constraints}{15}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Data pipeline}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Systems Input and Output}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Data Selection}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}The Final Dataset}{17}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Data Pre-processing and Transformation}{19}{subsection.3.2.4}%
+\contentsline {subsubsection}{Issues With The OECD Dataset}{20}{section*.10}%
+\contentsline {subsubsection}{Granger Causality}{20}{section*.11}%
+\contentsline {subsubsection}{Granger Testing The Data}{20}{section*.12}%
+\contentsline {section}{\numberline {3.3}Modelling and Training}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Model Selection}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Model Training}{22}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Serving}{22}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Implementation and Testing}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tools}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Coding Environemnt}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Visualisation}{23}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Libraries}{24}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Data Preperation}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Normalising the Data}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Splitting the Data into Training and Testing Splits}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Inflation's Historic Outliers}{26}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}The Machine Learning Models}{26}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Univariate Implementation}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Multivariate Implementation}{27}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}The Features and Dataset}{27}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{28}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Model Architecture}{28}{subsection.4.5.3}%
+\contentsline {subsubsection}{Aritficial Neural Network Model Architecture}{28}{section*.13}%
+\contentsline {subsubsection}{LSTM Model Architecture}{30}{section*.14}%
+\contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{31}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Testing and Model Results}{32}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Testing Objectives}{32}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}The Testing Set}{32}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{33}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{33}{subsection.4.6.4}%
+\contentsline {subsubsection}{Ensuring the Models Do Not Over Train}{34}{section*.15}%
+\contentsline {section}{\numberline {4.7}Final User Friendly Model Implementation}{36}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Models'Results}{37}{section.5.1}%
+\contentsline {subsubsection}{Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{37}{section*.16}%
+\contentsline {subsubsection}{LSTM Network Model Predictions}{38}{section*.17}%
+\contentsline {subsubsection}{Aritficial Neural Network Predictions}{39}{section*.18}%
+\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{40}{section*.19}%
+\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}%

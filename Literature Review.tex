@@ -1,32 +1,31 @@
 \chapter{Literature Review}
 
 \section{Motivation}%%%why lit review? what does it do?
-Embarking on a literature review before developing our project offers numerous benefits. 
-Understanding existing knowledge in Machine Learning, specifically when used to predict financial indicators, 
-helps to contextualise our research, positioning it within the existing field. 
-Reviewing previous literature also provides the benefits of identifying gaps in current research and
-finding supporting arguments that can guide our work and help us to avoid, as much as possible, 
-redundancy in our and others' works. 
-Having completed the literature review, we should have a strong foundation to start and guide our project.
+Embarking on a literature review before developing a project offers numerous benefits. 
+Understanding existing knowledge in Machine Learning, specifically when used to predict financial indicators, helps to contextualise the research and position it within the existing field. 
+Reviewing previous literature also provides the benefits of identifying gaps in current research and finding supporting arguments that can provide a guide for the work that needs to be done during the project.
+Additionally, the literature review helps the project avoid redundancy between it and other similar works. 
+Completing the literature review will provide a strong foundation to start and guide the project.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Available Literature and Context}
-There is certainly a strong monetary incentive to produce research on how best to predict financial indicators. 
+There is a strong monetary incentive to produce research that outlines how best to predict financial indicators. 
 The correct predictions can not only allow organizations and individuals to profit greatly but also to avoid loss.
-This results in a myriad of papers being written, experimenting with a variety of techniques to predict future values, 
-most of which we can learn from to help structure our models.
+This has resulted in a myriad of papers being written that experiment with a variety of techniques to predict future values.
+Many such papers will provide helpful insight that will support the development of the models in this project.
 \par 
 This report's topic focuses on the prediction of inflation through the use of machine learning.
-To accomplish this we can view papers predominantly addressing two types of topics. 
+To accomplish this it is important to view papers predominantly addressing two types of topics. 
 The first type is papers that focus on the topic of predicting inflation or other economic indicators and time series.
-The second type of papers we can research deals with different machine-learning techniques.
-Additionally, it is pertinent to survey the current literature on inflation: its causing factors, effects, and significance.  
+The second type is papers dealing with different machine-learning techniques.
+It will also be pertinent to survey the current literature on inflation: its causing factors, effects, and significance.  
 
 \subsection{Financial Indicator Prediction Papers}
-According to "Analysis of Financial Time Series" by Ruey S. Tsay 
+According to "Analysis of Financial Time Series" by Ruey S. Tsay: 
 "Financial time series analysis is concerned with the theory and practice of asset valuation over time."\cite{tsay2005analysis}
-There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention, the taxonomy of which is shown in figure \ref{fig:FTSForecastingMethods}. 
+There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention.
+The taxonomy of these FTS analysis methods is shown in figure \ref{fig:FTSForecastingMethods}. 
 The predominant analysis strategies for predicting financial market behaviour are fundamental analysis and technical analysis\cite{Harrington_2003}.
 \begin{figure}[h]
     \centering
@@ -34,51 +33,52 @@ The predominant analysis strategies for predicting financial market behaviour ar
     \caption[FTS Forecasting Methods]{FTS Forecasting Methods. \par \textit{Figure from page 3 of 'A survey on machine learning models for financial time series forecasting by Yajiao Tang et al.'}\cite{TANG2022363}}
     \label{fig:FTSForecastingMethods}
 \end{figure}
+
 \subsubsection{Fundamental Analysis} 
 Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
 Additionally, fundamental analysis frequently makes use of techniques - such as sentiment analysis - that often deal with unstructured data.
-The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939},
-which according to Tom Seegmiller is defined as
-"... how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
+The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939}, which according to Tom Seegmiller is defined as 
+"how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
+
 \subsubsection{Technical Analysis}
 Technical analysis\cite{achelis2001technical} attempts to identify opportunities and predict investments by viewing movements and trends in market data alongside using a variety of technical indicators.
 Unlike fundamental analysis, technical analysis does not take into account many of the same fundamentals that can help indicate an asset's current value such as quarterly revenue.
-This is partially because it is often argued that technical indicators such as inflation or a stock's value are already priced according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
-From this, we can come to the understanding that while fundamental analysis is the idea of looking at the current factors affecting an asset and using them to evaluate to asset's true value; 
+This is partially important because it is often argued that technical indicators such as inflation or a stock's value are already priced according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
+From this, we can come to the understanding that while fundamental analysis is the idea of looking at the current factors affecting an asset and using them to evaluate the asset's true value; 
 Technical analysis is built upon the idea that past performance can predict future performance.
 Traditionally, technical analysis has relied heavily on statistical models to forecast the future performance of assets\cite{rockefeller2019technical}.
-Furthermore, the application of using past values to predict future values has been widely implemented for years, 
-with one of the earliest uses of autoregressive models being used to predict time series created by U.G.Yule in the 1920s\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
+Furthermore, the act of utilising past values to predict future values has been widely implemented for years.
+One of the earliest uses of autoregressive models being used to predict time series was created by U.G.Yule in the 1920s\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
 However, with the increase of big data and the internet, ever-larger amounts of financial predictive data are continually being produced.
 Nowadays, simple statistical models may struggle to produce accurate future predictions when faced with big data sets containing complex characteristics\cite{Akbilgic2014ANH}.
 
 \subsection{Machine Learning Papers} 
-This brings us to machine learning algorithms\cite{michalski2013machine}. 
+This subsection will explore the literature on machine learning algorithms\cite{michalski2013machine}. 
 According to Mariette Awad et al. machine learning "is a branch of artificial intelligence that systematically applies algorithms to synthesize the underlying relationships among data and information"\cite{Awad2015}.
-Currently, there is a massive abundance of fresh machine learning papers constantly being produced in the field. \cite{8259424}
+Currently, there is an abundance of fresh machine learning papers constantly being produced\cite{8259424}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{articleGrowth.png}
     \caption[ML arXiv articles per year]{ML arXiv articles per year. \par \textit{Figure from page 4 of 'A New Golden Age in Computer Architecture: Empowering the MachineLearning Revolution' by Jeff Dean, David Patterson, and Cliff Young}\cite{8259424}}
     \label{fig:articleGrowth}
 \end{figure}
-As you can see in figure \ref{fig:articleGrowth} articles on machine learning posted to arXiV (an archive for scholarly articles) have more than doubled every two years.
-Additionally, in 2018 the number of articles released reached 100 per day, summing to more than 33,000 by the end of the year.
+As figure \ref{fig:articleGrowth} indicates, articles on machine learning posted to arXiV (an archive for scholarly articles) have more than doubled every two years.
+Additionally, in 2018 the number of articles released peaked at over 100 per day, summing to more than 33,000 by the end of the year.
 The number of articles released has steadily continued to increase in the years since\cite{Dean2019TheDL}.
 Naturally, to read this many articles is impossible, 
-however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop our predictive models. 
+however, the sheer quantity bodes well for this project as it means there will be plenty of guidance on how best to select and develop predictive models. 
 
 \subsection{Inflation Papers}
 According to Ceyda Oner at the International Monetary Fund 
-"Inflation is the rate of increase in prices over a given period of time."\cite{Oner_2019}
-Often inflation is used to broadly indicate a countries of the global state of price fluctuation, 
+"Inflation is the rate of increase in prices over a given period of time"\cite{Oner_2019}.
+Often inflation is used to broadly indicate a country's currency's global state of price fluctuation, 
 however, inflation can also be used for certain services, goods, or food.
-Inflation affects everyone leading to an abundance of different papers linking to the topic.
+Inflation affects everyone which leads to a vast amount of different papers linking to the topic.
 The papers focusing on inflation cover a variety of topics such as inflation's various effects, forecasting inflation, the causes and trends of inflation, and more. \cite{Parkin2016}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Problem Domain} 
-This section of the literature review will go more in-depth into the area that this report will tackle as well as which methods could potentially be used.
 \subsection{UK Inflation}
 Inflation has been around since money has been used with one of the earliest recordings of inflation being caused by the death of Alexander the Great in around 300 BC\cite{hammond1981alexander}.
 Because of inflation's pervasiveness and its intrinsic link to both macro and microeconomics, there is a surplus of literature surrounding the subject.
@@ -86,34 +86,29 @@ This report will focus on inflation in the UK as opposed to global inflation.
 Several indicators can be used to measure inflation, the most common of which are Consumer Price Index (CPI), Consumer Price Index with Housing (CPIH), and Retail Price Index (RPI).
 There are also more novel measurements of inflation as well such as viewing the Big Mac index\cite{TheEconomist} and recording its change over time. 
 \par
-In the UK, inflation is the responsibility of the Bank of England who set monetary policy eight times a year with the goal of controlling and stablising inflation.
-The Bank of England (BoE) calculates inflation using their own in-house models\cite{clapham1939bank}.
+In the UK, inflation is the responsibility of the Bank of England (BoE) who set monetary policy eight times a year with the goal of controlling and stablising inflation.
+The BoE calculates inflation using their own in-house models\cite{clapham1939bank}.
 The BoE is not transparent with the specifics of the models or exactly how they calculate inflation, however, they state their models do factor in market expectations.
 In October 2022 inflation rates reached a peak of 11.1\% the highest in over 40 years.
 Yet by October 2023, the annual rate was the lowest since October 2021 at 4.7\%\cite{Beckett_2023}.
 Granted this is still higher than the targeted 2\% imposed on the BoE by the government.
 According to a research briefing published by the House of Commons Library, the main causes for the extremely high current inflation were: 
 Covid-19 lockdowns causing supply chain disruptions and Russia's invasion of Ukraine causing increased energy prices due to the UK's prior reliance on Russian fuel\cite{HouseOfCommons}.
-Additionally, several pundits have suggested the BoE's slow reaction to combating high inflation rates and their increased money-printing during the pandemic\cite{telegraphBankEnglands}.
+Additionally, several pundits have suggested the BoE's slow reaction to combating high inflation rates and their increased money-printing during the pandemic added to the issue\cite{telegraphBankEnglands}.
 The main way that the BoE combats inflation is through the manipulation of interest rates.
 The general premise is that as inflation rates grow, the growth of inflation should slow and inflation should eventually decrease. 
-This is because increased interest rates mean the overall spending in the economy lessens as money is instead being spent on the increased interest.
-\par
-Through this project we hope to be able to forecast future inflation through the use of machine learning models.
-%%% talk about current uk inflation
-%%% talk about bank of englands job to handle inflatrion and how they calculate it
+This is because increased interest rates mean the overall spending in the economy lessens as money is instead being spent on trying to mitigate the higher interest.
+
 \subsection{Machine Learning Models}
-By utilising machine learning techniques in financial forecasting we can endeavor to improve upon the performance of traditional statistical models.
-Generally, the goal of FTS forecasting can be placed into two main categories:
-1. Price prediction
-2. Price movement prediction (this includes volatility predictions)
-These two goals also reflect two types of machine-learning problems:
-1. Regression
-2. Classification.
-This paper will focus mainly on the price prediction/regression categories regarding inflation.
-This means that we will aim to predict future values of inflation as opposed to whether inflation will increase or decrease.
-Naturally, the areas we study will be with this regression problem in mind.
-We shall now cover some of the potential ML forecasting models that can aid us in predicting inflation.
+Machine learning techniques have been used in financial forecasting endeavors to improve upon the performance of traditional statistical models.
+Generally, the goal of FTS forecasting can be placed into two main categories:\\
+1. Price prediction.\\
+2. Price movement prediction (this includes volatility predictions).\\
+These two goals also reflect two types of machine-learning problems: regression and classification.
+This project will focus mainly on the price prediction/regression categories regarding inflation.
+This means that the aim of this project will be to predict future values of inflation as opposed to whether or not inflation will increase or decrease.
+Naturally, the areas of literature that will be studied will be with this regression problem in mind.
+
 \subsubsection{Artificial Neural Networks}
 An artificial neural network is a machine learning model that is made up of an interconnected group of nodes (also known as neurons) organised into layers.
 The model's inspiration stems from how neurons in the human brain interact with one another.
@@ -135,14 +130,16 @@ When a neuron receives the activation value, it sums and modifies it based on th
 The predicted results can then be compared to the true values and the weights and biases of the network are updated accordingly.
 Artificial neural networks can be modified with a variety of techniques to alter their accuracy. 
 One of these alterations is changing the activation function of the neurons.
-Figure \ref{fig:CmnAcFc} shows some common activation functions. Other commonly used activation functions include sigmoid, Guassian, and leaky ReLU.
+Figure \ref{fig:CmnAcFc} shows some common activation functions. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{CmnAcFc.png}
     \caption[Common Activation Functions]{Common Activation Functions \cite{ciaburro2018hand}}
     \label{fig:CmnAcFc}
 \end{figure}
-\par ANNs have many advantages:
+Other commonly used activation functions include Sigmoid, Guassian, and leaky ReLU.
+\par 
+ANNs have many advantages: 
 \begin{itemize}
     \item Thanks to the many interconnected neurons, ANNs have strong learning capabilities\cite{HANSEN1999345}.
     \item ANNs do not have a fixed structural equation making them very adaptable.
@@ -154,19 +151,20 @@ Figure \ref{fig:CmnAcFc} shows some common activation functions. Other commonly 
     \item Due to the nature of the hidden layers, ANNs can be hard to interpret.
     \item ANNs can be overfitted\cite{srivastava2014dropout}.
 \end{itemize}
+
 \subsubsection{Support Vector Regression}
 Created by Vladimir Vapnik and Alexey Chervonenkis in the 1960s and later built upon further by Vapnik et al. with the addition of the kernel trick and soft margin \cite{cortes1995support},
 Support Vector Regression and Support Vector Machines are supervised learning methods used for regression and classification respectively.
 Both models use non-linear mapping to transform the dimension of the input data. 
 Then utilise a hyperplane in order to either best fit or categorize the data.
 The hyperplane for these models is found by using an $\varepsilon$-insensitive tube, meaning that any errors within the range of the tube are ignored. 
-This is unlike a standard line of best fit that takes into account the $\varepsilon$ (distance) of all points to the line, 
-instead, only errors outside of the tube are considered pertinent.
+This is unlike a standard line of best fit that takes into account the $\varepsilon$ (distance) of all points to the line, instead, only errors outside of the tube are considered pertinent.
 The hyperplane is then placed in a way in which the sum of all points outside of the tube is minimised.
 The points outside of the tube are called support vectors hence the name support vector regressions. 
 \par Advantages of Support Vector Regression:
 \begin{itemize}
-    \item SVRs are simple and easy to implement as well as producing easily interpretable results.
+    \item SVRs are simple and easy to implement.
+    \item SVRs can produce easily interpretable results.
     \item SVRs require less computational resources than other models.
     \item SVRs can maintain stability despite noisy input data thanks to the $\varepsilon$-incentive tube\cite{wei2012svm}.
 \end{itemize}
@@ -174,25 +172,28 @@ The points outside of the tube are called support vectors hence the name support
 \begin{itemize}
     \item Deciding a suitable kernel function can cause difficulty \cite{Cao2001184}.
     \item SVRs may struggle with big data\cite{sadrfaridpour2020amlsvm}.
+    \item SVRs may struggle with very complex data and relationships.
 \end{itemize}
+
 \subsubsection{Random Forest}
-The first random forest (RF) algorithm was created by Tin Kam Ho in 1995\cite{ho1995random} which was later developed upon by Leo Breiman\cite{breiman2001random}.
+The first random forest algorithm was created by Tin Kam Ho in 1995\cite{ho1995random} which was later developed upon by Leo Breiman\cite{breiman2001random}.
 The random forest model makes predictions by consulting multiple decision trees.
 Each tree is trained on a random subset of data taken from the training set, this is called bagging or bootstrap aggregation.
 The final prediction is an average taken from all of the trees' predictions.
 \par Advantages of random forest:
 \begin{itemize}
     \item Random forest can prevent overfitting by combining the results of several weak learners instead of using one powerful learner\cite{breiman1996bagging}.
-    \item Rf models have good prediction accuracy as the result is an average making it unlikely to be an outlier.
-    \item Rfs are stable as changes to the data set may affect one tree but are unlikely to affect many trees.
+    \item Random forest models have good prediction accuracy as the result is an average, making it unlikely to be an outlier.
+    \item Random forest models are stable as changes to the data set may affect one tree but are unlikely to affect many trees.
 \end{itemize}
 \par Disadvantages of random forest:
 \begin{itemize}
-    \item Rfs suffer from increased training time. This is due to the fact that to make a prediction you need predictions from all of the trees to get an average.
+    \item Random forest models suffer from increased training time. This is due to the fact that to make a prediction you need predictions from all of the trees to get an average.
+    \item Random forests distribute the data between trees randomly thus potentially losing some relationships or patterns in the data.
 \end{itemize}
 
 \subsection{Regression Metrics and Model Evaluation}
-Evaluating a model is extremely important not only to know the quality of your model's predictions but also in order to make improvements to the model to achieve a more desirable result.
+Evaluating a model is extremely important not only to know the quality of the model's predictions but also in order to make improvements to the model.
 Evaluation metrics can be used to evaluate the performance of the model.
 Some useful metrics that can be applied to measure a model's performance are: 
 Mean absolute error (MAE), Mean squared error (MSE), Mean absolute percentage error (MAPE), Root mean absolute error (RMAE), Normalised mean square error (NMSE), Root mean squared error (RMSE), Relative root mean squared error (RRMSE), Correlation coefficient of prediction (R)
@@ -221,7 +222,7 @@ The most commonly used metrics are MSE, MAE, MAPE, and R.
 \centerline{$\mathit{MAPE}=\frac{1}{n} \sum_{i=1}^n |\frac{Y_i - X_i}{Y_i}| $} 
 \centerline{$n$ is the number of data points}
 \centerline{$Y_i$ is the true value.}
-\centerline{$X_i$ is the predicted value.}
+\centerline{$X_i$ is the predicted value.}   
 \end{varwidth}}
 \end{center}
 
@@ -236,16 +237,14 @@ The most commonly used metrics are MSE, MAE, MAPE, and R.
 FOR MSE, MAE, and MAPE a lower result indicates a more accurate model, and when a model has no error the value will be zero.
 R is always between -1 and 1, when R=0 it indicates that there is no linear relationship between the values.
 If R is -1 then there is a perfect negative linear relationship and if R is 1 then there is a perfect positive linear relationship. 
-These formulas can be used to understand the predictive skills of a model.
+These formulas can be used to evaluate the predictive ability of a model.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Summary and Conclusion}
-Through this literature review, we have covered a sample of the literature on machine learning methods, financial time series forecasting, and inflation.
+This literature review has covered a sample of the literature on machine learning methods, financial time series forecasting, and inflation.
 There is a multitude of literature available in these areas due to the potential monetary gain as well as the new and emerging technologies being explored in the fields.
-Therefore, it would be nearly impossible to extensively cover all of the relevant articles to this project.
+Therefore, it would be nearly impossible to extensively cover all of the articles relevant to this project.
 Instead, the main focus was on understanding the most common techniques used to predict FTS and which machine learning models are often applied.
-We also covered the UK's relationship with inflation, who is tasked with controlling it, and how they attempt to do so as well as some of the factors contributing to it.
-\par
-Having completed the literature review we are now equipped with general knowledge of the problem of inflation, its causes, and how it is controlled.
-This will help us to select appropriate data to train and build our models on. 
-Furthermore, due to reviewing current literature in the field of FTS forecasting and machine learning, 
-we have the knowledge of which available models may be best suited to forecasting inflation as well as an understanding of how to evaluate the models we choose to use.
+Additionally, the literature review also covered the UK's relationship with inflation, who is tasked with controlling it, how they attempt to do so, as well as some of the factors contributing to it.\\
+The knowledge gained from completing the literature review will provide a strong backbone for solving the tasks presented in the implementation of the project going forward.

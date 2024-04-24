@@ -1,7 +1,7 @@
 %%% first attempt at thesis in latex
 %%% going for setup + introduction and literature review
 \documentclass[mono, fyp]{luthesis}
-\usepackage{showframe}
+%\usepackage{showframe}
 \programme{Computer Science}
 \setmodcode{COUB01}
 \idnumber{F014621}
@@ -21,8 +21,8 @@
 \title{Predicting Inflation With Machine Learning}
 \author{Ben M. Taylor}
 
-\thesisDateDay{2nd}
-\thesisDateMonth{12}
+\thesisDateDay{1st}
+\thesisDateMonth{5}
 \thesisDateYear{2024}
 
 %%%
@@ -34,35 +34,28 @@
 \frontmatter
 
 \chapter{Acknowledgements}
-I would like to thank my supervisor Mohamad Saada for his help and guidance throughout this project.
+I would like to thank my supervisor Mohamad Saada for his excellent support and guidance throughout this project.
 
 \input{Abstract}
 
 \tableofcontents
 \listoffigures
-\listoftables
 
 \mainmatter
-\bibliographystyle{plain}
-\bibliography{mybib}
 
 \input{Introduction}
 
 \input{Literature Review}
 
-%%%\chapter{Design and Implementation}
-%\input{Requirements}
 \input{Design}
-%%%\input{Data Selection, Preprocessing, and Transformation}
-%\input{Design}
+
 \input{Implementation and Testing}
 
 \input{Results and Evaluation}
-%\chapter{Results and Evaluation}
-%\section{Data Mining}
-%%% univariate and multivariate
-%\section{Interpretation \ Evaluation}
 
 \chapter{Conclusion}
-\chapter{References}
+
+\bibliographystyle{ieeetr}
+\bibliography{mybib}
+
 \end{document}
