@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  25 APR 2024 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  25 APR 2024 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -529,148 +529,157 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
+] [5
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
+color pop
+color push 0 g 0 G
+color pop
 ])
 \tf@toc=\write4
 \openout4 = `Thesis.toc'.
 
- [5
+ [6
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -680,14 +689,10 @@ color pop
 \tf@lof=\write5
 \openout5 = `Thesis.lof'.
 
- [6
+ [7
 color push 0 g 0 G
 color pop
 
-color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
 color push 0 g 0 G
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -810,7 +815,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=416, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=423, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 32.
@@ -849,7 +854,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=446, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=453, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -916,7 +921,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=494, 661.47125pt x 785.93625pt>
+<images/CmnAcFc.png, id=501, 661.47125pt x 785.93625pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 136.
@@ -1031,7 +1036,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-<images/machineLearningDesignPipeline.png, id=550, 233.673pt x 251.13824pt>
+<images/machineLearningDesignPipeline.png, id=558, 233.673pt x 251.13824pt>
 File: images/machineLearningDesignPipeline.png Graphic file (type png)
 <use images/machineLearningDesignPipeline.png>
 Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
@@ -1085,7 +1090,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/hist.png, id=576, 1720.7487pt x 880.9713pt>
+<images/hist.png, id=583, 1720.7487pt x 880.9713pt>
 File: images/hist.png Graphic file (type png)
 <use images/hist.png>
 Package pdftex.def Info: images/hist.png  used on input line 107.
@@ -1100,7 +1105,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/corr.png, id=583, 1296.5238pt x 839.0547pt>
+<images/corr.png, id=590, 1296.5238pt x 839.0547pt>
 File: images/corr.png Graphic file (type png)
 <use images/corr.png>
 Package pdftex.def Info: images/corr.png  used on input line 120.
@@ -1237,12 +1242,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/totalCPI.png, id=649, 406.8801pt x 327.3831pt>
+<images/totalCPI.png, id=656, 406.8801pt x 327.3831pt>
 File: images/totalCPI.png Graphic file (type png)
 <use images/totalCPI.png>
 Package pdftex.def Info: images/totalCPI.png  used on input line 98.
 (pdftex.def)             Requested size: 166.73378pt x 134.15799pt.
-<images/limitedCPI.png, id=650, 400.3758pt x 327.3831pt>
+<images/limitedCPI.png, id=657, 400.3758pt x 327.3831pt>
 File: images/limitedCPI.png Graphic file (type png)
 <use images/limitedCPI.png>
 Package pdftex.def Info: images/limitedCPI.png  used on input line 103.
@@ -1275,7 +1280,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/ANNSummary.png, id=668, 389.65575pt x 226.446pt>
+<images/ANNSummary.png, id=675, 389.65575pt x 226.446pt>
 File: images/ANNSummary.png Graphic file (type png)
 <use images/ANNSummary.png>
 Package pdftex.def Info: images/ANNSummary.png  used on input line 163.
@@ -1300,7 +1305,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/ANNSummary.png>]
-<images/LSTMSummary.png, id=677, 383.63326pt x 203.5605pt>
+<images/LSTMSummary.png, id=684, 383.63326pt x 203.5605pt>
 File: images/LSTMSummary.png Graphic file (type png)
 <use images/LSTMSummary.png>
 Package pdftex.def Info: images/LSTMSummary.png  used on input line 197.
@@ -1352,7 +1357,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/annlossboth.png, id=703, 416.2752pt x 327.3831pt>
+<images/annlossboth.png, id=710, 416.2752pt x 327.3831pt>
 File: images/annlossboth.png Graphic file (type png)
 <use images/annlossboth.png>
 Package pdftex.def Info: images/annlossboth.png  used on input line 322.
@@ -1363,7 +1368,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/nntraining.png, id=710, 947.4597pt x 505.1673pt>
+<images/nntraining.png, id=717, 947.4597pt x 505.1673pt>
 File: images/nntraining.png Graphic file (type png)
 <use images/nntraining.png>
 Package pdftex.def Info: images/nntraining.png  used on input line 337.
@@ -1386,7 +1391,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/annlossboth.png>]
-<images/skeleton.png, id=717, 366.168pt x 409.53pt>
+<images/skeleton.png, id=725, 366.168pt x 409.53pt>
 File: images/skeleton.png Graphic file (type png)
 <use images/skeleton.png>
 Package pdftex.def Info: images/skeleton.png  used on input line 360.
@@ -1425,17 +1430,17 @@ color push 0 g 0 G
 color pop
  <./images/skeleton.png>]
 Chapter 5.
-<images/LinearRegUni.png, id=730, 947.4597pt x 297.0297pt>
+<images/LinearRegUni.png, id=737, 947.4597pt x 297.0297pt>
 File: images/LinearRegUni.png Graphic file (type png)
 <use images/LinearRegUni.png>
 Package pdftex.def Info: images/LinearRegUni.png  used on input line 11.
 (pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
-<images/RandomForestUni.png, id=731, 947.4597pt x 297.0297pt>
+<images/RandomForestUni.png, id=738, 947.4597pt x 297.0297pt>
 File: images/RandomForestUni.png Graphic file (type png)
 <use images/RandomForestUni.png>
 Package pdftex.def Info: images/RandomForestUni.png  used on input line 12.
 (pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
-<images/SVRuni.png, id=732, 947.4597pt x 297.0297pt>
+<images/SVRuni.png, id=739, 947.4597pt x 297.0297pt>
 File: images/SVRuni.png Graphic file (type png)
 <use images/SVRuni.png>
 Package pdftex.def Info: images/SVRuni.png  used on input line 13.
@@ -1447,7 +1452,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/threemodelsres.png, id=737, 574.5465pt x 327.3831pt>
+<images/threemodelsres.png, id=744, 574.5465pt x 327.3831pt>
 File: images/threemodelsres.png Graphic file (type png)
 <use images/threemodelsres.png>
 Package pdftex.def Info: images/threemodelsres.png  used on input line 27.
@@ -1481,12 +1486,12 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/threemodelsres.png>]
-<images/lstmtotal.png, id=751, 422.7795pt x 327.3831pt>
+<images/lstmtotal.png, id=758, 422.7795pt x 327.3831pt>
 File: images/lstmtotal.png Graphic file (type png)
 <use images/lstmtotal.png>
 Package pdftex.def Info: images/lstmtotal.png  used on input line 59.
 (pdftex.def)             Requested size: 354.31049pt x 274.38048pt.
-<images/lstm150.png, id=752, 409.7709pt x 327.3831pt>
+<images/lstm150.png, id=759, 409.7709pt x 327.3831pt>
 File: images/lstm150.png Graphic file (type png)
 <use images/lstm150.png>
 Package pdftex.def Info: images/lstm150.png  used on input line 66.
@@ -1507,7 +1512,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/lstmtotal.png>]
-<images/anntotal.png, id=758, 960.4683pt x 505.1673pt>
+<images/anntotal.png, id=766, 960.4683pt x 505.1673pt>
 File: images/anntotal.png Graphic file (type png)
 <use images/anntotal.png>
 Package pdftex.def Info: images/anntotal.png  used on input line 80.
@@ -1528,17 +1533,12 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/lstm150.png>]
-<images/ann150.png, id=765, 947.4597pt x 505.1673pt>
+<images/ann150.png, id=772, 947.4597pt x 505.1673pt>
 File: images/ann150.png Graphic file (type png)
 <use images/ann150.png>
 Package pdftex.def Info: images/ann150.png  used on input line 87.
 (pdftex.def)             Requested size: 354.31049pt x 188.9131pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--112
-
- []
-
-[44
+ [44
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1547,7 +1547,7 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 
+l.104 
       
 color pop
 color pop
@@ -1557,7 +1557,7 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 
+l.104 
       
 color pop
 color pop
@@ -1570,35 +1570,31 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/anntotal.png> <./images/ann150.png>]
-<images/annvslstm.png, id=775, 946.0143pt x 491.436pt>
-File: images/annvslstm.png Graphic file (type png)
-<use images/annvslstm.png>
-Package pdftex.def Info: images/annvslstm.png  used on input line 126.
-(pdftex.def)             Requested size: 354.31049pt x 184.05559pt.
-) [45
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
+Underfull \hbox (badness 10000) in paragraph at lines 106--125
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.56 \chapter
-             {Conclusion}
+ []
+
+[45
+color push 0 g 0 G
 color pop
+color push 0  0.5  0 rg 0  0.5  0 RG
 color pop
 color push 0 g 0 G
 color pop
- <./images/annvslstm.png>]
+]) [46
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
 Chapter 6.
-(Thesis.bbl [46
+(Thesis.bbl [47
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-] [47
+] [48
 color push 0 g 0 G
 color pop
 
@@ -1648,7 +1644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--102
 [] \OT1/cmtt/m/n/12 : text = During % 20the % 20pandemic % 2C % 20the % 20Bank ,[] to % 20a % 20record %
  []
 
-[48
+[49
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1687,7 +1683,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [49
+] [50
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1742,7 +1738,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--241
 \OT1/cmtt/m/n/12 choose-[]an-[]activation-[]function-[]for-[]deep-[]learning/$[][]\OT1/cmr/m/n/12 .  [Ac-cessed
  []
 
-) [50
+[51
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1766,6 +1762,13 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+]) [52
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1775,20 +1778,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 261A64D4685797989542D7C74494CDFB;10840.
+(rerunfilecheck)             Checksum: 75DD181A7D8D8E358F047B6D49148C13;11196.
  ) 
 Here is how much of TeX's memory you used:
- 12090 strings out of 475248
- 198854 string characters out of 5758757
- 1932785 words of memory out of 5000000
- 33194 multiletter control sequences out of 15000+600000
+ 12088 strings out of 475248
+ 198730 string characters out of 5758757
+ 1933785 words of memory out of 5000000
+ 33186 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,755b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,755b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (56 pages, 1931477 bytes).
+Output written on Thesis.pdf (59 pages, 1838781 bytes).
 PDF statistics:
- 931 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 615 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 949 PDF objects out of 1000 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 618 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -92,14 +92,20 @@ The predictions from the model trained on the entire dataset start well but lose
 Figures \ref{fig:anntotal} and \ref{fig:ann150} show the results produced by the model with the entire data vs the subset of the data respectively.
 The figures show how the models trained on the subset of the dataset produced more accurate predictions than the models trained on the entire dataset.
 
-The model from figure \ref{fig:ann150} produced the best results out of all of the models implemented to predict inflation.
-This is likely due to a number of factors.
+\subsection{Why the Artificial Neural Network Had the Most Success}
+The artificial neural network shown in figure \ref{fig:ann150} produced the best results out of all of the models implemented to predict inflation.
+This is likely due to several factors.
 
-Removing the first 150 data points removed some large outliers that would have negatively affected the predictions.
-This was confirmed by the fact that the other models also showed an increase in performance once the first 150 rows of data were removed.
+\subsubsection{Removing Data Outliers}
+This method was applied to all models successfully.
+The first 150 samples of CPI contained large outliers compared to the rest of the dataset.
+Including these samples would have negatively affected the model's predictive abilities.
+This was confirmed by the fact that the other models also showed an increase in performance after the first 150 rows of data were removed.
 
+\subsubsection{Hyperparameter Tuning}
 Another reason for the ANN's success is that it was the most flexible of the models with the largest number of hyperparameters that could be adjusted.
-Interestingly, the best set of hyperparameters found by the grid search was somewhat unexpected.
+The only other model that underwent similar hyperparameter tuning was the LSTM and interestingly the hyperparameters that were found to be optimal were similar for both models.  
+However, some of the hyperparameters found to be optimal by the grid search were somewhat unexpected.\\
 The model performed best with 128 nodes in the hidden layer, which was the highest option in the grid and higher than expected.
 The reason for the model preferring a higher number of nodes could be that with more nodes the model could better capture the problems' more intricate non-linear patterns.
 However, such a large number of nodes comes at a computational cost as it will require more processing power and take more time to run the model.\\
@@ -109,21 +115,22 @@ The next smallest dropout rate available was 10\% or 0.1 so this theory is unlik
 The ideal learning rate was 0.005 which was unexpected as s it is higher than Keras' default learning rate of 0.001.
 A higher learning rate often allows for faster convergence but can lead to the model oscillating or diverging if it overshoots the optimal point.
 Despite this, it does not seem like the model oscillated or diverged based on the loss graph as it did not display any additional inflections.\\
-
-
- a 0\% dropout rate (meaning that its very unlikely the model came close to overtraining), a learning rate of 0.005
+The final hyperparameter was a batch size of 8, this was the smallest batch size option.
+The batch size dictates the number of data samples the model works through before it updates its internal parameters.
+Thus a smaller batch size means that the model's parameters are being updated more frequently.
+Research\cite{masters2018revisiting} indicates that smaller batch sizes produce models with better generalisation.
+This can even be true for models trained using mini-batch sizes as small as 2.
+A model that updates its parameters more frequently is likely to perform well on data that has a lot of complex relationships.
+Therefore, the fact that the smallest batch size produced the best results is not surprising as the data the model is training on likely contains many such relationships.\\
 
 % %TODO
-% - compare the results of each model
-% - which was best, which was worst
-% - is this the same as was predicted?
-% - why did the good ones do good and the bad do bad
+% - continue writing why the ann was the best. How is it better than an lstm?
+% - is this the same as what was predicted
 % - what could be improved next time?
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth]{annvslstm.png}
-    \caption[A Comparison of the LSTM and ANN Predictions.]{A Comparison of the LSTM and ANN Predictions.}
-    \label{fig:annvslstm}
-\end{figure} 
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.85\textwidth]{annvslstm.png}
+%     \caption[A Comparison of the LSTM and ANN Predictions.]{A Comparison of the LSTM and ANN Predictions.}
+%     \label{fig:annvslstm}
+% \end{figure} 
