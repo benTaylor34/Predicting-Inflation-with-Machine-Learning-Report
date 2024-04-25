@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  25 APR 2024 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  25 APR 2024 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1533,12 +1533,12 @@ File: images/ann150.png Graphic file (type png)
 <use images/ann150.png>
 Package pdftex.def Info: images/ann150.png  used on input line 87.
 (pdftex.def)             Requested size: 354.31049pt x 188.9131pt.
-<images/annvslstm.png, id=768, 946.0143pt x 491.436pt>
-File: images/annvslstm.png Graphic file (type png)
-<use images/annvslstm.png>
-Package pdftex.def Info: images/annvslstm.png  used on input line 108.
-(pdftex.def)             Requested size: 354.31049pt x 184.05559pt.
-) [44
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--112
+
+ []
+
+[44
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1547,8 +1547,8 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.55 
-     
+l.112 
+      
 color pop
 color pop
 color push 0 g 0 G
@@ -1557,9 +1557,11 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.55 
-     
+l.112 
+      
 color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
@@ -1567,7 +1569,13 @@ color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0 g 0 G
 color pop
- <./images/anntotal.png> <./images/ann150.png>] [45
+ <./images/anntotal.png> <./images/ann150.png>]
+<images/annvslstm.png, id=775, 946.0143pt x 491.436pt>
+File: images/annvslstm.png Graphic file (type png)
+<use images/annvslstm.png>
+Package pdftex.def Info: images/annvslstm.png  used on input line 126.
+(pdftex.def)             Requested size: 354.31049pt x 184.05559pt.
+) [45
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1778,9 +1786,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,755b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (56 pages, 1929516 bytes).
+Output written on Thesis.pdf (56 pages, 1931477 bytes).
 PDF statistics:
- 930 PDF objects out of 1000 (max. 8388607)
+ 931 PDF objects out of 1000 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)
  615 words of extra memory for PDF output out of 10000 (max. 10000000)
 
