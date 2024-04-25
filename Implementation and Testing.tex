@@ -51,6 +51,18 @@ The data was compiled into a tabular format to facilitate the use of the Pandas 
 By using a pandas dataframe several functions can be used to quickly assess the state of the data such as the head or shape functions.
 This is useful in the context of machine learning as model layers require inputs of certain types or shapes.
 
+\subsection{Maintaining Time Consistency}
+Using time series data in a machine learning model requires additional attention compared to regular data, especially when testing the model.
+General practice in machine learning is to split the dataset into arrays for training and testing and into X and y (with X being the data that predicts the target data y).
+However, in time series forecasting the data is created or released over time.
+This means that using X data from the year 2000 to predict the value of inflation from the same year is redundant as the inflation data will have already been released around the same time as the X data meaning that it is already available.
+Instead, the aim of time series forecasting should be to use past data to predict future data.
+In creating a dataset for a machine learning model this takes the form of shifting the target forward in time so that the X data from 2000 is being used to predict the y data from 2001.
+Often, the further forward the target data is shifted the less accurate the model becomes.
+In this project, the target values of inflation were shifted 12 months ahead of the X data.
+This means that the model uses data from the current year to predict the inflation values of the next year.
+Additionally, a feature was implemented in the project where the user can adjust the number of months that inflation is shifted to provide additional predictive flexibility if needed.
+
 \subsection{Normalising the Data}
 Normalisation, also known as feature scaling, is used to rescale data between a given range. 
 The importance of normalisation is due to the fact that many of the features may have varying ranges, this could lead to features with a large range having a greater impact on the result.
@@ -237,7 +249,7 @@ These hyperparameters were used as the default for the respective models going f
 \subsection{Testing Objectives}
 Before beginning testing it is beneficial to understand what the objectives of the tests are.
 The main objectives are: identifying any errors or bugs in the code, ensuring the results are of an acceptable standard, and identifying potential areas of improvement.
-Identifying and analysing areas of improvement will be carried out in chapter 5.
+Identifying and analysing areas of improvement will be carried out in Chapter 5.
 
 \subsection{The Testing Set}
 The testing set is the set of previously unseen data that the models will be tested on.
@@ -329,7 +341,13 @@ This is possibly because the final portion of the training data has much finer i
 The model is likely struggling with the change in momentum between the highly volatile first portion and the smaller changes in the second portion of the data.
 However, as the model does not seem to be able to predict the training data with nearly 100\% accuracy, then it is further indication that the model is unlikely to have overtrained.
 
-\section{Final User Friendly Model Implementation}
+% \section{Final User Friendly Model Implementation}
+% Although further comparisons and evaluation will be completed, based on the regression metrics taken, it looks like the artificial neural network produces the best results for predicting inflation.
+% As such a more user-friendly implementation was created using this model.
+% The implementation consists of a checkbox list of the dataset's features.
+% %The list of selected features is output to the user.
+% These features can be selected and then a model will be trained and tested using the selected features.
+
 %%talk about the feature selection model
 %show screen shots
 
