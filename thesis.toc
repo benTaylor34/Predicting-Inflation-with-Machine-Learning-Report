@@ -65,10 +65,11 @@
 \contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{33}{subsection.4.6.3}%
 \contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{34}{subsection.4.6.4}%
 \contentsline {subsubsection}{Ensuring the Models Do Not Over Train}{35}{section*.15}%
-\contentsline {chapter}{\numberline {5}Results and Evaluation}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The Models'Results}{38}{section.5.1}%
-\contentsline {subsubsection}{Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{38}{section*.16}%
-\contentsline {subsubsection}{LSTM Network Model Predictions}{39}{section*.17}%
-\contentsline {subsubsection}{Aritficial Neural Network Predictions}{40}{section*.18}%
-\contentsline {subsubsection}{Training and Testing the Models on the Entire Data vs on a Subset}{41}{section*.19}%
-\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
+\contentsline {section}{\numberline {4.7}Final User Friendly Model Implementation}{37}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Results and Evaluation}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Results From the Univariate Implementation}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Multivariate Models' Results}{40}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{40}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}LSTM Network Model Predictions}{42}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Aritficial Neural Network Predictions}{43}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}%

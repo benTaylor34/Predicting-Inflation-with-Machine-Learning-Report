@@ -77,7 +77,8 @@ It is common practice to split a dataset into training and testing splits.
 The training split is then used for training the machine learning model and the testing split is used for testing the model's performance on unseen data.
 If the model was tested on data it had already been trained on it would become difficult to evaluate the model's generalization (its ability to perform on new/unseen data).
 The difficulty in deciding the size of the training and testing splits lies in the fact that too small a training split and our model may not perform well but too small a testing split and our performance metrics will have a greater variance. 
-The project dataset was split into 80\% training data and 20\% as this is a common split and the models will not utilize a validation set.
+The project dataset was split into 70\% training data and 30\% as this is a common split.
+The models will not utilize a validation set.
 As the dataset is made up of time series data, splitting the data carelessly can lead to suboptimal results.
 This is because time series data often has temporal dependencies.
 Temporal dependency is when data contains stronger associations between events that happened within the same time period.
@@ -283,8 +284,8 @@ The ideal values for each metric are MAE=0, RMSE=0, MAPE=0, R-squared=1.
     Linear Regression              & 0.1526 & 0.2611 & 9188948002912 & -4.4515   \\ \hline
     Random Forest Regression       & 0.1040 & 0.1272 & 1949910168334 & -0.2941   \\ \hline
     Support Vector Regression      & 0.1537 & 0.1784 & 2210975015699 & -1.5471   \\ \hline
-    Long Short-Term Memory         & 0.0288 & 0.0358 & 2053180149089 & 0.1630    \\ \hline
-    Artificial Neural Network      & 0.0146 & 0.0191 & 1554485762650 & 0.9741    \\ \hline
+    Long Short-Term Memory         & 0.0504 & 0.0642 & 5815110419921 & 0.7082    \\ \hline
+    Artificial Neural Network      & 0.0225 & 0.0304 & 4617012820526 & 0.9207    \\ \hline
     \end{tabular}
 \end{table}
 
@@ -311,6 +312,7 @@ Rather, the R-squared metric produces a negative value when the model's fit is w
 Another part of quality assurance in machine learning is ensuring the models do not overtrain.
 Overtraining is when a model learns the training set so well that it impacts the model's overall generalisation.
 This is obviously negative, as the model's job is not to predict data it has already been given, but rather to predict data it has never seen before.
+Deciding the number of epochs to train the model on requires a balance between a high number of epochs which can produce better results but will take more processing time and potentially cause overtraining.
 During the implementation of the models, a few methods were used to ensure that overtraining was not happening.
 The first method was producing a loss graph that tracks the loss value over the number of epochs.
 The loss should gradually fall over time, however, if the loss begins to rise it can be an indication of overtraining.
@@ -341,20 +343,30 @@ This is possibly because the final portion of the training data has much finer i
 The model is likely struggling with the change in momentum between the highly volatile first portion and the smaller changes in the second portion of the data.
 However, as the model does not seem to be able to predict the training data with nearly 100\% accuracy, then it is further indication that the model is unlikely to have overtrained.
 
-% \section{Final User Friendly Model Implementation}
-% Although further comparisons and evaluation will be completed, based on the regression metrics taken, it looks like the artificial neural network produces the best results for predicting inflation.
-% As such a more user-friendly implementation was created using this model.
-% The implementation consists of a checkbox list of the dataset's features.
-% %The list of selected features is output to the user.
-% These features can be selected and then a model will be trained and tested using the selected features.
+Likely due to the complexity of the data, the models could be run for a relatively large number of epochs without overtraining.
+Overtraining began occuring around 300 epochs, furthermore training the models for this many epochs became increasingly time consuming whilst using the grid method for hyperparameter optimisation.
+Ultimately, the models were each trained for around 100 epochs as this seemed to be the sweet spot between saving time and producing results that are towards the higher end of what the model is capable of.
 
-%%talk about the feature selection model
+\section{Final User Friendly Model Implementation}
+Although further comparisons and evaluation will be completed, based on the regression metrics taken the artificial neural network produced the best results for predicting inflation.
+As such a more user-friendly implementation was created using this model.
+The implementation consists of a checkbox list of the dataset's features.
+These features can be selected and then a model will be trained and tested using the selected features.
+Additionally, the number of months the X data is shifted from the target value can be altered using a slider.
+If the slider is set to 12 then the dataset will be aligned so that the X data is predicting the target values 12 months in the future.
+This implementation allows for more flexibility in producing predictions, however, a large majority of the predictions will be worse than the default settings of the model.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{skeleton.png}
+    \caption[A Screen Shot of a Section of the Input Screen for the Adjustable Model.]{A Screen Shot of a Section of the Input Screen for the Adjustable Model.}
+    \label{fig:skeleton}
+\end{figure}
+Figure \ref{fig:skeleton} shows part of the input section of the adjustable model.
+After running these inputs the model will output a graph of the predicted values of inflation compared to the actual values along with a loss graph from the model's training.
 %show screen shots
 
 
 % %TODO
-% - talk about overfitting/training, how many epochs used and how we know it wasnt overtrianed.
-% - talk about the whole set fs the set without hte first 150 points
 % - compare the results of each model
 % - which was best, which was worst
 % - is this the same as was predicted?

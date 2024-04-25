@@ -296,11 +296,35 @@ INPUT .\images\nntraining.png
 INPUT .\images\nntraining.png
 INPUT .\images\nntraining.png
 INPUT .\images\nntraining.png
+INPUT .\images\skeleton.png
+INPUT .\images\skeleton.png
+INPUT .\images\skeleton.png
+INPUT .\images\skeleton.png
+INPUT .\images\skeleton.png
+INPUT .\images\skeleton.png
 INPUT .\Results and Evaluation.tex
 INPUT .\Results and Evaluation.tex
 INPUT .\Results and Evaluation.tex
 INPUT .\Results and Evaluation.tex
 INPUT Results and Evaluation.tex
+INPUT .\images\LinearRegUni.png
+INPUT .\images\LinearRegUni.png
+INPUT .\images\LinearRegUni.png
+INPUT .\images\LinearRegUni.png
+INPUT .\images\LinearRegUni.png
+INPUT .\images\LinearRegUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\RandomForestUni.png
+INPUT .\images\SVRuni.png
+INPUT .\images\SVRuni.png
+INPUT .\images\SVRuni.png
+INPUT .\images\SVRuni.png
+INPUT .\images\SVRuni.png
+INPUT .\images\SVRuni.png
 INPUT .\images\threemodelsres.png
 INPUT .\images\threemodelsres.png
 INPUT .\images\threemodelsres.png
@@ -331,6 +355,12 @@ INPUT .\images\ann150.png
 INPUT .\images\ann150.png
 INPUT .\images\ann150.png
 INPUT .\images\ann150.png
+INPUT .\images\annvslstm.png
+INPUT .\images\annvslstm.png
+INPUT .\images\annvslstm.png
+INPUT .\images\annvslstm.png
+INPUT .\images\annvslstm.png
+INPUT .\images\annvslstm.png
 INPUT .\Thesis.bbl
 INPUT .\Thesis.bbl
 INPUT Thesis.bbl
