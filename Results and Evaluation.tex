@@ -144,21 +144,72 @@ Finally, there was no obvious indication in the graph comparison between inflati
 A regime change would have been represented in dips or spikes in inflation that were not represented in the LSTM's results. 
 So it is unlikely that the sole reason for poor performance from the LSTM is due to outside features.
 
-Another explanation is that the problem of forecasting inflation is less sequential than it was initially thought to be.
+Another explanation is that the problem of forecasting inflation may be less sequential than it was initially thought to be.
 LSTMs are made to forecast sequential data and time series data, but what if the value of inflation does not rely heavily on past values?
-It may seem a strange hypothesis but it could potentially mean that each value of inflation is almost independent of the last value within reason.
-LSTMs are a popular choice of recurrent neural network because of their ability to recognise long-term dependencies, but if inflation's value does not rely heavily on long-term temporal dependencies then this ability will not be useful.
-An LSTM's recurrent nature can impede its performance if the target does not show any patterns relating to long-term dependencies.
+It may seem a strange hypothesis but it could potentially mean that each value of inflation is independent of the past values, within reason.
+LSTMs are a popular choice for a recurrent neural network because of their ability to recognise long-term dependencies, but if inflation's value does not rely heavily on long-term temporal dependencies then this ability will not be useful.
+Furthermore, an LSTM's recurrent nature can impede its performance if the target does not show any patterns relating to long-term dependencies.
 LSTMs take longer to train than standard feedforward networks and require more computational power due to their recurrent nature.
-Using non-sequential data on an LSTM may also hinder its predictive ability as LSTMs assume long-term relationships exist in the data so the model will be looking for relationships that do not exist.
+Using non-sequential data on an LSTM may also hinder its predictive ability as LSTMs assume long-term relationships exist in the data causing the model to look for relationships that do not exist.
 
-Sirignano and Cont solve all of the performance problems of their LSTM with one solution: lots of data.
+Sirignano and Cont solved all of the performance problems of their LSTM with one solution: lots of data.
+A quote from their paper states: "The resulting LSTM network involves up to hundreds of thousands of parameters... ...it is huge compared to econometric models traditionally used in finance"\cite{sirignano2018universal}.
+In comparison the LSTM implemented in this project involved a mere 15000 total parameters, this massive disparity could be the reason the LSTM in this project did not perform as well.
+It seems that for an LSTM to perform to the best of its ability a large amount of data is needed.
+More data means more long-term relationships and more long-term relationships means better performance from recurrent neural networks.
+Thus, standard feedforward neural networks may be better suited for smaller datasets as the temporal relationships are less prominent in a limited dataset.
 
+\section{Technical Difficulties}
+From the beginning to the end of this project, constant hurdles were faced and overcome.
+This section will discuss some of the technical difficulties presented by the task of 'Predicting Inflation with Machine Learning'.
+
+\subsubsection{Difficulties in the Literature Review}
+The literature review presented several unique difficulties.
+Most of all was the sheer amount of literature available.
+The variety and contents of the research both past and present are seemingly insurmountable.
+This posed the age-old question of where to start.
+Survey papers were a blessing by providing the results of several papers compiled into one.
+Thanks to the obvious monetary incentive of being able to predict financial time series like stocks there was a plethora of papers available covering topics not dissimilar to this project.
+However, there was a rather distinct lack of crossover between machine learning and inflation forecasting.
+This could be possibly because it is the job of national banks to monitor inflation and they are often large enough and have enough resources available to conduct in-house research.
+
+Reviewing literature ultimately became a constant throughout the project allowing for changes and improvements to be made once new information came to light.
+If this project were to be completed again it would be a much smoother process purely because of the literature that has already been read both in and out of this report.
+
+\subsubsection{Difficulties in the Design}
+The design chapter posed challenges of its own, chief of which was data selection and preprocessing.
+The choice was made to include data selection and preprocessing in the design section as implementation of the models could not be started without an already suitable dataset.
+Data selection was particularly difficult as inflation is commonly collected as an annual indicator and quarterly at best.
+This would not be enough data samples to adequately train a machine-learning model.
+Go to dataset sites like Kaggle provided no solution to this problem.
+Even both the Bank of England and the World Bank did not possess adequate data in this regard or at least it was not available on their websites or as part of their online databases.
+For a long period, it seemed like the project was doomed to poor data and poor data produces poor models. 
+Eventually, OECD's CPI data was found which was collected monthly.
+Although, this too was not as straightforward as it should have been as not only did OECD not store its CPI data with the rest of its country indicators but OECD also did not store its publicly available databases in a tabular format.
+This meant that it was necessary to undergo the painstaking task of hundreds of samples of data into an admissible format.
+Despite the stress of having to navigate the websites of multiple million-dollar institutions that seemed to be purposefully built like mazes created to withhold information, the best that could be found was data collected monthly.
+This meant that there were only a few hundred data samples available.
+To add insult to injury, a large portion of CPI data (the first available 10 years) was disproportionately large: it was an outlier.
+As such, although removing it increased the performance of the models, it left the data set with a minor 500+ samples: likely too few to produce the best possible results.
+Fortunately, despite the undersized dataset, a few of the models were still able to produce passable predictions.
+If there was only one thing that could be improved about the project it would be the size of the dataset.
+
+\subsubsection{Difficulties in the Implementation}
+The issues encountered with the sample size naturally followed through into the implementation process, contributing to subpar results from the models compared to if they had been trained on more samples.
+The limited sample size meant that there was a limited amount of testing data available as the models required a minimum amount of samples for training.
+
+% Implementation difficulties:
+% - maintaining the temporal dependencies (several errors encountered from attempting to shift the data) (shuffling the data did not work)
+% - implementing 5 models at once
+% - run time of the models (especially during hyperparameter optimisation)
+
+% - waht problems were faced? how were they overcome?
+% - what would you do if u had more time/ next time
+% - what would you do differently
+% - what have you learnt and experienced
 
 
 % %TODO
-% - continue writing why the ann was the best. How is it better than an lstm?
 % - is this the same as what was predicted
 % - what could be improved next time?
-% - granger test function using pseudocode/algorithm in design.tex
 
