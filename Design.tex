@@ -10,7 +10,7 @@ These four steps can be iterated through as seen in figure \ref{fig:machineLearn
     \label{fig:machineLearningDesignPipeline}
 \end{figure}
 This is the project flow that will be followed for this project and throughout this design chapter.
-
+ 
 \section{Project Setup}
 The project setup step of Heung's design flow mainly focuses on outlining the details of the project.
 Examples of these details are the projects: goals, user experience, evaluation, personalization, and constraints.
@@ -26,9 +26,10 @@ By making these predictions it will prevent additional time from being wasted on
 This does not mean that these models should not be implemented properly but rather it means that the limited time for the implementation of the project should focus on the models with the best potential to predict inflation.
 Although all the models that will be implemented should be able to predict inflation to some degree, certain models have a higher likelihood of better performance.
 The models that are predicted to have the best performance are the LSTM and the FNN.
-This is due to their increased complexity and the fact that they can be modified more easily, giving more control over the architecture of the model.
+This is because of their increased complexity and the fact that they can be modified more easily, giving more control over the architecture of the model.
+Of these two models, the LSTM is predicted to perform the best due to the fact it can memorise previous data which should help the LSTM to better analyse the patterns of a sequential time series such as inflation.
 The models that are predicted to perform worse are the linear regression model, the random forest model, and the support vector regression model.
-This is due to their simplicity and the fact that inflation is a complex variable to predict and so is likely to require more complex models to create an accurate prediction.
+This is in view of their simplicity and the fact that inflation is a complex variable to predict and so is likely to require more complex models to create an accurate prediction.
 This means that throughout the design and implementation, more time will be allocated to tweaking and improving the performance of the LSTM and FNN models as they are predicted to have a higher potential.
 \subsection{Evaluation}
 Evaluation outlines how the system's performance shall be evaluated: what metrics shall be used, what visualisations shall be produced, and so on.

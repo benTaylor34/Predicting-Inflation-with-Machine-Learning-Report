@@ -2,7 +2,6 @@
 This chapter covers the overall evaluation of the products developed.
 This includes a comparison and evaluation of the results produced by the models as well as a reflection of what could be done differently if the project were to start over.
 
-
 \section{Results From the Univariate Implementation}
 The Univariate implementation was only implemented on linear regression, random forest regression, and support vector regression.
 This was because it was unlikely for the results of the univariate analysis to be of a high standard due to the complexity of inflation as such it was deemed unnecessary to implement any more models.
@@ -124,7 +123,17 @@ A model that updates its parameters more frequently is likely to perform well on
 Therefore, the fact that the smallest batch size produced the best results is not surprising as the data the model is training on likely contains many such relationships.\\
 
 \subsubsection{Recurrent Neural Networks vs None Recurrent Neural Networks}
-
+The previously mentioned factors still do not explain why the feedforward network produced superior results to the LSTM.
+During the 'Expected Model Performance' section of this report, the LSTM had been predicted to produce the best results.
+This prediction was made on the basis that an LSTM has the ability to retain historical data and use it in conjunction with present data in order to tune its parameters.
+Having this ability should in theory make the LSTM better suited for utilising the sequential time series data that made up the dataset for this project.
+However, as shown in the results of both the metrics and graphs presented, the LSTM performed worse than a non-recurrent network: the feedforward neural network.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{annvslstm.png}
+    \caption[A Comparison of the LSTM and FNN Predictions.]{A Comparison of the LSTM and FNN Predictions.}
+    \label{fig:annvslstm}
+\end{figure} 
 
 
 % %TODO
@@ -132,9 +141,3 @@ Therefore, the fact that the smallest batch size produced the best results is no
 % - is this the same as what was predicted
 % - what could be improved next time?
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth]{annvslstm.png}
-    \caption[A Comparison of the LSTM and FNN Predictions.]{A Comparison of the LSTM and FNN Predictions.}
-    \label{fig:annvslstm}
-\end{figure} 

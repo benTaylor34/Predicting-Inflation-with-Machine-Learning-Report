@@ -104,7 +104,9 @@ Although the purpose of predicting inflation is to also be able to foresee such 
         \label{fig:limitedCPI}
     \end{minipage}
     \caption[History of CPI vs History of CPI Excluding the First 150 Datapoints.]{History of CPI vs History of CPI Excluding the First 150 Datapoints.}
+    \label{fig:totalCPIvsLimitedCPI}
 \end{figure}
+The graphs in figure \ref{fig:totalCPIvsLimitedCPI}  
 As such, after training and testing the models on the entire dataset and comparing the results to those of models trained on a subset of the data, the decision was made to remove the first 150 data points from the dataset.
 This would remove the large outlying period of the 70s while still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
 Removing the first 150 data points reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
@@ -320,11 +322,11 @@ The loss should gradually fall over time, however, if the loss begins to rise it
 %graphs
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{annlossboth.png}
+    \includegraphics[width=0.8\textwidth]{annloss.png}
     \caption[FNN Model Loss Over Time (epochs).]{FNN Model Loss Over Time (epochs).}
-    \label{fig:annlossboth}
+    \label{fig:annloss}
 \end{figure}
-By observing \ref{fig:annlossboth} it can be seen that the loss plateaus after 50 to 60 epochs.
+By observing \ref{fig:annloss} it can be seen that the loss plateaus after 50 to 60 epochs.
 This means that the model could be trained for much fewer epochs while still producing similar results and saving time.
 After the loss plateaus, at no point does it begin to rise, therefore we can assume that the model has not overtrained.
 
