@@ -259,4 +259,8 @@ J.~Brownlee, ``{H}ow to {C}hoose an {A}ctivation {F}unction for {D}eep
 D.~Masters and C.~Luschi, ``Revisiting small batch training for deep neural
   networks,'' 2018.
 
+\bibitem{sirignano2018universal}
+J.~Sirignano and R.~Cont, ``Universal features of price formation in financial
+  markets: perspectives from deep learning,'' 2018.
+
 \end{thebibliography}

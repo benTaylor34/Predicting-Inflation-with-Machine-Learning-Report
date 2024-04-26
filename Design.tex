@@ -15,10 +15,12 @@ This is the project flow that will be followed for this project and throughout t
 The project setup step of Heung's design flow mainly focuses on outlining the details of the project.
 Examples of these details are the projects: goals, user experience, evaluation, personalization, and constraints.
 This report's project setup shall focus mainly on the goals, evaluation, and constraints sections as user experience and personalization are not key aspects of the project.
+
 \subsection{Goals}
 As the title of the project outlines, the goal of the project is to predict inflation using machine learning.
 This project will evaluate the use of various machine learning methods and assess their ability to predict inflation.
 Further aims and objectives are outlined in Chapter 1. Introduction.
+
 \subsection{Expected Model Performance}
 As multiple models will be implemented in this project, it is unlikely that all models will perform to the same ability.
 Thus it is important to have a rough prediction as to which models will perform better or worse.
@@ -31,6 +33,7 @@ Of these two models, the LSTM is predicted to perform the best due to the fact i
 The models that are predicted to perform worse are the linear regression model, the random forest model, and the support vector regression model.
 This is in view of their simplicity and the fact that inflation is a complex variable to predict and so is likely to require more complex models to create an accurate prediction.
 This means that throughout the design and implementation, more time will be allocated to tweaking and improving the performance of the LSTM and FNN models as they are predicted to have a higher potential.
+
 \subsection{Evaluation}
 Evaluation outlines how the system's performance shall be evaluated: what metrics shall be used, what visualisations shall be produced, and so on.
 The models created in this project will be regression models attempting to predict an exact value of inflation.
@@ -41,6 +44,7 @@ As each of these metrics is straightforward to implement, they will all be used 
 Furthermore, visualisations displaying each model's predictions alongside the values they were attempting to predict will be produced.
 This will aid the view in understanding the model's effectiveness beyond numerical metrics.
 Where appropriate, certain models should produce loss functions as these will be able to guide hyperparameter optimisation, such as selecting the correct number of epochs to train a model.
+
 \subsection{Constraints}
 The Constraints of a project can follow two veins: performance constraints and project constraints.
 Performance constraints address how a project must produce its results. 
@@ -62,6 +66,7 @@ These factors mean that given the task of predicting inflation with machine lear
 
 \section{Data pipeline}
 The data pipeline section of designing machine learning algorithms deals with the selection and preprocessing of data.
+
 \subsection{The Systems Input and Output}
 One of the first questions that needs to be addressed is: "What is the system producing and from what information are these predictions being produced?"
 The input is real-world historical economic data relating to UK inflation. 
@@ -92,6 +97,7 @@ The World Bank is known for reliable and accurate data which should avoid issues
 However, the World Bank sourced a majority of its indicators annually dating back to the 1960s meaning that there would only be around 60 rows of data up to the present day.
 Thus, although the set had a large number of interesting features, the number of data points was insufficient for a machine-learning model.
 Additionally, due to the large number of features (over 1400), it would need a sufficient amount of cleaning/preprocessing in order to remove irrelevant features.
+
 \subsection{The Final Dataset}
 Due to the issues encountered with the other datasets, the OECD dataset was selected for use alongside monthly CPI data sourced from the World Bank.
 The first main benefit of the OECD dataset is that the data is taken monthly so there are a lot more data points than datasets that collect data annually.
@@ -129,13 +135,13 @@ Pearson correlation attempts to draw a line of best fit between two features, me
 As the relationship between inflation and its causes is extremely complex, with many different factors contributing to the value of inflation in varying amounts, it is unlikely that inflation will have a strong linear correlation with the features that contribute to it.
 So despite the fact that the results of the heatmap were not ideal, this does not mean that the features are inappropriate to use in our models.
 
-
 \subsection{Data Pre-processing and Transformation}
 Often, datasets have several outstanding issues or properties that make them imperfect for use in a machine-learning model.
 Data pre-processing often includes steps such as data cleaning (handling outliers, noise, or missing values) and data integration (combining data from multiple sources). 
 Data transformation is the task of molding the data to an appropriate size and dimensionality.
 Both of these processes are to create a dataset that is formatted in a manner that suits our models and objectives.
 Poorly processed data can be difficult for both machines and humans to use and can lead to poor results. 
+
 \subsubsection{Issues With The OECD Dataset}
 There were some outstanding issues with the original dataset taken from OECD and thus several steps were taken to clean the data.
 These issues included:
@@ -149,6 +155,7 @@ These issues included:
 Any data points that fell under these issues were removed/cleaned and all null values were replaced with zeros to improve readability.
 
 Finally, a Granger causality test was carried out on the data to gather a better understanding of our data and its correlation to the target feature (CPI).
+
 \subsubsection{Granger Causality}
 Granger causality is a statistical concept in economics used to show if time series A is useful at forecasting time series B.
 Clive Granger originally proposed the test in 1969 in the article "Investigating Causal Relations by Econometric Models and Cross-spectral Methods\cite{GCTest}.
@@ -157,6 +164,7 @@ Additionally, the test only provides information about forecasting ability and n
 Another issue with the use of the Granger test in the context of inflation is that the test works best on stationary data.
 Whether inflation is best treated as stationary or non-stationary data is currently inconclusive\cite{inflationStationaryOrNot}.
 But for our purposes, these limitations are fine as we only want to understand an indication of how useful the data will be for inflation forecasting.
+
 \subsubsection{Granger Testing The Data}
 With two indicators X and Y, X causes Y if a series of tests on lagged values of X produce a p-value of less than 0.05.
 The closer the p-value is to zero the more likely it is for X to granger cause Y.
@@ -171,13 +179,15 @@ This indicates that almost half of the features have the potential to predict CP
 This, however, does not mean that the 9 features found to Granger Cause CPI definitely cause inflation as the Granger Causality test is only a measure of the potential of one value to cause another.
 Furthermore, just because a value does not Granger Cause inflation does not mean that the feature is not useful in predicting inflation. 
 We now have a better understanding of the potential our dataset has to predict inflation. 
-%%\begin{figure}[H]
-%%    \centering
-%%    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
-%%    \caption[The function written to Granger test the data.]{The function written to Granger test the data.}
-%%    \label{fig:GrangerTestFunction}
-%%\end{figure}
+% \begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
+%    \caption[The function written to Granger test the data.]{The function written to Granger test the data.}
+%    \label{fig:GrangerTestFunction}
+% \end{figure}
+
 \section{Modelling and Training}
+
 \subsection{Model Selection}
 The models that will be compared for their ability to predict inflation are a random forest model, a support vector regression model, a linear regression model, a long short-term memory (LSTM) model, and a feedforward neural network (FNN) model.
 Most of the models were discussed during the literature review and will be implemented due to their common use in similar regression models.
@@ -192,12 +202,14 @@ As the values of inflation are time series data, an LSTM could potentially provi
 \\Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
 Implementing a model through a high-level library lets the user create an already well-documented and tested model with only a few lines of code.
 This saves both time and resources (as the model implemented from the library is likely to have been optimised) while also providing additional support, if necessary, from the community and documentation.
+
 \subsection{Model Training}
 The models will be created using Python and several of its supported libraries and written in a Jupyter Notebook.
 The reason for using a Jupyter Notebook is that the cell structure allows for the steps to be run separately and the results to be displayed in real time without the entire file being run.
 This makes experimenting with hyperparameters and training models much more convenient.
 As the results of each cell are displayed separately this also improves the ability to quickly create and display visualisations through tools such as Matplotlib \cite{Hunter:2007}.
 Jupyter also supports multiple languages and libraries enabling users to work in the preferred environment.
+
 \section{Serving}
 Serving is the process in which the models and their results are presented to the end user.
 As this is an academic project this report will act as the presentation method.

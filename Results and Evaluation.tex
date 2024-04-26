@@ -134,10 +134,31 @@ However, as shown in the results of both the metrics and graphs presented, the L
     \caption[A Comparison of the LSTM and FNN Predictions.]{A Comparison of the LSTM and FNN Predictions.}
     \label{fig:annvslstm}
 \end{figure} 
+One explanation for the poor performance of the recurrent neural network is covered in a quote from Justin Sirignano and Rama Cont, which states:
+"financial data can be 'non-stationary' and prone to regime changes which may render older data less relevant for prediction"\cite{sirignano2018universal}.
+This means that outside factors can have an effect on the value of financial data.
+In the context of this project, this could mean that outside variables that were not included in the feature set impacted inflation which would lead the LSTM to struggle in predicting inflation's value.
+However, if this was the case then the feedforward network should have struggled to form accurate predictions in certain areas as well.
+Furthermore, the features in the dataset cover a wide range of macroeconomic indicators that should exhibit changes in the case of an outside event occurring.
+Finally, there was no obvious indication in the graph comparison between inflation and the LSTM's results that a regime change had taken place.
+A regime change would have been represented in dips or spikes in inflation that were not represented in the LSTM's results. 
+So it is unlikely that the sole reason for poor performance from the LSTM is due to outside features.
+
+Another explanation is that the problem of forecasting inflation is less sequential than it was initially thought to be.
+LSTMs are made to forecast sequential data and time series data, but what if the value of inflation does not rely heavily on past values?
+It may seem a strange hypothesis but it could potentially mean that each value of inflation is almost independent of the last value within reason.
+LSTMs are a popular choice of recurrent neural network because of their ability to recognise long-term dependencies, but if inflation's value does not rely heavily on long-term temporal dependencies then this ability will not be useful.
+An LSTM's recurrent nature can impede its performance if the target does not show any patterns relating to long-term dependencies.
+LSTMs take longer to train than standard feedforward networks and require more computational power due to their recurrent nature.
+Using non-sequential data on an LSTM may also hinder its predictive ability as LSTMs assume long-term relationships exist in the data so the model will be looking for relationships that do not exist.
+
+Sirignano and Cont solve all of the performance problems of their LSTM with one solution: lots of data.
+
 
 
 % %TODO
 % - continue writing why the ann was the best. How is it better than an lstm?
 % - is this the same as what was predicted
 % - what could be improved next time?
+% - granger test function using pseudocode/algorithm in design.tex
 
