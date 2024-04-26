@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Machine Learning Models}{7}{subsection.2.3.2}%
 \contentsline {subsubsection}{Artificial Neural Networks}{8}{section*.7}%
 \contentsline {subsubsection}{Support Vector Regression}{10}{section*.8}%
-\contentsline {subsubsection}{Random Forest}{10}{section*.9}%
+\contentsline {subsubsection}{Random Forest}{11}{section*.9}%
 \contentsline {subsection}{\numberline {2.3.3}Regression Metrics and Model Evaluation}{11}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Summary and Conclusion}{12}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Design}{13}{chapter.3}%
@@ -56,7 +56,7 @@
 \contentsline {subsection}{\numberline {4.5.1}The Features and Dataset}{28}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{28}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Model Architecture}{28}{subsection.4.5.3}%
-\contentsline {subsubsection}{Aritficial Neural Network Model Architecture}{29}{section*.13}%
+\contentsline {subsubsection}{Feedforward Neural Network Model Architecture}{29}{section*.13}%
 \contentsline {subsubsection}{LSTM Model Architecture}{30}{section*.14}%
 \contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{32}{subsection.4.5.4}%
 \contentsline {section}{\numberline {4.6}Testing and Model Results}{33}{section.4.6}%
@@ -71,8 +71,9 @@
 \contentsline {section}{\numberline {5.2}The Multivariate Models' Results}{40}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{40}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}LSTM Network Model Predictions}{42}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Aritficial Neural Network Predictions}{43}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Why the Artificial Neural Network Had the Most Success}{44}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.3}Feedforward Neural Network Predictions}{43}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Why the Feedforward Neural Network Had the Most Success}{44}{subsection.5.2.4}%
 \contentsline {subsubsection}{Removing Data Outliers}{45}{section*.16}%
 \contentsline {subsubsection}{Hyperparameter Tuning}{45}{section*.17}%
+\contentsline {subsubsection}{Recurrent Neural Networks vs None Recurrent Neural Networks}{46}{section*.18}%
 \contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}%

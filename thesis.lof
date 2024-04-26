@@ -12,16 +12,17 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces A Correlation Matrix for the Features in the Dataset.}}{19}{figure.3.3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces History of CPI vs History of CPI Excluding the First 150 Datapoints.}}{26}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces ANN Model Architecture Summary.}}{29}{figure.4.2}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces FNN Model Architecture Summary.}}{29}{figure.4.2}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces LSTM Model Architecture Summary.}}{31}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces ANN Model Loss Over Time (epochs).}}{36}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces ANN Model's Predictions of Seen Data.}}{37}{figure.4.5}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces FNN Model Loss Over Time (epochs).}}{36}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces FNN Model's Predictions of Seen Data.}}{37}{figure.4.5}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces A Screen Shot of a Section of the Input Screen for the Adjustable Model.}}{38}{figure.4.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Univariate Implementation of Linear Regression, Random Forest Regression, and Support Vector Regression.}}{40}{figure.5.1}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces A Comparison of the Predictions of Linear Regression, Random Forest Regression, and Support Vector Regression Models.}}{41}{figure.5.2}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Predictions from the LSTM Network Trained on the Entire Dataset.}}{42}{figure.5.3}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Predictions from the LSTM Network Trained on a subset of the Dataset.}}{43}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Predictions from the Artificial Neural-Network Trained on the Entire Dataset.}}{44}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Predictions from the Artificial Neural-Network Trained on a subset of the Dataset.}}{44}{figure.5.6}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Predictions from the Feedforward Neural-Network Trained on the Entire Dataset.}}{44}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Predictions from the Feedforward Neural-Network Trained on a subset of the Dataset.}}{44}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces A Comparison of the LSTM and FNN Predictions.}}{46}{figure.5.7}%
 \addvspace {10\p@ }

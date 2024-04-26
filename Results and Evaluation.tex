@@ -72,27 +72,27 @@ The graph produced by the LSTM that was trained on the subset of the dataset is 
 However, neither model produces close accurate predictions of the actual value of inflation.
 Both LSTMs can follow the trends of inflation (although somewhat delayed) but struggle to produce predictions that are of the correct magnitude.
 
-\subsection{Aritficial Neural Network Predictions}
-Of the models implemented, the custom ANN produced the best results.
+\subsection{Feedforward Neural Network Predictions}
+Of the models implemented, the FNN produced the best results.
 This model, like the others, was implemented on both the whole dataset and a subset of the original data that did not include values from before the 1980s.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{anntotal.png}
-    \caption[Predictions from the Artificial Neural-Network Trained on the Entire Dataset.]{Neural-Network Trained on the Entire Dataset.}
+    \caption[Predictions from the Feedforward Neural-Network Trained on the Entire Dataset.]{Neural-Network Trained on the Entire Dataset.}
     \label{fig:anntotal}
 \end{figure}
 The predictions from the model trained on the entire dataset start well but lose accuracy towards the end of the training set.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{ann150.png}
-    \caption[Predictions from the Artificial Neural-Network Trained on a subset of the Dataset.]{Neural-Network Trained on a subset of the Dataset.}
+    \caption[Predictions from the Feedforward Neural-Network Trained on a subset of the Dataset.]{Neural-Network Trained on a subset of the Dataset.}
     \label{fig:ann150}
 \end{figure} 
 
 Figures \ref{fig:anntotal} and \ref{fig:ann150} show the results produced by the model with the entire data vs the subset of the data respectively.
 The figures show how the models trained on the subset of the dataset produced more accurate predictions than the models trained on the entire dataset.
 
-\subsection{Why the Artificial Neural Network Had the Most Success}
+\subsection{Why the Feedforward Neural Network Had the Most Success}
 The artificial neural network shown in figure \ref{fig:ann150} produced the best results out of all of the models implemented to predict inflation.
 This is likely due to several factors.
 
@@ -103,7 +103,7 @@ Including these samples would have negatively affected the model's predictive ab
 This was confirmed by the fact that the other models also showed an increase in performance after the first 150 rows of data were removed.
 
 \subsubsection{Hyperparameter Tuning}
-Another reason for the ANN's success is that it was the most flexible of the models with the largest number of hyperparameters that could be adjusted.
+Another reason for the FNN's success is that it was the most flexible of the models with the largest number of hyperparameters that could be adjusted.
 The only other model that underwent similar hyperparameter tuning was the LSTM and interestingly the hyperparameters that were found to be optimal were similar for both models.  
 However, some of the hyperparameters found to be optimal by the grid search were somewhat unexpected.\\
 The model performed best with 128 nodes in the hidden layer, which was the highest option in the grid and higher than expected.
@@ -123,14 +123,18 @@ This can even be true for models trained using mini-batch sizes as small as 2.
 A model that updates its parameters more frequently is likely to perform well on data that has a lot of complex relationships.
 Therefore, the fact that the smallest batch size produced the best results is not surprising as the data the model is training on likely contains many such relationships.\\
 
+\subsubsection{Recurrent Neural Networks vs None Recurrent Neural Networks}
+
+
+
 % %TODO
 % - continue writing why the ann was the best. How is it better than an lstm?
 % - is this the same as what was predicted
 % - what could be improved next time?
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{annvslstm.png}
-%     \caption[A Comparison of the LSTM and ANN Predictions.]{A Comparison of the LSTM and ANN Predictions.}
-%     \label{fig:annvslstm}
-% \end{figure} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{annvslstm.png}
+    \caption[A Comparison of the LSTM and FNN Predictions.]{A Comparison of the LSTM and FNN Predictions.}
+    \label{fig:annvslstm}
+\end{figure} 

@@ -105,6 +105,18 @@ F.~Rosenblatt, ``The perceptron - a perceiving and recognizing automaton,''
   Tech. Rep. 85-460-1, Cornell Aeronautical Laboratory, Ithaca, New York,
   January 1957.
 
+\bibitem{Rumelhart1986-ok}
+D.~E. Rumelhart, G.~E. Hinton, and R.~J. Williams, ``Learning representations
+  by back-propagating errors,'' {\em Nature}, vol.~323, pp.~533--536, Oct.
+  1986.
+
+\bibitem{sak2014long}
+H.~Sak, A.~Senior, and F.~Beaufays, ``Long short-term memory based recurrent
+  neural network architectures for large vocabulary speech recognition,'' 2014.
+
+\bibitem{petneházi2019recurrent}
+G.~Petneházi, ``Recurrent neural networks for time series forecasting,'' 2019.
+
 \bibitem{ciaburro2018hand}
 G.~Ciaburro, V.~Ayyadevara, and A.~Perrier, {\em Hands-On Machine Learning on
   Google Cloud Platform: Implementing smart and efficient analytics using Cloud
@@ -178,6 +190,10 @@ D.~H.~. Wojciech W.~Charemza and P.~Burridge, ``Is inflation stationary?,''
 \bibitem{wooldridge2009introductory}
 J.~M. Wooldridge, {\em Introductory Econometrics: A Modern Approach}.
 \newblock ISE - International Student Edition, South-Western, 2009.
+
+\bibitem{Nicholson_2023}
+C.~V. Nicholson, ``A beginners guide to lstms and recurrent neural networks,''
+  2023.
 
 \bibitem{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,

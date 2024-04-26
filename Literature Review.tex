@@ -113,8 +113,21 @@ Naturally, the areas of literature that will be studied will be with this regres
 An artificial neural network is a machine learning model that is made up of an interconnected group of nodes (also known as neurons) organised into layers.
 The model's inspiration stems from how neurons in the human brain interact with one another.
 In 1957 Frank Rosenblatt invented the perceptron, one of if not the first implementations of an artificial neural network \cite{Rosenblatt_1957_6098}.
-\par
-ANNs are composed of 3 types of layers: the input, hidden, and output layers.
+
+There are many different types of ANNs.
+Two of the ANNs that commonly occur in the literature for predicting financial time series are feedforward neural networks (FNNS) and recurrent neural networks (RNNs).
+Feedforward neural networks and recurrent neural networks are differentiated by the direction through the network in which the data flows.
+
+In FNNs the data flow is unidirectional, this means that it flows forward through the network from one layer to the next.
+This was the first type of neural network introduced in 1958 by Frank Rosenblatt\cite{Rosenblatt_1957_6098}.
+In more recent times, a method called backpropagation\cite{Rumelhart1986-ok} has been introduced to help train feedforward networks.
+Backpropagation essentially works by sending the error from an output back through the network and optimising the weights and biases along the way.
+
+The data in RNNs can flow in a loop by using recurrent connections.
+This allows RNNs to keep an internal memory of past data that can affect future data and calculations.
+The ability to store past data makes RNNs useful for tasks involving sequential data such as speech recognition\cite{sak2014long} or time series analysis\cite{petneházi2019recurrent}.
+
+ANNs are composed of three types of layers: the input, hidden, and output layers.
 The input layer receives input data and passes it through to the first hidden layer.
 Hidden layers receive weighted inputs, perform an activation function on said input, and then pass the new data to the next layer.
 The output layer receives data from the final hidden layer and then produces the resulting prediction.
@@ -245,6 +258,6 @@ These formulas can be used to evaluate the predictive ability of a model.
 This literature review has covered a sample of the literature on machine learning methods, financial time series forecasting, and inflation.
 There is a multitude of literature available in these areas due to the potential monetary gain as well as the new and emerging technologies being explored in the fields.
 Therefore, it would be nearly impossible to extensively cover all of the articles relevant to this project.
-Instead, the main focus was on understanding the most common techniques used to predict FTS and which machine learning models are often applied.
+Instead, the main focus was on understanding the most common techniques used to predict financial time series and which machine learning models are often applied.
 Additionally, the literature review also covered the UK's relationship with inflation, who is tasked with controlling it, how they attempt to do so, as well as some of the factors contributing to it.\\
 The knowledge gained from completing the literature review will provide a strong backbone for solving the tasks presented in the implementation of the project going forward.

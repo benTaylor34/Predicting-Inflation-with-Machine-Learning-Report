@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis"] 1714079310 "Thesis.aux" "Thesis.bbl" "Thesis" 1714079578 0
-  "./mybib.bib" 1714077671 27756 dc7f6d60d6b339108c931c24d73c5dc3 ""
+["bibtex Thesis"] 1714133309 "Thesis.aux" "Thesis.bbl" "Thesis" 1714133418 0
+  "./mybib.bib" 1714132565 29811 dae2a49023ed5e21227b1b1e32dcaf0b ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Thesis.aux" 1714079577 19255 84e23b8bdbf5d55eb1bdebdd3cb88cff "pdflatex"
+  "Thesis.aux" 1714133417 19937 28d85cd98d564dd2b848394c22b0a941 "pdflatex"
   (generated)
   "Thesis.bbl"
   "Thesis.blg"
   (rewritten before read)
-["pdflatex"] 1714079574 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1714079578 0
+["pdflatex"] 1714133415 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1714133418 0
   "Abstract.tex" 1704811898 870 a1ddea8272baa0a8ffdbd05d0dfe9a9c ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702665882 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1702604695 14064 f3f25c56dec3a3862ffc6f64a9ebbed9 ""
@@ -114,17 +114,17 @@
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1686255640 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
-  "Design.tex" 1713962694 21805 8d667f36b0802761e0a3ec80c7bb9a89 ""
-  "Implementation and Testing.tex" 1714066362 34049 4f36fc468144d68141231ab81c4fd3d3 ""
+  "Design.tex" 1714132780 22040 a1c9de11b11b8d1f88e3e78c3f4086ad ""
+  "Implementation and Testing.tex" 1714133213 34132 b32ec1314a3695fc1a547c9c1d0ea48f ""
   "Introduction.tex" 1713979749 3523 67c06fd1684b6e2133491638c1c76100 ""
-  "Literature Review.tex" 1713982328 20682 9d99dabbd5752bb39c752149fbf111aa ""
-  "Results and Evaluation.tex" 1714079574 11714 04ce276140d77b99feeb248a6b577c97 ""
-  "Thesis.aux" 1714079577 19255 84e23b8bdbf5d55eb1bdebdd3cb88cff "pdflatex"
-  "Thesis.bbl" 1714079311 9876 755968c8b0ba9c9b8a67156eb7fdc735 "bibtex Thesis"
-  "Thesis.lof" 1714079577 2542 6dee1cf4e371b7ca2aadeeb43f6cee3b "pdflatex"
-  "Thesis.out" 1714079577 11196 75dd181a7d8d8e358f047b6d49148c13 "pdflatex"
+  "Literature Review.tex" 1714130741 21931 a3eade624bd89ce7d0c51fa24b6f7439 ""
+  "Results and Evaluation.tex" 1714133414 11782 e5c6a22382e3f3ad21153f13c66ee7bd ""
+  "Thesis.aux" 1714133417 19937 28d85cd98d564dd2b848394c22b0a941 "pdflatex"
+  "Thesis.bbl" 1714133309 10489 47faa265985f69190e0edf430545c4a1 "bibtex Thesis"
+  "Thesis.lof" 1714133417 2664 0eb516ef7a9d8fb9b5d9819205e5d9d1 "pdflatex"
+  "Thesis.out" 1714133417 11206 f3fcbd3400a4bd9cc3c464df5d1b38ec "pdflatex"
   "Thesis.tex" 1713975942 1206 3fb9a300e773058f63668b1b113c5412 ""
-  "Thesis.toc" 1714079577 6622 c5a0d7c6f875992f29ca86438d42a27b "pdflatex"
+  "Thesis.toc" 1714133417 6734 e3fbc7cb4150517e620894052d68d4f2 "pdflatex"
   "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" 1713975942 1206 3fb9a300e773058f63668b1b113c5412 ""
   "images/ANNSummary.png" 1713872807 21482 a1b74c065392f2c43833ef6cc1cb9be3 ""
   "images/CmnAcFc.png" 1713975647 72854 a3c12387d28402275b760d7f35ce11da ""
@@ -136,6 +136,7 @@
   "images/ann150.png" 1714066148 83157 8744ff2dfec6235dd3852c18aec565c7 ""
   "images/annlossboth.png" 1713955074 24114 56ce9667340633e62498084a03c42e1a ""
   "images/anntotal.png" 1714066141 94436 a27ef03d9bb9900e740acf33df96edea ""
+  "images/annvslstm.png" 1714065900 112516 29dc62b121ee425554491c0175460867 ""
   "images/articleGrowth.png" 1702500711 244954 e2db17ee82a14bb699108dfab2e437e2 ""
   "images/corr.png" 1713561957 365246 dcb2ca43ca697197982e241c16040dcb ""
   "images/hist.png" 1713562036 151313 a7a0911593465b7dab803b29d56de2f0 ""

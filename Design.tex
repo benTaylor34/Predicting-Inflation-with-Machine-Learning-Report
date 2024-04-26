@@ -1,7 +1,7 @@
 \chapter{Design}
 The design process for machine learning algorithms varies depending on the size, complexity, and use cases of the algorithm.
-According to Chip Huyen, author of the book Designing Machine Learning Systems, the machine learning project flow has four distinct steps.
-Project setup, data pipeline, modeling and training, and finally: serving.
+According to Chip Huyen, author of the book "Designing Machine Learning Systems", the machine learning project flow has four distinct steps:
+project setup, data pipeline, modeling and training, and finally: serving.
 These four steps can be iterated through as seen in figure \ref{fig:machineLearningDesignPipeline}.
 \begin{figure}[H]
     \centering
@@ -9,7 +9,7 @@ These four steps can be iterated through as seen in figure \ref{fig:machineLearn
     \caption[Machine Learning Design Pipeline by Chip Huyen]{Machine Learning Design Pipeline by Chip Huyen. \par \textit{Figure from https://huyenchip.com/machine-learning-systems-design/design-a-machine-learning-system.html}\cite{Huyen_2022}}
     \label{fig:machineLearningDesignPipeline}
 \end{figure}
-This is the project flow that will be followed throughout this design chapter.
+This is the project flow that will be followed for this project and throughout this design chapter.
 
 \section{Project Setup}
 The project setup step of Heung's design flow mainly focuses on outlining the details of the project.
@@ -25,11 +25,11 @@ Thus it is important to have a rough prediction as to which models will perform 
 By making these predictions it will prevent additional time from being wasted on optimizing or making changes to models that show less potential.
 This does not mean that these models should not be implemented properly but rather it means that the limited time for the implementation of the project should focus on the models with the best potential to predict inflation.
 Although all the models that will be implemented should be able to predict inflation to some degree, certain models have a higher likelihood of better performance.
-The models that are predicted to have the best performance are the LSTM and the ANN.
+The models that are predicted to have the best performance are the LSTM and the FNN.
 This is due to their increased complexity and the fact that they can be modified more easily, giving more control over the architecture of the model.
 The models that are predicted to perform worse are the linear regression model, the random forest model, and the support vector regression model.
 This is due to their simplicity and the fact that inflation is a complex variable to predict and so is likely to require more complex models to create an accurate prediction.
-This means that throughout the design and implementation, more time will be allocated to tweaking and improving the performance of the LSTM and ANN models as they are predicted to have a higher potential.
+This means that throughout the design and implementation, more time will be allocated to tweaking and improving the performance of the LSTM and FNN models as they are predicted to have a higher potential.
 \subsection{Evaluation}
 Evaluation outlines how the system's performance shall be evaluated: what metrics shall be used, what visualisations shall be produced, and so on.
 The models created in this project will be regression models attempting to predict an exact value of inflation.
@@ -178,14 +178,15 @@ We now have a better understanding of the potential our dataset has to predict i
 %%\end{figure}
 \section{Modelling and Training}
 \subsection{Model Selection}
-The models that will be compared for their ability to predict inflation are a Random forest model, a support vector regression model, a linear regression model, a long short-term memory model, and a custom neural network model
-Random forest regression, support vector regression, and artificial neural networks are all models that were selected through the literature review due to their common use in similar regression problems.
+The models that will be compared for their ability to predict inflation are a random forest model, a support vector regression model, a linear regression model, a long short-term memory (LSTM) model, and a feedforward neural network (FNN) model.
+Most of the models were discussed during the literature review and will be implemented due to their common use in similar regression models.
 \\Linear regression was added to the list of models to be implemented as it is an extremely simple model that focuses on plotting a single line of best fit through the data.
 Including linear regression will provide a comparison to the results of a simple model, as well as potentially indicate any unexpected linear relationships between inflation and any of the dataset's features.
-\\A long short-term memory network (LSTM) will also be implemented. 
+\\A long short-term memory network will also be implemented. 
 LSTMs are a type of recurrent neural network (RNN). 
-The architecture of RNNs enables them to preserve an internal memory state that helps them to model temporal dependencies in the data.
+As mentioned in the literature review, the architecture of RNNs enables them to preserve an internal memory state that helps them to model temporal dependencies in the data.
 This characteristic means that RNNs excel at processing sequential data such as time series data.
+The LSTM was selected as the RNN model that will be implemented as they are considered to be one of the most powerful implementations of an RNN and are used to find patterns in numerical sequence data\cite{Nicholson_2023}.
 As the values of inflation are time series data, an LSTM could potentially provide good results despite the seeming lack of literature relating LSTMs to economic time series prediction.
 \\Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
 Implementing a model through a high-level library lets the user create an already well-documented and tested model with only a few lines of code.
