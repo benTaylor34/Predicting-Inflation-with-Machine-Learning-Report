@@ -81,5 +81,8 @@
 \contentsline {subsubsection}{Difficulties in the Design}{48}{section*.20}%
 \contentsline {subsubsection}{Difficulties in the Implementation}{49}{section*.21}%
 \contentsline {chapter}{\numberline {6}Conclusion}{51}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Shortcomings and Future Improvements}{51}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Process Evaluation}{51}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.1}Evaluation Objectives}{51}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Process Evaluation}{52}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Shortcomings and Future Improvements}{52}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Looking Forwards}{53}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Final Thoughts and Reflections}{53}{section.6.4}%

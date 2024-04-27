@@ -202,8 +202,9 @@ Using a small testing set could cause performance estimates to be unreliable.
 Thankfully despite these issues, both the feedforward network and the LSTM were able to produce passable results.
 All of the models would have likely benefitted from being trained on a larger dataset.
 As inflation data and many other economic indicators are historical, they can only be collected so many times each year.
-This means that as the years progress more and more data will be produced but the rate of getting new data cannot be increased.
-As such, the issue of limited data for macroeconomic problems is likely to persist for a long time to come.
+This means that as the years progress more and more data will be produced but the rate of collecting new data cannot be increased.
+There is the potential for using tools like autoencoders to generate new data\cite{Bungaro2020} but this may cause models to produce unreliable results.
+As such, the issue of limited data for macroeconomic problems is likely to persist for a long time to come. 
 
 Another difficulty encountered during the implementation process was in attempting to maintain the temporal consistency of the data.
 As inflation is a time series, shuffling the data - as is common practice- during the training and testing split was not applicable.

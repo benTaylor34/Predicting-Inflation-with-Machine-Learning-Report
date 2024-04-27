@@ -263,4 +263,14 @@ D.~Masters and C.~Luschi, ``Revisiting small batch training for deep neural
 J.~Sirignano and R.~Cont, ``Universal features of price formation in financial
   markets: perspectives from deep learning,'' 2018.
 
+\bibitem{Bungaro2020}
+L.~Bungaro, ``How to generate new data in machine learning with vae
+  (variational autoencoder),'' Jul 2020.
+
+\bibitem{dawson2005projects}
+C.~Dawson, {\em Projects in Computing and Information Systems: A Student's
+  Guide}.
+\newblock Projects in Computing and Information Systems: A Student's Guide,
+  Addison-Wesley, 2005.
+
 \end{thebibliography}
