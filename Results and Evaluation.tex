@@ -196,12 +196,32 @@ If there was only one thing that could be improved about the project it would be
 
 \subsubsection{Difficulties in the Implementation}
 The issues encountered with the sample size naturally followed through into the implementation process, contributing to subpar results from the models compared to if they had been trained on more samples.
-The limited sample size meant that there was a limited amount of testing data available as the models required a minimum amount of samples for training.
+The small sample size meant that the training and testing set sizes were limited.
+A model trained on a smaller training set is likely to produce worse results than a model trained on lots of data.
+Using a small testing set could cause performance estimates to be unreliable.
+Thankfully despite these issues, both the feedforward network and the LSTM were able to produce passable results.
+All of the models would have likely benefitted from being trained on a larger dataset.
+As inflation data and many other economic indicators are historical, they can only be collected so many times each year.
+This means that as the years progress more and more data will be produced but the rate of getting new data cannot be increased.
+As such, the issue of limited data for macroeconomic problems is likely to persist for a long time to come.
 
-% Implementation difficulties:
-% - maintaining the temporal dependencies (several errors encountered from attempting to shift the data) (shuffling the data did not work)
-% - implementing 5 models at once
-% - run time of the models (especially during hyperparameter optimisation)
+Another difficulty encountered during the implementation process was in attempting to maintain the temporal consistency of the data.
+As inflation is a time series, shuffling the data - as is common practice- during the training and testing split was not applicable.
+Shuffling the data would have meant that the results produced are difficult to interpret and are likely not applicable for real-world use as inflation will always be a time series.
+Furthermore, several programming errors were encountered when trying to shift the data in order to maintain its time consistency.
+Data needed to be shifted as using values from the same year to forecast other values from that year would be fruitless.
+This is because OECD and many other institutions release all of the indicators simultaneously every month so the target value would already be available.
+As such the data had to be altered so that the models would use data from the previous year to predict the target values of the current year.
+The programming errors encountered when implementing this were eventually resolved however the solution involved resetting the index of the dataframes and dropping even more data.
+Thus the further into the future the user wishes to predict, the fewer samples will be available in the dataset.
+Predicting one year into the future did not cause much issue as only twelve samples had to be dropped (one for each month) yet this issue is still likely to reduce the performance of the models.
+
+The final issue that will be discussed regarding the implementation of this project is one that is encountered in almost every machine learning project: the runtime.
+This was especially prominent when utilising the grid search method for hyperparameter optimisation as it meant training and testing the models on every combination of hyperparameters in the given set.
+Using a smaller set of hyperparameters would reduce the wait time but it may also produce worse results if more optimal hyperparameters could have been found but were not included in the search.
+Once the optimal hyperparameters of each model were found they were fed directly to the models for training and testing moving forward in order to avoid using the grid search every time a model had to be run.
+Using a more powerful computer could help combat this issue or using an online service such as Google Collab that provides free access to graphics processing units (GPU) and tensor processing units (TPU) that aid in reducing the execution time of programs.
+
 
 % - waht problems were faced? how were they overcome?
 % - what would you do if u had more time/ next time

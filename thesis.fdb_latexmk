@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis"] 1714170918 "Thesis.aux" "Thesis.bbl" "Thesis" 1714171327 0
+["bibtex Thesis"] 1714213970 "Thesis.aux" "Thesis.bbl" "Thesis" 1714214847 0
   "./mybib.bib" 1714147902 30113 63ddbba415bbabd1cbbaa4d8d3b06495 ""
   "C:/Users/Ben/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Thesis.aux" 1714171326 20930 fa86b7afd9683813f75e766100599ccf "pdflatex"
+  "Thesis.aux" 1714214846 20930 ca90711004095a08e492fcb40064c876 "pdflatex"
   (generated)
   "Thesis.bbl"
   "Thesis.blg"
   (rewritten before read)
-["pdflatex"] 1714171323 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1714171327 0
+["pdflatex"] 1714214843 "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" "Thesis.pdf" "Thesis" 1714214847 0
   "Abstract.tex" 1704811898 870 a1ddea8272baa0a8ffdbd05d0dfe9a9c ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702665882 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Ben/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1702604695 14064 f3f25c56dec3a3862ffc6f64a9ebbed9 ""
@@ -119,13 +119,13 @@
   "Implementation and Testing.tex" 1714146836 34213 c51c9900d367b9cca1907cb856d47ac9 ""
   "Introduction.tex" 1713979749 3523 67c06fd1684b6e2133491638c1c76100 ""
   "Literature Review.tex" 1714130741 21931 a3eade624bd89ce7d0c51fa24b6f7439 ""
-  "Results and Evaluation.tex" 1714171323 20261 d24095330fcc3fb16cdd88fd6de4497f ""
-  "Thesis.aux" 1714171326 20930 fa86b7afd9683813f75e766100599ccf "pdflatex"
-  "Thesis.bbl" 1714170918 10658 a50be2e3a0bc9b099237dd5bba8306db "bibtex Thesis"
-  "Thesis.lof" 1714171326 2664 0eb516ef7a9d8fb9b5d9819205e5d9d1 "pdflatex"
-  "Thesis.out" 1714171326 11773 272d464dca1434d63e1347691aeb1f11 "pdflatex"
+  "Results and Evaluation.tex" 1714214841 23195 961d818d4eeb8a86899eb338fb86a5b6 ""
+  "Thesis.aux" 1714214846 20930 ca90711004095a08e492fcb40064c876 "pdflatex"
+  "Thesis.bbl" 1714213970 10658 a50be2e3a0bc9b099237dd5bba8306db "bibtex Thesis"
+  "Thesis.lof" 1714214846 2664 0eb516ef7a9d8fb9b5d9819205e5d9d1 "pdflatex"
+  "Thesis.out" 1714214846 11773 272d464dca1434d63e1347691aeb1f11 "pdflatex"
   "Thesis.tex" 1714142984 1204 a39c55bd49ef10e0b8086d4e6a1bcdaa ""
-  "Thesis.toc" 1714171326 7250 f1531dac4f18766a86c1eccd25441fc6 "pdflatex"
+  "Thesis.toc" 1714214846 7250 4c5104e20b7541c2f7a0b0f11518db55 "pdflatex"
   "c:/Users/Ben/OneDrive/Documents/GitHub/Predicting-Inflation-with-Machine-Learning-Report/Thesis.tex" 1714142984 1204 a39c55bd49ef10e0b8086d4e6a1bcdaa ""
   "images/ANNSummary.png" 1713872807 21482 a1b74c065392f2c43833ef6cc1cb9be3 ""
   "images/CmnAcFc.png" 1713975647 72854 a3c12387d28402275b760d7f35ce11da ""
