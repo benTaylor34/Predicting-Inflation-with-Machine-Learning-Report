@@ -69,7 +69,7 @@ The importance of normalisation is due to the fact that many of the features may
 By adjusting all of the features to range between the same values, no single feature will dominate and all features should contribute equally to the final result.
 Additionally, normalisation increases the speed at which gradient descent converges, which will decrease the runtime of the models.\cite{IoffeS15}
 Normalising the data is often done either in the range [0,1] or [-1,1].
-The dataset for this project was normalised between the range of [0,1] with the use of the MinMaxScaler from the sklearn library.
+The dataset for this project was normalised between the range of [0,1] with the use of the MinMaxScaler from the Sklearn library.
 There are several benefits to scaling to a small range such as reducing the impact of outliers and increasing the speed of the algorithms.\\
 
 \subsection{Splitting the Data into Training and Testing Splits}
@@ -83,7 +83,7 @@ As the dataset is made up of time series data, splitting the data carelessly can
 This is because time series data often has temporal dependencies.
 Temporal dependency is when data contains stronger associations between events that happened within the same time period.
 To preserve the temporal dependency of the data the dataset will not be shuffled (randomised) when it is split into the training and testing sets.
-The dataset was split using the "train\textunderscore test\textunderscore split" function from sklearn.
+The dataset was split using the "train\textunderscore test\textunderscore split" function from Sklearn.
 
 \subsection{Inflation's Historic Outliers}
 The history of inflation is riddled with outliers caused by unexpected or unprecedented events.
@@ -152,22 +152,23 @@ Therefore, as there is no indication as to whether or not any of the features ar
 
 \subsection{The Models Used for Multivariate Analysis}
 All five of the previously stated models (see 3.3.1 Model Selection) were implemented for multivariate analysis.
-Linear regression, random forest regression, and support vector regression were implemented with the help of the respective sklearn libraries.
-Long short-term memory network (LSTM) and the feedforward neural network (FNN) were implemented with the use of TensorFlow and Keras.
-The feedforward neural network, somewhat expectedly, produced the best predictions.
+Linear regression, random forest regression, and support vector regression were implemented with the help of the respective Sklearn libraries.
+The long short-term memory network (LSTM) and the feedforward neural network (FNN) were implemented with the use of TensorFlow and Keras.
+Of the models implemented, the feedforward neural network produced the best results.
 The results of each model will be explored further in the following chapter.
 
 \subsection{Model Architecture}
 The architecture of a model is the structure of the model including the types of layers, number of nodes, and connections between layers as well as the input and output of the model.
 This subsection will cover the architecture of the LSTM model and the feedforward neural network model.
 The linear regression, random forest regression, and support vector regression models will not be covered in this section as they are algorithm-based models. 
-The parameters used for these three models were sklearn's default recommended parameters outlined in the sklearn documentation.
+The parameters used for these three models were the default parameters outlined in the Sklearn documentation.
+
 \subsubsection{Feedforward Neural Network Model Architecture}
-An artificial neural network (ANN) is a machine learning model inspired by the human brain.
+An artificial neural network (ANN) is a machine-learning model inspired by the human brain.
 ANNs feed data through layers of interconnected artificial neurons (nodes) in order to compute complex problems.
 ANNs can vary in size and shape as well as the different types of nodes they contain.
-The feedforward neural network (FNN) was implemented as one type of ANN.
-After some research and experimentation with various structures, the structure shown in figure \ref{fig:ANNSummary} was implemented.
+
+After some research and experimentation with various structures, the structure shown in figure \ref{fig:ANNSummary} was implemented for the feedforward neural network.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{ANNSummary.png}
@@ -177,8 +178,8 @@ After some research and experimentation with various structures, the structure s
 Figure \ref{fig:ANNSummary} shows the structure of the FNN model, including each layer's output shape, and parameters.
 The layer column of the figure indicates which types of neural network layers were implemented.
 The output shape column states the shape of the data, this also indicates the number of nodes in a layer.
-After hyperparameter optimisation, it was found that for this particular model, sixteen nodes per layer produced the best results.
-The params column is the result of the inputs * weights + bias.
+Figure \ref{fig:ANNSummary} shows the model with 64 nodes per layer.
+The 'params' column is the result of the (inputs * weights) + bias.
 
 The structure of the FNN model contains three dense layers (an input layer, a hidden layer, and an output layer) each with a dropout layer in between.
 A dense layer is a layer where every neuron in the layer connects to every neuron in the previous layer.
@@ -189,15 +190,14 @@ These functions were selected based on the advice offered in the article 'How to
 The article states the most common activation function for hidden layers is the ReLU function due to being simple to implement and being less susceptible to vanishing gradient issues compared to other functions.
 The output layer uses a linear activation function.
 The linear activation function allows the model to produce an output that is a linear combination of its inputs.
-This does not introduce any additional non-linearity as the goal is to predict a continuous value so there is no need to apply constraints through another activation function.
+This does not introduce any additional non-linearity as the goal is to predict a continuous value so there is no need to apply constraints through the activation function.
 
-Dropout layers set the input values of some nodes in the layer to 0 at the specified dropout rate. 
+Dropout layers set the input values of a node in the layer to 0 at the specified dropout rate. 
 Setting a limited number of inputs to 0 or 'dropping' them prevents the model from overfitting (becoming too familiar with the training data and losing generalization).
 However, the dropout rate needs to be monitored as a dropout rate that is too high may lead to a model that trains poorly on the data.
 Dropout rates are only applied during the training process to prevent overfitting, they are not applied during the testing or prediction process.
-After hyperparameter optimisation, the most successful dropout rate was found to be 0.1 (or 10\%). 
 
-The final dense layer only contains an output shape of 1, this is the predicted value of inflation given the inputs.
+The final dense layer only contains an output shape of 1 this is the final output i.e. the predicted value of inflation given the inputs.
 
 \subsubsection{LSTM Model Architecture}
 An LSTM network is a type of recurrent neural network that is designed to excel in predicting sequential data (including time series data).
@@ -210,7 +210,7 @@ The LSTM for this project was implemented through the use of TensorFlow and Kera
 \end{figure}
 Figure \ref{fig:LSTMSummary} shows the structure of the LSTM model, including each layer's output shape, and parameters.
 The input shape of the LSTM differs from that of the FNN.
-This is because the FNN takes just one row of the X and y variables (X is the features being used to predict and y is the CPI value from the same time period of the given features).
+This is because the FNN takes just one row of the X and y variables (X is the features being used to predict the target and y is the CPI value target to predict).
 Whereas the LSTM model takes 12 consecutive rows of data, this is the equivalent of taking in a year's worth of data all at the same time.
 The reasoning for this is that the LSTM model contains hidden cells that store past values in order to predict future values.
 This should, in theory, improve the LSTM model's ability to predict sequential data.
@@ -222,7 +222,7 @@ The hidden state contains the memorized past data and the cell state contains th
 Thus adding an additional activation function to the output is not necessary as there is already ample non-linearity being implemented.
 
 Furthermore, the final LSTM model did not include dropout layers as when tested these had a significant negative impact on the results produced.
-This is possibly due to the fact that dropping values in an LSTM may break down temporal dependency relationships.
+This is possibly due to the fact that dropping values in an LSTM may break down the long-term relationships the model is trying to analyse.
 
 The final layer of the LSTM is a dense layer. 
 This layer serves as the output by compiling the results from all the nodes in the previous layer into a single node.
@@ -250,10 +250,11 @@ Additionally, small batch sizes have been shown to increase the generalization p
 
 The set of hyperparameters tested in the grid search were as follows: 
 number of nodes per layer = [16,32,64,128], dropout rate = [0,0.1,0.2], learning rate = [0.01,0.005,0.001], batch size = [8,32,64].
-The values were selected as they are commonly used or default settings for these hyperparameters.
+These values were selected as they are commonly used or default settings for these hyperparameters.
 More values could be tested but this would take up exponentially more time and processing power in order to compare every combination.\\
 For the FNN model, it was found that the ideal hyperparameters were 16 nodes per layer, a dropout rate of 0, a learning rate of 0.005, and a batch size of 32.\\
-For the LSTM model, it was found that the ideal hyperparameters were 32 nodes per layer, a learning rate of 0.01, and a batch size of 8.\\
+For the LSTM model, it was found that the ideal hyperparameters were 32 nodes per layer, a learning rate of 0.01, and a batch size of 8.
+
 These hyperparameters were used as the default for the respective models going forward.
 
 \section{Testing and Model Results}
@@ -311,7 +312,7 @@ MAPE (Mean Absolute Percentage Error) is the average of the absolute percentage 
 MAPE values are on a scale of 0 to 1 with 0 being a 0\% deviation between the predicted and the actual values.
 Yet all of the models, including the two best-performing models, produced exceptionally high MAPE values despite the fact that they would be expected to produce the lower values.
 The reason for this is that if values are 0 or close enough to 0, it can cause the MAPE calculation to divide by 0 which is undefined.
-The sklearn metric deals with this by producing an arbitrarily high output.
+The Sklearn metric deals with this by producing an arbitrarily high output.
 Including MAPE as a metric proves to be ineffective in this case as normalising the data between the the range [0,1] most likely caused this error.\\
 Another of the errors appears in the r-squared collum, where it produces negative values for some of the models.
 R-squared measures the proportion of the variance for a dependent variable that is predicted by an independent variable, this is also known as the coefficient of determination.
