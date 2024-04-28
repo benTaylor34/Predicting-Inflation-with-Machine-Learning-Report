@@ -5,8 +5,6 @@ This chapter of the report will cover:
 which models were implemented, how they were implemented, how the models were tuned and tested, the results produced by the models, and some of the issues encountered in the implementation process.
 This chapter will not contain the evaluation of the models' results or a comparison of the results.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Tools}
 \subsection{Coding Environemnt}
 The IDE used for this project was Jupyter Notebook provided through the use of Anaconda.
@@ -261,11 +259,11 @@ These hyperparameters were used as the default for the respective models going f
 \subsection{Testing Objectives}
 Before beginning testing it is beneficial to understand what the objectives of the tests are.
 The main objectives are: identifying any errors or bugs in the code, ensuring the results are of an acceptable standard, and identifying potential areas of improvement.
-Identifying and analysing areas of improvement will be carried out in Chapter 5.
+Identifying and analysing areas of improvement will be carried out further in Chapter 5.
 
 \subsection{The Testing Set}
 The testing set is the set of previously unseen data that the models will be tested on.
-The set was made up of the final 20\% of the original unshuffled data.
+The set was made up of the final 30\% of the original unshuffled data.
 As the testing set was not shuffled, it provides a better perspective on how the models will perform for future inflation data as it will also be sequential.
 
 \subsection{Identifying Errors}
@@ -273,19 +271,19 @@ Throughout the implementation process, the code was continuously tested to ensur
 This included both unit testing (testing a single piece of code) and integration testing (testing that multiple pieces of code work together as intended).
 Continuous testing was made easier by the fact that Jupyter Notebook allows the user to divide their code into cells and run the cells individually.
 Being able to see the output of an individual cell makes unit testing much faster as the entire code does not need to be run.
-This is particularly true for machine learning projects as training the algorithm can often be time-consuming.
+This is particularly true for machine learning projects as training a model can often be time-consuming.
 
 When dealing with the errors found by the continuous testing, documentation was often the first port of call.
 Due to the well-known nature of the libraries this project utilised, documentation was thorough and well-written, making identifying and understanding errors much easier.
-Furthermore, most of the libraries in use such as Sklearn or TensorFlow have active communities that help provide solutions through websites such as stack overflow.
-This meant that the errors produced during the implementation of the project had already been identified and solved by other users, once again making the implementation process much smoother.
+Furthermore, most of the libraries in use, such as Sklearn or TensorFlow, have active communities that help provide solutions through websites such as Stack Overflow.
+This meant that many of the errors produced during the implementation of the project had already been identified and solved by other users, once again making the implementation process much smoother.
 
 \subsection{Quality Assurance}
 Another purpose of testing is to ensure that the outputs of the code are of a high enough quality regardless of whether they are the correct output or not.
 This is particularly important as the value of a machine learning model rests on the quality of results it produces.
 For quality assurance testing, several regression metrics were used such as MAE, RMSE, MAPE, and R-squared.
 These metrics evaluate the effectiveness of the models.
-The metrics were calculated using the testing set against the models' predictions of the testing set.
+The metrics were calculated using the actual testing set against the models' predictions of the testing set.
 The ideal values for each metric are MAE=0, RMSE=0, MAPE=0, R-squared=1.
 \begin{table}[H]
     \centering
@@ -302,22 +300,26 @@ The ideal values for each metric are MAE=0, RMSE=0, MAPE=0, R-squared=1.
 
 Of the models shown, linear regression performs the worst and the feedforward neural network performs the best.
 However, there are some strange outliers within the regression metrics.
-To understand these outliers better there will be a brief overview of each metric.\\
+To understand these outliers better there will be a brief overview of each metric.
+
 MAE (Mean Absolute Error) measures the sum of absolute errors divided by the number of observations.
-The value of MAE is a positive real number.\\
+The value of MAE is a positive real number.
+
 RMSE (Root Mean Square Error) is the square root of the MSE which is the average of the squared difference between actual values and predicted values.
 RMSE was used as it is easier to interpret than MSE because MSE is in squared units.
-An RMSE value will be a positive real number.\\
+An RMSE value will be a positive real number.
+
 MAPE (Mean Absolute Percentage Error) is the average of the absolute percentage error of each observation.
 MAPE values are on a scale of 0 to 1 with 0 being a 0\% deviation between the predicted and the actual values.
-Yet all of the models, including the two best-performing models, produced exceptionally high MAPE values despite the fact that they would be expected to produce the lower values.
+Yet all of the models, including the two best-performing models, produced exceptionally high MAPE values despite the fact that they would be expected to produce lower values.
 The reason for this is that if values are 0 or close enough to 0, it can cause the MAPE calculation to divide by 0 which is undefined.
 The Sklearn metric deals with this by producing an arbitrarily high output.
-Including MAPE as a metric proves to be ineffective in this case as normalising the data between the the range [0,1] most likely caused this error.\\
+Including MAPE as a metric proves to be ineffective in this case as normalising the data between the the range [0,1] most likely caused this error.
+
 Another of the errors appears in the r-squared collum, where it produces negative values for some of the models.
 R-squared measures the proportion of the variance for a dependent variable that is predicted by an independent variable, this is also known as the coefficient of determination.
-Despite what the name suggests, R-squared is not always squared so a negative value is not necessarily an error.
-Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean of the data.\\
+Despite what the name suggests, R-squared is not always squared, so a negative value is not necessarily an error.
+Rather, the R-squared metric produces a negative value when the model's fit is worse than the fit of the mean of the data.
 
 \subsubsection{Ensuring the Models Do Not Over Train}
 Another part of quality assurance in machine learning is ensuring the models do not overtrain.
@@ -334,8 +336,8 @@ The loss should gradually fall over time, however, if the loss begins to rise it
     \caption[FNN Model Loss Over Time (epochs).]{FNN Model Loss Over Time (epochs).}
     \label{fig:annloss}
 \end{figure}
-By observing \ref{fig:annloss} it can be seen that the loss plateaus after 50 to 60 epochs.
-This means that the model could be trained for much fewer epochs while still producing similar results and saving time.
+By observing \ref{fig:annloss} it can be seen that the loss plateaus after around 60 epochs.
+This means that the model could be trained for fewer epochs while still producing similar results and saving time.
 After the loss plateaus, at no point does it begin to rise, therefore we can assume that the model has not overtrained.
 
 The second method used to test for overtraining was by making the model predict the training data after it had already been trained.
@@ -355,11 +357,11 @@ The model is likely struggling with the change in momentum between the highly vo
 However, as the model does not seem to be able to predict the training data with nearly 100\% accuracy, then it is further indication that the model is unlikely to have overtrained.
 
 Likely due to the complexity of the data, the models could be run for a relatively large number of epochs without overtraining.
-Overtraining began occuring around 300 epochs, furthermore training the models for this many epochs became increasingly time-consuming whilst using the grid method for hyperparameter optimisation.
+Overtraining began occurring around 300 epochs, furthermore training the models for this many epochs became increasingly time-consuming whilst using the grid method for hyperparameter optimisation.
 Ultimately, the models were each trained for around 100 epochs as this seemed to be the sweet spot between saving time and producing results that are towards the higher end of what the model is capable of.
 
 \section{Final User Friendly Model Implementation}
-Although further comparisons and evaluation will be completed, based on the regression metrics taken the feedforward neural network produced the best results for predicting inflation.
+Although further comparisons and evaluation will be completed, based on the regression metrics taken, the feedforward neural network produced the best results for predicting inflation.
 As such a more user-friendly implementation was created using this model.
 The implementation consists of a checkbox list of the dataset's features.
 These features can be selected and then a model will be trained and tested using the selected features.
