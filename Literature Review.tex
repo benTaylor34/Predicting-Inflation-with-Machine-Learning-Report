@@ -2,7 +2,7 @@
 
 \section{Motivation}%%%why lit review? what does it do?
 Embarking on a literature review before developing a project offers numerous benefits. 
-Understanding existing knowledge in Machine Learning, specifically when used to predict financial indicators, helps to contextualise the research and position it within the existing field. 
+Understanding existing knowledge in Machine Learning, specifically when used to predict financial indicators, helps to contextualise the research completed in this project and position it within the existing field. 
 Reviewing previous literature also provides the benefits of identifying gaps in current research and finding supporting arguments that can provide a guide for the work that needs to be done during the project.
 Additionally, the literature review helps the project avoid redundancy between it and other similar works. 
 Completing the literature review will provide a strong foundation to start and guide the project.
@@ -11,12 +11,12 @@ Completing the literature review will provide a strong foundation to start and g
 
 \section{Available Literature and Context}
 There is a strong monetary incentive to produce research that outlines how best to predict financial indicators. 
-The correct predictions can not only allow organizations and individuals to profit greatly but also to avoid loss.
+The correct predictions can not only allow organisations and individuals to profit greatly but also to avoid loss.
 This has resulted in a myriad of papers being written that experiment with a variety of techniques to predict future values.
 Many such papers will provide helpful insight that will support the development of the models in this project.
 \par 
 This report's topic focuses on the prediction of inflation through the use of machine learning.
-To accomplish this it is important to view papers predominantly addressing two types of topics. 
+To accomplish this, it is important to view papers predominantly addressing two types of topics. 
 The first type is papers that focus on the topic of predicting inflation or other economic indicators and time series.
 The second type is papers dealing with different machine-learning techniques.
 It will also be pertinent to survey the current literature on inflation: its causing factors, effects, and significance.  
@@ -24,7 +24,7 @@ It will also be pertinent to survey the current literature on inflation: its cau
 \subsection{Financial Indicator Prediction Papers}
 According to "Analysis of Financial Time Series" by Ruey S. Tsay: 
 "Financial time series analysis is concerned with the theory and practice of asset valuation over time."\cite{tsay2005analysis}
-There are many financial time series (FTS for short) prediction methods both theoretical and practical that have attracted attention.
+There are many financial time series (FTS) prediction methods both theoretical and practical that have attracted attention.
 The taxonomy of these FTS analysis methods is shown in figure \ref{fig:FTSForecastingMethods}. 
 The predominant analysis strategies for predicting financial market behaviour are fundamental analysis and technical analysis\cite{Harrington_2003}.
 \begin{figure}[h]
@@ -36,7 +36,7 @@ The predominant analysis strategies for predicting financial market behaviour ar
 
 \subsubsection{Fundamental Analysis} 
 Fundamental analysis\cite{thomsett2006getting} attempts to measure the intrinsic value of an asset by looking at current market and economic conditions.
-Additionally, fundamental analysis frequently makes use of techniques - such as sentiment analysis - that often deal with unstructured data.
+Additionally, fundamental analysis frequently makes use of techniques such as sentiment analysis that regularly deal with unstructured data.
 The success of fundamental analysis often relies on the financial efficiency of the target\cite{WAFI2015939}, which according to Tom Seegmiller is defined as 
 "how successful your organization is at turning expenses into revenue"\cite{Seegmiller_2023}.
 
@@ -45,9 +45,9 @@ Technical analysis\cite{achelis2001technical} attempts to identify opportunities
 Unlike fundamental analysis, technical analysis does not take into account many of the same fundamentals that can help indicate an asset's current value such as quarterly revenue.
 This is partially important because it is often argued that technical indicators such as inflation or a stock's value are already priced according to the fundamentals that cause or contribute to them\cite{murphy1999technical}.
 From this, we can come to the understanding that while fundamental analysis is the idea of looking at the current factors affecting an asset and using them to evaluate the asset's true value; 
-Technical analysis is built upon the idea that past performance can predict future performance.
-Traditionally, technical analysis has relied heavily on statistical models to forecast the future performance of assets\cite{rockefeller2019technical}.
-Furthermore, the act of utilising past values to predict future values has been widely implemented for years.
+technical analysis is built upon the idea that past performance can predict future performance.
+
+Traditionally, technical analysis has relied heavily on statistical models to forecast the future performance of assets\cite{rockefeller2019technical} and the act of utilising past values to predict future values has been widely implemented for years.
 One of the earliest uses of autoregressive models being used to predict time series was created by U.G.Yule in the 1920s\cite{5c7b6f25-ed11-3745-8118-935d66a8f3d3}.
 However, with the increase of big data and the internet, ever-larger amounts of financial predictive data are continually being produced.
 Nowadays, simple statistical models may struggle to produce accurate future predictions when faced with big data sets containing complex characteristics\cite{Akbilgic2014ANH}.
@@ -96,7 +96,7 @@ According to a research briefing published by the House of Commons Library, the 
 Covid-19 lockdowns causing supply chain disruptions and Russia's invasion of Ukraine causing increased energy prices due to the UK's prior reliance on Russian fuel\cite{HouseOfCommons}.
 Additionally, several pundits have suggested the BoE's slow reaction to combating high inflation rates and their increased money-printing during the pandemic added to the issue\cite{telegraphBankEnglands}.
 The main way that the BoE combats inflation is through the manipulation of interest rates.
-The general premise is that as inflation rates grow, the growth of inflation should slow and inflation should eventually decrease. 
+The general premise is that as interest rates grow, the growth of inflation should slow and inflation should eventually decrease. 
 This is because increased interest rates mean the overall spending in the economy lessens as money is instead being spent on trying to mitigate the higher interest.
 
 \subsection{Machine Learning Models}
@@ -151,14 +151,15 @@ Figure \ref{fig:CmnAcFc} shows some common activation functions.
     \label{fig:CmnAcFc}
 \end{figure}
 Other commonly used activation functions include Sigmoid, Guassian, and leaky ReLU.
-\par 
+
 ANNs have many advantages: 
 \begin{itemize}
     \item Thanks to the many interconnected neurons, ANNs have strong learning capabilities\cite{HANSEN1999345}.
     \item ANNs do not have a fixed structural equation making them very adaptable.
     \item ANNs can be finely tuned with many changes to the network in order to find the best-fitting model. For example, changing the number of hidden layers, the number of nodes in a layer, the activation functions, and so on.
-\end{itemize}
-\par ANNs also come with some disadvantages:
+\end{itemize} 
+
+ANNs also come with some disadvantages:
 \begin{itemize}
     \item The higher complexity of ANNs means that they require more resources than traditional statistical models.
     \item Due to the nature of the hidden layers, ANNs can be hard to interpret.
@@ -209,7 +210,7 @@ The final prediction is an average taken from all of the trees' predictions.
 Evaluating a model is extremely important not only to know the quality of the model's predictions but also in order to make improvements to the model.
 Evaluation metrics can be used to evaluate the performance of the model.
 Some useful metrics that can be applied to measure a model's performance are: 
-Mean absolute error (MAE), Mean squared error (MSE), Mean absolute percentage error (MAPE), Root mean absolute error (RMAE), Normalised mean square error (NMSE), Root mean squared error (RMSE), Relative root mean squared error (RRMSE), Correlation coefficient of prediction (R)
+Mean absolute error (MAE), Mean squared error (MSE), Mean absolute percentage error (MAPE), Root mean absolute error (RMAE), Normalised mean square error (NMSE), Root mean squared error (RMSE), Relative root mean squared error (RRMSE), and Correlation coefficient of prediction (R).
 The most commonly used metrics are MSE, MAE, MAPE, and R.
 
 \begin{center}
@@ -258,6 +259,7 @@ These formulas can be used to evaluate the predictive ability of a model.
 This literature review has covered a sample of the literature on machine learning methods, financial time series forecasting, and inflation.
 There is a multitude of literature available in these areas due to the potential monetary gain as well as the new and emerging technologies being explored in the fields.
 Therefore, it would be nearly impossible to extensively cover all of the articles relevant to this project.
-Instead, the main focus was on understanding the most common techniques used to predict financial time series and which machine learning models are often applied.
-Additionally, the literature review also covered the UK's relationship with inflation, who is tasked with controlling it, how they attempt to do so, as well as some of the factors contributing to it.\\
+Instead, the main focus was on understanding the most common techniques used to predict financial time series and which machine learning models are often applied to these tasks.
+The literature review also covered the UK's relationship with inflation, who is tasked with controlling it, how they attempt to do so, as well as some of the factors contributing to it.
+
 The knowledge gained from completing the literature review will provide a strong backbone for solving the tasks presented in the implementation of the project going forward.
