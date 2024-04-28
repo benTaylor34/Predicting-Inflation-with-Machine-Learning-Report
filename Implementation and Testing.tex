@@ -1,6 +1,6 @@
 \chapter{Implementation and Testing}
-The goal of the project is to implement a machine-learning model that has the ability to predict inflation.
-In order to find the most suitable model, several different models were implemented and their results were compared.
+The goal of this project is to implement several machine-learning models that have the ability to predict inflation.
+The results of each model will be compared in order to find the most suitable model for the task.
 This chapter of the report will cover: 
 which models were implemented, how they were implemented, how the models were tuned and tested, the results produced by the models, and some of the issues encountered in the implementation process.
 This chapter will not contain the evaluation of the models' results or a comparison of the results.
@@ -37,7 +37,7 @@ SciKit-Learn\cite{scikit-learn} - Sklearn is a machine learning library that pro
 Its extensive documentation makes it easy to learn and implement.\\
 
 Matplotlib\cite{Hunter:2007} and Seaborn\cite{Waskom2021} - Matplotlib and Seaborn were used for all graphical data visualisation.
-These libraries provide a plethora of graphing options along with plenty of community support.
+These libraries provide a plethora of graphing options along with plenty of community support.\\
 
 Sktime\cite{Loning2022-mg} - Sktime is a library for machine learning with time series data. 
 This was used to implement the univariate time series forecasting of inflation.
@@ -55,9 +55,9 @@ This is useful in the context of machine learning as model layers require inputs
 Using time series data in a machine learning model requires additional attention compared to regular data, especially when testing the model.
 General practice in machine learning is to split the dataset into arrays for training and testing and into X and y (with X being the data that predicts the target data y).
 However, in time series forecasting the data is created or released over time.
-This means that using X data from the year 2000 to predict the value of inflation from the same year is redundant as the inflation data will have already been released around the same time as the X data meaning that it is already available.
+This means that using X data from a specific year to predict the y value from the same year is redundant as target data is usually released around the same time as the X data, meaning that it is already available.
 Instead, the aim of time series forecasting should be to use past data to predict future data.
-In creating a dataset for a machine learning model this takes the form of shifting the target forward in time so that the X data from 2000 is being used to predict the y data from 2001.
+In creating a dataset for a machine learning model this takes the form of shifting the target forward in time so that the X data from the current year is being used to predict the y data from the next year.
 Often, the further forward the target data is shifted the less accurate the model becomes.
 In this project, the target values of inflation were shifted 12 months ahead of the X data.
 This means that the model uses data from the current year to predict the inflation values of the next year.
@@ -76,8 +76,8 @@ There are several benefits to scaling to a small range such as reducing the impa
 It is common practice to split a dataset into training and testing splits.
 The training split is then used for training the machine learning model and the testing split is used for testing the model's performance on unseen data.
 If the model was tested on data it had already been trained on it would become difficult to evaluate the model's generalization (its ability to perform on new/unseen data).
-The difficulty in deciding the size of the training and testing splits lies in the fact that too small a training split and our model may not perform well but too small a testing split and our performance metrics will have a greater variance. 
-The project dataset was split into 70\% training data and 30\% as this is a common split.
+The difficulty in deciding the size of the training and testing splits lies in the fact that too small a training split and the model may not perform well but too small a testing split and the performance metrics will have a greater variance. 
+The project dataset was split into 70\% training data and 30\% testing data as this is a common split.
 The models will not utilize a validation set.
 As the dataset is made up of time series data, splitting the data carelessly can lead to suboptimal results.
 This is because time series data often has temporal dependencies.
@@ -106,16 +106,14 @@ Although the purpose of predicting inflation is to also be able to foresee such 
     \caption[History of CPI vs History of CPI Excluding the First 150 Datapoints.]{History of CPI vs History of CPI Excluding the First 150 Datapoints.}
     \label{fig:totalCPIvsLimitedCPI}
 \end{figure}
-The graphs in figure \ref{fig:totalCPIvsLimitedCPI}  
+The graphs in figure \ref{fig:totalCPIvsLimitedCPI} indicate the difference in magnitude from the peaks in the entire dataset vs the peaks in the dataset that omit the first 150 datapoints.
 As such, after training and testing the models on the entire dataset and comparing the results to those of models trained on a subset of the data, the decision was made to remove the first 150 data points from the dataset.
 This would remove the large outlying period of the 70s while still retaining some peaks in inflation in order to give the model a realistic expectation for how inflation may peak again.
 Removing the first 150 data points reduces the size of the dataset by a significant portion, however, the subset of data still produced more accurate results when testing the models.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{The Machine Learning Models}
 Five different models were implemented and tested for the predictive ability on the same data set.
-The different machine learning models were linear regression, random forest, support vector regression, long short-term memory network, and a feedforward neural network.
+The different machine learning models were linear regression, random forest regression, support vector regression, long short-term memory network, and a feedforward neural network.
 The reason for these five models was because they are some of the most common models used for regression analysis and, as found in the literature, many of the models are used for economic indicator analysis (such as stock predictions).
 Three of the five models were implemented with the Scikit-learn library.
 These were linear regression, random forest, and support vector regression.
@@ -127,21 +125,30 @@ Univariate analysis does not involve relationships or causes from other variable
 Before Implementing each machine learning model with the full dataset, a subset of the models were trained and tested using inflation as the only variable.
 The models that were implemented were linear regression, random forest regression (using 20 trees), and support vector regression.
 This was a quick implementation to test if predicting inflation solely based on its past values would suffice.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{LinearRegUni.png}
+    \includegraphics[width=0.8\textwidth]{RandomForestUni.png}
+    \includegraphics[width=0.8\textwidth]{SVRuni.png}
+    \caption[The Results of Univariate Analysis.]{The Results of Univariate Analysis.}
+    \label{fig:LinearRegUni}
+\end{figure}
 As expected, the results produced were lackluster, likely due to inflation's complexity and the fact that many outside factors affect it.
 Of the three models, random forest regression produced the best results although the quality of the predictions was still not satisfactory. 
 
 \section{Multivariate Implementation}
-Multivariate analysis is the practice of compiling multiple unique data variables in order to create a more holistic forecast of a related variable.
-\subsection{The Features and Dataset}
-The curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987.
-The OECD features are macroeconomic indicators that focus on broad trends from the UK with global implications.
-Macroeconomic features were selected as inflation itself happens on a macro scale thus it stands to reason that macro features will likely predict inflation better than micro ones.
+Multivariate analysis is the practice of compiling multiple unique data variables in order to create a more holistic forecast of the target variable.
 
-Upon analysis of the features selected for the dataset (as seen in figures \ref{fig:corr} and \ref{fig:hist}) very few features share a strong correlation or similar distribution to inflation.
+\subsection{The Features and Dataset}
+The curated dataset that was used for this project contained 20 different features, each with monthly data dating back to 1972 at the earliest and 1987 at the latest.
+The OECD features are macroeconomic indicators that focus on broad trends from the UK with global implications.
+Macroeconomic features were selected as inflation happens on a macro scale thus it stands to reason that macro features will predict inflation better than micro ones.
+
+Upon analysis of the features selected for the dataset (as seen in figures \ref{fig:hist} and \ref{fig:corr}) very few features share a strong correlation or similar distribution to inflation.
 This could be worrying as it may indicate that, although on an intuitive surface level, many of these features should contribute to inflation, the features may not possess a strong ability to predict inflation.
 However, this is not the case as explored in the previous design chapter, the Pearson correlation calculated in the correlation matrix and the distribution of data shown in the histograms are not the be-all and end-all of value forecasting.
-This is demonstrated in the Granger causality tests carried out in the Design chapter as several features are shown to have the potential to predict inflation.
-Therefore, as the indication as to whether or not any of the features are redundant, all of the features will be kept in the dataset for training the models.
+This is reiterated further in the Granger causality tests carried out in the Design chapter as several features are shown to have the potential to predict inflation.
+Therefore, as there is no indication as to whether or not any of the features are redundant, all of the features will be kept in the dataset for training the models.
 
 \subsection{The Models Used for Multivariate Analysis}
 All five of the previously stated models (see 3.3.1 Model Selection) were implemented for multivariate analysis.

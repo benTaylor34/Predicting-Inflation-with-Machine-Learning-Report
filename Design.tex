@@ -13,7 +13,7 @@ This is the project flow that will be followed for this project and throughout t
  
 \section{Project Setup}
 The project setup step of Heung's design flow mainly focuses on outlining the details of the project.
-Examples of these details are the projects: goals, user experience, evaluation, personalization, and constraints.
+Examples of these details are the project's: goals, user experience, evaluation, personalization, and constraints.
 This report's project setup shall focus mainly on the goals, evaluation, and constraints sections as user experience and personalization are not key aspects of the project.
 
 \subsection{Goals}
@@ -22,12 +22,14 @@ This project will evaluate the use of various machine learning methods and asses
 Further aims and objectives are outlined in Chapter 1. Introduction.
 
 \subsection{Expected Model Performance}
-As multiple models will be implemented in this project, it is unlikely that all models will perform to the same ability.
+As multiple models will be implemented in this project, it is unlikely that all of the models implemented will perform to the same standard.
 Thus it is important to have a rough prediction as to which models will perform better or worse.
 By making these predictions it will prevent additional time from being wasted on optimizing or making changes to models that show less potential.
-This does not mean that these models should not be implemented properly but rather it means that the limited time for the implementation of the project should focus on the models with the best potential to predict inflation.
-Although all the models that will be implemented should be able to predict inflation to some degree, certain models have a higher likelihood of better performance.
-The models that are predicted to have the best performance are the LSTM and the FNN.
+This does not mean that these models should not be implemented properly but rather it means that the limited time for implementation should focus on the models with the best potential to predict inflation.
+Although all the models that will be implemented hope to be able to predict inflation to some degree, certain models have a higher likelihood of better performance.
+Five models will be implemented: a linear regression model, a random forest model, a support vector regression model, a long short-term memory network model, and a feedforward neural network.
+Further details on the models that shall be implemented will be covered later.
+The models that are predicted to have the best performance are the long short-term memory network (LSTM) and the feedforward neural network (FNN).
 This is because of their increased complexity and the fact that they can be modified more easily, giving more control over the architecture of the model.
 Of these two models, the LSTM is predicted to perform the best due to the fact it can memorise previous data which should help the LSTM to better analyse the patterns of a sequential time series such as inflation.
 The models that are predicted to perform worse are the linear regression model, the random forest model, and the support vector regression model.
@@ -38,12 +40,12 @@ This means that throughout the design and implementation, more time will be allo
 Evaluation outlines how the system's performance shall be evaluated: what metrics shall be used, what visualisations shall be produced, and so on.
 The models created in this project will be regression models attempting to predict an exact value of inflation.
 Thus the methods selected to evaluate the models should be suited for regression and continuous values.
-So methods like confusion matrixes that are better suited for classification would not be a good choice.
+This means that methods like confusion matrixes that are better suited for classification would not be a good choice.
 As stated in the literature review, the most common regression metrics were MSE, MAE, MAPE, and R/ R².
 As each of these metrics is straightforward to implement, they will all be used for evaluating the models created.
 Furthermore, visualisations displaying each model's predictions alongside the values they were attempting to predict will be produced.
-This will aid the view in understanding the model's effectiveness beyond numerical metrics.
-Where appropriate, certain models should produce loss functions as these will be able to guide hyperparameter optimisation, such as selecting the correct number of epochs to train a model.
+This will help to understand the model's effectiveness beyond numerical metrics.
+Where appropriate, certain models should produce loss graphs as these will be able to guide hyperparameter optimisation, such as selecting the correct number of epochs to train a model.
 
 \subsection{Constraints}
 The Constraints of a project can follow two veins: performance constraints and project constraints.
@@ -53,9 +55,8 @@ Of these two constraints, this project's main concern is with precision.
 The predictions of each model created will be evaluated and compared to one another in order to conclude the type of machine learning model best suited to predicting inflation.
 
 On the other hand, project constraints are real-world constraints that may limit the project such as the time or manpower available.
-A typical project constraint may be the software available.
-However, since it is common practice to use Python for artificial intelligence research (even for billion-dollar companies such as Google\cite{Google}).
-Additionally, Python is a free-to-use, open-source language.
+A typical project constraint is the software available.
+However, since it is common practice to use Python for artificial intelligence research (even for billion-dollar companies such as Google\cite{Google}) and Python is a free-to-use, open-source language this particular constraint should not be an issue.
 The constraints of this project are mainly generic constraints that will apply to most final-year projects.
 One such generic constraint is the fact that only one student will be working on the project and the student has several other modules to focus on throughout the year.
 This means that a limited amount of time and resources will be dedicated to the project.
@@ -95,18 +96,18 @@ Initially, datasets from Kaggle were tested but they lacked a sufficient number 
 Data from the World Bank was also preprocessed and tested with basic models.
 The World Bank is known for reliable and accurate data which should avoid issues of bias, or poor quality.
 However, the World Bank sourced a majority of its indicators annually dating back to the 1960s meaning that there would only be around 60 rows of data up to the present day.
-Thus, although the set had a large number of interesting features, the number of data points was insufficient for a machine-learning model.
+Thus, although the set had a large number of interesting features, the number of data samples was insufficient for a machine-learning model.
 Additionally, due to the large number of features (over 1400), it would need a sufficient amount of cleaning/preprocessing in order to remove irrelevant features.
 
 \subsection{The Final Dataset}
 Due to the issues encountered with the other datasets, the OECD dataset was selected for use alongside monthly CPI data sourced from the World Bank.
-The first main benefit of the OECD dataset is that the data is taken monthly so there are a lot more data points than datasets that collect data annually.
+The first main benefit of the OECD dataset is that the samples are taken monthly so there are a lot more data points than datasets that collect annually.
 The features from the OECD dataset were taken from 1972 to 2022.
 Unfortunately, a few of the features had less data as they were taken from later than 1972 with the latest being taken in 1987. 
 However, as this is only a small fraction of the overall dataset, replacing the missing values with zeros is unlikely to have a profound effect on the final results.
 The second benefit is that the dataset contains a moderate number of features to choose from (not too many that the features need to be drastically reduced (as was the case with the World Bank dataset)).
 There were twenty different features in total (not including CPI), these features were: 
-composite business confidence, composite consumer confidence, composite leading indicator (CLI), consumer prices, hourly earnings, immediate interest rates call money interbank rate, long-term interest rates, M1, M3, merchandise exports, merchandise imports, nominal exchange rates, passenger car registrations, production volume, GDP, retail trade volume, share prices, short-term interest rates, and unemployment
+composite business confidence, composite consumer confidence, composite leading indicator (CLI), consumer prices, hourly earnings, immediate interest rates call money interbank rate, long-term interest rates, M1, M3, merchandise exports, merchandise imports, nominal exchange rates, passenger car registrations, production volume, GDP, retail trade volume, share prices, short-term interest rates, and unemployment.
 Histograms were plotted for each feature in order to assess their distributions.
 Understanding the distribution of a feature can give some insight as to whether to use normalisation (rescaling the data between two set values) or standardisation (setting the mean of the data to 0 and the standard deviation to 1) before giving the data to the machine learning models.
 \begin{figure}[H]
@@ -140,7 +141,7 @@ Often, datasets have several outstanding issues or properties that make them imp
 Data pre-processing often includes steps such as data cleaning (handling outliers, noise, or missing values) and data integration (combining data from multiple sources). 
 Data transformation is the task of molding the data to an appropriate size and dimensionality.
 Both of these processes are to create a dataset that is formatted in a manner that suits our models and objectives.
-Poorly processed data can be difficult for both machines and humans to use and can lead to poor results. 
+Poorly processed data can be difficult for both machines and humans to understand and can lead to poor results. 
 
 \subsubsection{Issues With The OECD Dataset}
 There were some outstanding issues with the original dataset taken from OECD and thus several steps were taken to clean the data.
@@ -153,12 +154,13 @@ These issues included:
     \item A large amount of metadata that needed to be removed.
 \end{itemize}
 Any data points that fell under these issues were removed/cleaned and all null values were replaced with zeros to improve readability.
+The dataset was also reshaped into a tabular format to improve readability and use in the machine learning models.
 
 Finally, a Granger causality test was carried out on the data to gather a better understanding of our data and its correlation to the target feature (CPI).
 
 \subsubsection{Granger Causality}
 Granger causality is a statistical concept in economics used to show if time series A is useful at forecasting time series B.
-Clive Granger originally proposed the test in 1969 in the article "Investigating Causal Relations by Econometric Models and Cross-spectral Methods\cite{GCTest}.
+Clive Granger originally proposed the test in 1969 in the article "Investigating Causal Relations by Econometric Models and Cross-spectral Methods"\cite{GCTest}.
 The test only shows predictive causality and not true causality.
 Additionally, the test only provides information about forecasting ability and not the actual causal relationship.
 Another issue with the use of the Granger test in the context of inflation is that the test works best on stationary data.
@@ -172,13 +174,13 @@ Lagged values are values from a time series shifted forwards or backward in time
 In the case of the Granger test, Jeffery Woolriddge proposes that fewer lags should be used for annual data compared to quarterly or monthly data in order to not lose degrees of freedom\cite{wooldridge2009introductory}.
 The Granger test was run on the preprocessed indicators comparing each of them to CPI.
 The function ran 12 lags to see if data has a potential causal relationship with inflation within the past year.
-This means that if at some point during the last 12 lags a p-value<0.05 was produced the data will be labeled as having the potential to be useful in forecasting CPI.
+This means that if at some point during the last 12 lags a p-value$<$0.05 was produced the data will be labeled as having the potential to be useful in forecasting CPI.
 Of the 20 features tested, 9 produced results that indicate Granger Causality.
-These 9 were: 'Composite business confidence', 'Composite consumer confidence', 'Consumer prices', 'Long-term interest rates', 'Merchandise imports', 'Reference series (GDP)', 'Retail trade volume', 'Share prices', 'Unemployment'
+These 9 were: Composite business confidence, Composite consumer confidence, Consumer prices, Long-term interest rates, Merchandise imports, GDP, Retail trade volume, Share prices, and Unemployment.
 This indicates that almost half of the features have the potential to predict CPI.
 This, however, does not mean that the 9 features found to Granger Cause CPI definitely cause inflation as the Granger Causality test is only a measure of the potential of one value to cause another.
 Furthermore, just because a value does not Granger Cause inflation does not mean that the feature is not useful in predicting inflation. 
-We now have a better understanding of the potential our dataset has to predict inflation. 
+Thanks to the Granger Causality test we now have a better understanding of the potential our dataset has to predict inflation. 
 % \begin{figure}[H]
 %    \centering
 %    \includegraphics[width=0.75\textwidth]{GrangerTestFunction.png}
@@ -191,15 +193,18 @@ We now have a better understanding of the potential our dataset has to predict i
 \subsection{Model Selection}
 The models that will be compared for their ability to predict inflation are a random forest model, a support vector regression model, a linear regression model, a long short-term memory (LSTM) model, and a feedforward neural network (FNN) model.
 Most of the models were discussed during the literature review and will be implemented due to their common use in similar regression models.
-\\Linear regression was added to the list of models to be implemented as it is an extremely simple model that focuses on plotting a single line of best fit through the data.
+
+Linear regression was added to the list of models to be implemented as it is an extremely simple model that focuses on plotting a single line of best fit through the data.
 Including linear regression will provide a comparison to the results of a simple model, as well as potentially indicate any unexpected linear relationships between inflation and any of the dataset's features.
-\\A long short-term memory network will also be implemented. 
+
+A long short-term memory network will also be implemented. 
 LSTMs are a type of recurrent neural network (RNN). 
 As mentioned in the literature review, the architecture of RNNs enables them to preserve an internal memory state that helps them to model temporal dependencies in the data.
 This characteristic means that RNNs excel at processing sequential data such as time series data.
 The LSTM was selected as the RNN model that will be implemented as they are considered to be one of the most powerful implementations of an RNN and are used to find patterns in numerical sequence data\cite{Nicholson_2023}.
-As the values of inflation are time series data, an LSTM could potentially provide good results despite the seeming lack of literature relating LSTMs to economic time series prediction.
-\\Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
+As inflation is time series data, an LSTM could potentially provide good results.
+
+Several of the models selected have implementations provided through the use of libraries such as Scikit-learn\cite{scikit-learn}.
 Implementing a model through a high-level library lets the user create an already well-documented and tested model with only a few lines of code.
 This saves both time and resources (as the model implemented from the library is likely to have been optimised) while also providing additional support, if necessary, from the community and documentation.
 
@@ -217,4 +222,4 @@ This means that both the model and their results need to be suitably presented w
 This will be done through the use of graph visualisations created in Matplotlib. 
 These visualisations should display and compare the model's predictive ability along with their learning rates.
 This will be done by creating a graph for each model that displays their predictions compared to the actual values of inflation, indicating how well they can predict both training and testing data.
-Loss graphs will be used to show each model's learning rate over time.
+Loss graphs will be used to show a model's learning rate over time.
