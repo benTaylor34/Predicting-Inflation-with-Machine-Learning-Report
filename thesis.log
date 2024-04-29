@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  28 APR 2024 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.7)  28 APR 2024 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,10 +794,6 @@ color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color pop
 color push 0 g 0 G
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color pop
-color push 0 g 0 G
 color pop
 ] (Introduction.tex
 Chapter 1.
@@ -847,7 +843,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 2.
-<images/FTSForecastingMethods.png, id=457, 534.99875pt x 466.74374pt>
+<images/FTSForecastingMethods.png, id=455, 534.99875pt x 466.74374pt>
 File: images/FTSForecastingMethods.png Graphic file (type png)
 <use images/FTSForecastingMethods.png>
 Package pdftex.def Info: images/FTSForecastingMethods.png  used on input line 32.
@@ -886,7 +882,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/FTSForecastingMethods.png (PNG copy)>]
-<images/articleGrowth.png, id=487, 636.57825pt x 372.1905pt>
+<images/articleGrowth.png, id=485, 636.57825pt x 372.1905pt>
 File: images/articleGrowth.png Graphic file (type png)
 <use images/articleGrowth.png>
 Package pdftex.def Info: images/articleGrowth.png  used on input line 61.
@@ -953,7 +949,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/CmnAcFc.png, id=539, 661.47125pt x 785.93625pt>
+<images/CmnAcFc.png, id=537, 661.47125pt x 785.93625pt>
 File: images/CmnAcFc.png Graphic file (type png)
 <use images/CmnAcFc.png>
 Package pdftex.def Info: images/CmnAcFc.png  used on input line 149.
@@ -1076,7 +1072,7 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-<images/machineLearningDesignPipeline.png, id=600, 233.673pt x 251.13824pt>
+<images/machineLearningDesignPipeline.png, id=598, 233.673pt x 251.13824pt>
 File: images/machineLearningDesignPipeline.png Graphic file (type png)
 <use images/machineLearningDesignPipeline.png>
 Package pdftex.def Info: images/machineLearningDesignPipeline.png  used on input line 8.
@@ -1124,7 +1120,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/hist.png, id=625, 1720.7487pt x 880.9713pt>
+<images/hist.png, id=623, 1720.7487pt x 880.9713pt>
 File: images/hist.png Graphic file (type png)
 <use images/hist.png>
 Package pdftex.def Info: images/hist.png  used on input line 115.
@@ -1147,7 +1143,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/corr.png, id=632, 1296.5238pt x 839.0547pt>
+<images/corr.png, id=630, 1296.5238pt x 839.0547pt>
 File: images/corr.png Graphic file (type png)
 <use images/corr.png>
 Package pdftex.def Info: images/corr.png  used on input line 128.
@@ -1291,12 +1287,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/totalCPI.png, id=700, 406.8801pt x 327.3831pt>
+<images/totalCPI.png, id=698, 406.8801pt x 327.3831pt>
 File: images/totalCPI.png Graphic file (type png)
 <use images/totalCPI.png>
 Package pdftex.def Info: images/totalCPI.png  used on input line 96.
 (pdftex.def)             Requested size: 166.73378pt x 134.15799pt.
-<images/limitedCPI.png, id=701, 400.3758pt x 327.3831pt>
+<images/limitedCPI.png, id=699, 400.3758pt x 327.3831pt>
 File: images/limitedCPI.png Graphic file (type png)
 <use images/limitedCPI.png>
 Package pdftex.def Info: images/limitedCPI.png  used on input line 101.
@@ -1314,23 +1310,7 @@ l.111
 color pop
 color push 0 g 0 G
 color pop
- <./images/totalCPI.png> <./images/limitedCPI.png>]
-<images/LinearRegUni.png, id=709, 947.4597pt x 297.0297pt>
-File: images/LinearRegUni.png Graphic file (type png)
-<use images/LinearRegUni.png>
-Package pdftex.def Info: images/LinearRegUni.png  used on input line 128.
-(pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
-<images/RandomForestUni.png, id=710, 947.4597pt x 297.0297pt>
-File: images/RandomForestUni.png Graphic file (type png)
-<use images/RandomForestUni.png>
-Package pdftex.def Info: images/RandomForestUni.png  used on input line 129.
-(pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
-<images/SVRuni.png, id=711, 947.4597pt x 297.0297pt>
-File: images/SVRuni.png Graphic file (type png)
-<use images/SVRuni.png>
-Package pdftex.def Info: images/SVRuni.png  used on input line 130.
-(pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
- [27
+ <./images/totalCPI.png> <./images/limitedCPI.png>] [27
 color push 0 g 0 G
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
@@ -1340,37 +1320,54 @@ color pop
 ] [28
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color push 0 g 0 G
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.150 
-      
+color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0 g 0 G
 color pop
- <./images/LinearRegUni.png> <./images/RandomForestUni.png> <./images/SVRuni.png>]
-<images/ANNSummary.png, id=726, 389.65575pt x 226.446pt>
+]
+<images/ANNSummary.png, id=718, 389.65575pt x 226.446pt>
 File: images/ANNSummary.png Graphic file (type png)
 <use images/ANNSummary.png>
-Package pdftex.def Info: images/ANNSummary.png  used on input line 172.
+Package pdftex.def Info: images/ANNSummary.png  used on input line 165.
 (pdftex.def)             Requested size: 333.46758pt x 193.80682pt.
  [29
 color push 0 g 0 G
 color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
+color push 0 g 0 G
+color push 0 g 0 G
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.185 
+      
+color pop
+color pop
+color push 0  0  0.5 rg 0  0  0.5 RG
+color pop
 color push 0  0  0.5 rg 0  0  0.5 RG
 color pop
 color push 0 g 0 G
 color pop
-] [30
+ <./images/ANNSummary.png>]
+<images/LSTMSummary.png, id=728, 383.63326pt x 203.5605pt>
+File: images/LSTMSummary.png Graphic file (type png)
+<use images/LSTMSummary.png>
+Package pdftex.def Info: images/LSTMSummary.png  used on input line 198.
+(pdftex.def)             Requested size: 333.46758pt x 176.944pt.
+ [30
 color push 0 g 0 G
 color pop
-color push 0  0  0.5 rg 0  0  0.5 RG
+color push 0  0.5  0 rg 0  0.5  0 RG
+color pop
+color push 0 g 0 G
+color pop
+] [31
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
@@ -1378,34 +1375,7 @@ color push 0 g 0 G
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
-      
-color pop
-color pop
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color push 0  0  0.5 rg 0  0  0.5 RG
-color pop
-color push 0  0.5  0 rg 0  0.5  0 RG
-color pop
-color push 0 g 0 G
-color pop
- <./images/ANNSummary.png>]
-<images/LSTMSummary.png, id=742, 383.63326pt x 203.5605pt>
-File: images/LSTMSummary.png Graphic file (type png)
-<use images/LSTMSummary.png>
-Package pdftex.def Info: images/LSTMSummary.png  used on input line 205.
-(pdftex.def)             Requested size: 333.46758pt x 176.944pt.
- [31
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.221 
+l.232 
       
 color pop
 color pop
@@ -1431,10 +1401,10 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/annloss.png, id=762, 422.7795pt x 327.3831pt>
+<images/annloss.png, id=754, 422.7795pt x 327.3831pt>
 File: images/annloss.png Graphic file (type png)
 <use images/annloss.png>
-Package pdftex.def Info: images/annloss.png  used on input line 335.
+Package pdftex.def Info: images/annloss.png  used on input line 328.
 (pdftex.def)             Requested size: 333.46758pt x 258.24016pt.
  [35
 color push 0 g 0 G
@@ -1442,10 +1412,10 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/nntraining.png, id=769, 947.4597pt x 505.1673pt>
+<images/nntraining.png, id=761, 947.4597pt x 505.1673pt>
 File: images/nntraining.png Graphic file (type png)
 <use images/nntraining.png>
-Package pdftex.def Info: images/nntraining.png  used on input line 350.
+Package pdftex.def Info: images/nntraining.png  used on input line 343.
 (pdftex.def)             Requested size: 333.46758pt x 177.79785pt.
  [36
 color push 0 g 0 G
@@ -1453,10 +1423,10 @@ color pop
 color push 0 g 0 G
 color push 0 g 0 G
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.354 F
+l.347 F
        igure \ref{fig:nntraining} shows that the model was extremely effecti...
 color pop
 color pop
@@ -1465,10 +1435,10 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/annloss.png>]
-<images/skeleton.png, id=777, 366.168pt x 409.53pt>
+<images/skeleton.png, id=769, 366.168pt x 409.53pt>
 File: images/skeleton.png Graphic file (type png)
 <use images/skeleton.png>
-Package pdftex.def Info: images/skeleton.png  used on input line 373.
+Package pdftex.def Info: images/skeleton.png  used on input line 366.
 (pdftex.def)             Requested size: 333.46758pt x 372.96657pt.
  [37
 color push 0 g 0 G
@@ -1476,10 +1446,10 @@ color pop
 color push 0 g 0 G
 color push 0 g 0 G
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.376 \end{figure}
+l.369 \end{figure}
                   
 color pop
 color pop
@@ -1492,7 +1462,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \chapter
@@ -1504,14 +1474,17 @@ color push 0 g 0 G
 color pop
  <./images/skeleton.png>]
 Chapter 5.
+<images/LinearRegUni.png, id=781, 947.4597pt x 297.0297pt>
 File: images/LinearRegUni.png Graphic file (type png)
 <use images/LinearRegUni.png>
 Package pdftex.def Info: images/LinearRegUni.png  used on input line 10.
 (pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
+<images/RandomForestUni.png, id=782, 947.4597pt x 297.0297pt>
 File: images/RandomForestUni.png Graphic file (type png)
 <use images/RandomForestUni.png>
 Package pdftex.def Info: images/RandomForestUni.png  used on input line 11.
 (pdftex.def)             Requested size: 333.46758pt x 104.54208pt.
+<images/SVRuni.png, id=783, 947.4597pt x 297.0297pt>
 File: images/SVRuni.png Graphic file (type png)
 <use images/SVRuni.png>
 Package pdftex.def Info: images/SVRuni.png  used on input line 12.
@@ -1523,7 +1496,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/threemodelsres.png, id=793, 574.5465pt x 327.3831pt>
+<images/threemodelsres.png, id=788, 574.5465pt x 327.3831pt>
 File: images/threemodelsres.png Graphic file (type png)
 <use images/threemodelsres.png>
 Package pdftex.def Info: images/threemodelsres.png  used on input line 26.
@@ -1541,7 +1514,7 @@ l.29 \end{figure}
 color pop
 color push 0 g 0 G
 color pop
-] [41
+ <./images/LinearRegUni.png> <./images/RandomForestUni.png> <./images/SVRuni.png>] [41
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1557,12 +1530,12 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/threemodelsres.png>]
-<images/lstmtotal.png, id=804, 422.7795pt x 327.3831pt>
+<images/lstmtotal.png, id=802, 422.7795pt x 327.3831pt>
 File: images/lstmtotal.png Graphic file (type png)
 <use images/lstmtotal.png>
 Package pdftex.def Info: images/lstmtotal.png  used on input line 58.
 (pdftex.def)             Requested size: 354.31049pt x 274.38048pt.
-<images/lstm150.png, id=805, 409.7709pt x 327.3831pt>
+<images/lstm150.png, id=803, 409.7709pt x 327.3831pt>
 File: images/lstm150.png Graphic file (type png)
 <use images/lstm150.png>
 Package pdftex.def Info: images/lstm150.png  used on input line 65.
@@ -1583,7 +1556,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/lstmtotal.png>]
-<images/anntotal.png, id=812, 960.4683pt x 505.1673pt>
+<images/anntotal.png, id=810, 960.4683pt x 505.1673pt>
 File: images/anntotal.png Graphic file (type png)
 <use images/anntotal.png>
 Package pdftex.def Info: images/anntotal.png  used on input line 79.
@@ -1604,7 +1577,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./images/lstm150.png>]
-<images/ann150.png, id=818, 947.4597pt x 505.1673pt>
+<images/ann150.png, id=816, 947.4597pt x 505.1673pt>
 File: images/ann150.png Graphic file (type png)
 <use images/ann150.png>
 Package pdftex.def Info: images/ann150.png  used on input line 86.
@@ -1653,7 +1626,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<images/annvslstm.png, id=836, 960.4683pt x 505.1673pt>
+<images/annvslstm.png, id=834, 960.4683pt x 505.1673pt>
 File: images/annvslstm.png Graphic file (type png)
 <use images/annvslstm.png>
 Package pdftex.def Info: images/annvslstm.png  used on input line 133.
@@ -1922,17 +1895,17 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4E8C765A14FE766DDE4CB4E56AD0D3EB;12288.
  ) 
 Here is how much of TeX's memory you used:
- 12146 strings out of 475248
- 199759 string characters out of 5758757
+ 12144 strings out of 475248
+ 199731 string characters out of 5758757
  1933785 words of memory out of 5000000
- 33216 multiletter control sequences out of 15000+600000
+ 33215 multiletter control sequences out of 15000+600000
  566049 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,755b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Ben/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (65 pages, 1970827 bytes).
+Output written on Thesis.pdf (65 pages, 1970187 bytes).
 PDF statistics:
- 1038 PDF objects out of 1200 (max. 8388607)
- 251 named destinations out of 1000 (max. 500000)
+ 1036 PDF objects out of 1200 (max. 8388607)
+ 250 named destinations out of 1000 (max. 500000)
  671 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -54,15 +54,15 @@
 \contentsline {section}{\numberline {4.4}Univariate Implementation}{27}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Multivariate Implementation}{28}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}The Features and Dataset}{28}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{29}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}The Models Used for Multivariate Analysis}{28}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Model Architecture}{29}{subsection.4.5.3}%
 \contentsline {subsubsection}{Feedforward Neural Network Model Architecture}{29}{section*.13}%
-\contentsline {subsubsection}{LSTM Model Architecture}{31}{section*.14}%
+\contentsline {subsubsection}{LSTM Model Architecture}{30}{section*.14}%
 \contentsline {subsection}{\numberline {4.5.4}Hyperparameter Optimisation}{32}{subsection.4.5.4}%
 \contentsline {section}{\numberline {4.6}Testing and Model Results}{33}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Testing Objectives}{33}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}The Testing Set}{33}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{34}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.3}Identifying Errors}{33}{subsection.4.6.3}%
 \contentsline {subsection}{\numberline {4.6.4}Quality Assurance}{34}{subsection.4.6.4}%
 \contentsline {subsubsection}{Ensuring the Models Do Not Over Train}{35}{section*.15}%
 \contentsline {section}{\numberline {4.7}Final User Friendly Model Implementation}{37}{section.4.7}%

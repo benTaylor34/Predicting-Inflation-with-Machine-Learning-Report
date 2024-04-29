@@ -123,14 +123,7 @@ Univariate analysis does not involve relationships or causes from other variable
 Before Implementing each machine learning model with the full dataset, a subset of the models were trained and tested using inflation as the only variable.
 The models that were implemented were linear regression, random forest regression (using 20 trees), and support vector regression.
 This was a quick implementation to test if predicting inflation solely based on its past values would suffice.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{LinearRegUni.png}
-    \includegraphics[width=0.8\textwidth]{RandomForestUni.png}
-    \includegraphics[width=0.8\textwidth]{SVRuni.png}
-    \caption[The Results of Univariate Analysis.]{The Results of Univariate Analysis.}
-    \label{fig:LinearRegUni}
-\end{figure}
+
 As expected, the results produced were lackluster, likely due to inflation's complexity and the fact that many outside factors affect it.
 Of the three models, random forest regression produced the best results although the quality of the predictions was still not satisfactory. 
 
