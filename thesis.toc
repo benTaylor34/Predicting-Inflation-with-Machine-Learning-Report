@@ -72,11 +72,11 @@
 \contentsline {subsection}{\numberline {5.2.1}Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}{40}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}LSTM Network Model Predictions}{42}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Feedforward Neural Network Predictions}{43}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Why the Feedforward Neural Network Had the Most Success}{44}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.4}Why the Feedforward Neural Network Had the Most Success}{45}{subsection.5.2.4}%
 \contentsline {subsubsection}{Removing Data Outliers}{45}{section*.16}%
 \contentsline {subsubsection}{Hyperparameter Tuning}{45}{section*.17}%
 \contentsline {subsubsection}{Recurrent Neural Networks vs None Recurrent Neural Networks}{46}{section*.18}%
-\contentsline {section}{\numberline {5.3}Technical Difficulties}{47}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Technical Difficulties}{48}{section.5.3}%
 \contentsline {subsubsection}{Difficulties in the Literature Review}{48}{section*.19}%
 \contentsline {subsubsection}{Difficulties in the Design}{48}{section*.20}%
 \contentsline {subsubsection}{Difficulties in the Implementation}{49}{section*.21}%

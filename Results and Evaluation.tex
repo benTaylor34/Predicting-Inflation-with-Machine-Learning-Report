@@ -3,14 +3,14 @@ This chapter covers the overall evaluation of the models that were developed.
 This includes a comparison and evaluation of the results produced by the models as well as a reflection of what could be done differently if the project were to start over.
 
 \section{Results From the Univariate Implementation}
-The Univariate implementation was only implemented on linear regression, random forest regression, and support vector regression.
+Univariate analysis was only implemented using linear regression, random forest regression, and support vector regression.
 This was because it was unlikely for the results of the univariate analysis to be of a high standard due to the complexity of inflation as such it was deemed unnecessary to implement any more models.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{LinearRegUni.png}
     \includegraphics[width=0.8\textwidth]{RandomForestUni.png}
     \includegraphics[width=0.8\textwidth]{SVRuni.png}
-    \caption[Univariate Implementation of Linear Regression, Random Forest Regression, and Support Vector Regression.]{Univariate Implementation of Linear Regression, Random Forest Regression, and Support Vector Regression.}
+    \caption[Results From the Univariate Implementation of Linear Regression, Random Forest Regression, and Support Vector Regression.]{Results From the Univariate Implementation of Linear Regression, Random Forest Regression, and Support Vector Regression.}
     \label{fig:Univar}
 \end{figure}
 As expected, the results from attempting to predict inflation solely based on its history were extremely poor.
@@ -19,7 +19,7 @@ These results serve to cement the complexity of inflation and how it is affected
 
 \section{The Multivariate Models' Results}
 \subsection{Linear Regression Model, Random Forest Regression Model, and Support Vector Regression Model Predictions}
-The table of regression metrics in the previous chapter showed how the linear regression, random forest, and support vector regression algorithms all performed worse prediction methods than the mean of the data (as shown in the r-squared score).
+The table of regression metrics in the previous chapter showed how the linear regression, random forest, and support vector regression algorithms all produced forecasts worse than the mean of the data (as shown in the r-squared score).
 Although this was a disappointing result, it was somewhat expected as inflation is an extremely complex variable and simpler algorithms will likely struggle to form an understanding of its properties.
 \begin{figure}[H]
     \centering
@@ -34,7 +34,7 @@ This could be due to a linear property indicating that inflation was likely to i
 
 It was expected for linear regression to struggle in predicting inflation as the relationship between it and the other features is complex.
 This was shown in the correlation matrix created that showed very little Pearson pairwise correlation between CPI and the other features.
-Although it has to be said that despite linear regression not being expected to perform well, the predictions graph still outperformed random forest regression and support vector regression if the large outlier around month 70 is ignored.
+Despite this, the linear regression model's predictions still outperformed random forest regression and support vector regression if the large outlier around month 70 is ignored.
 
 Random forest models seemed to have a good reputation for predictions during the literature review yet still failed to provide an accurate prediction for inflation.
 This is possibly due to the fact that each tree in the random forest model is trained on a random subset of the data.
@@ -55,18 +55,19 @@ This could potentially be due to the number of past values the LSTM is given.
 As it stores 12 past values it may struggle to predict the sharp gains and losses of inflation.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{lstmtotal.png}
+    \includegraphics[width=0.8\textwidth]{lstmtotal.png}
     \caption[Predictions from the LSTM Network Trained on the Entire Dataset.]{LSTM Network Trained on the Entire Dataset.}
     \label{fig:lstmtotal}
 \end{figure}
 The predictions from the model trained on the entire dataset, produce a smooth curve that follows the trends of inflation but fails to depict the magnitude and precision of the finer changes.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{lstm150.png}
+    \includegraphics[width=0.8\textwidth]{lstm150.png}
     \caption[Predictions from the LSTM Network Trained on a subset of the Dataset.]{LSTM Network Trained on a subset of the Dataset.}
     \label{fig:lstm150}
 \end{figure} 
-The predictions of the LSTM trained on the subset of the data more accurately depict the small volatile increments but still fail to predict the magnitude of inflation.\\
+The predictions of the LSTM trained on the subset of the data more accurately depict the small volatile increments but still fail to predict the magnitude of inflation.
+
 The graph produced by the LSTM that was trained on the subset of the dataset is preferable to the graph produced by the LSTM trained on the entire dataset.
 However, neither model produces close accurate predictions of the actual value of inflation.
 Both LSTMs can follow the trends of inflation (although somewhat delayed) but struggle to produce predictions that are of the correct magnitude.
@@ -76,20 +77,22 @@ Of the models implemented, the FNN produced the best results.
 This model, like the others, was implemented on both the whole dataset and a subset of the original data that did not include values from before the 1980s.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{anntotal.png}
+    \includegraphics[width=0.8\textwidth]{anntotal.png}
     \caption[Predictions from the Feedforward Neural-Network Trained on the Entire Dataset.]{Neural-Network Trained on the Entire Dataset.}
     \label{fig:anntotal}
 \end{figure}
-The predictions from the model trained on the entire dataset start well but lose accuracy towards the end of the training set.
+The predictions from the model trained on the entire dataset start well but lose accuracy towards the end of the testing set.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{ann150.png}
+    \includegraphics[width=0.8\textwidth]{ann150.png}
     \caption[Predictions from the Feedforward Neural-Network Trained on a subset of the Dataset.]{Neural-Network Trained on a subset of the Dataset.}
     \label{fig:ann150}
 \end{figure} 
+The model trained on the dataset that omitted the first 150 samples produced results that were of similar accuracy to the model trained on the entire dataset.
+However, the benefit of the model trained on the subset was that its results maintained their consistency for the entire testing set.
 
 Figures \ref{fig:anntotal} and \ref{fig:ann150} show the results produced by the model with the entire data vs the subset of the data respectively.
-The figures show how the models trained on the subset of the dataset produced more accurate predictions than the models trained on the entire dataset.
+A comparison of the figures shows how the model trained on the subset of the dataset produced more accurate predictions than the model trained on the entire dataset.
 
 \subsection{Why the Feedforward Neural Network Had the Most Success}
 The artificial neural network shown in figure \ref{fig:ann150} produced the best results out of all of the models implemented to predict inflation.
