@@ -94,7 +94,7 @@ However, the benefit of the model trained on the subset was that its results mai
 Figures \ref{fig:anntotal} and \ref{fig:ann150} show the results produced by the model with the entire data vs the subset of the data respectively.
 A comparison of the figures shows how the model trained on the subset of the dataset produced more accurate predictions than the model trained on the entire dataset.
 
-\subsection{Why the Feedforward Neural Network Had the Most Success}
+\subsection{Analysing Why the Feedforward Neural Network Had the Most Success}
 The artificial neural network shown in figure \ref{fig:ann150} produced the best results out of all of the models implemented to predict inflation.
 This is likely due to several factors.
 
@@ -113,8 +113,8 @@ The reason for the model preferring a higher number of nodes could be that with 
 However, such a large number of nodes comes at a computational cost as it will require more processing power and take more time to run the model.\\
 The preferred dropout rate was 0\% meaning that it is quite unlikely the model came close to overtraining as if it did the model would have been more successful with a higher dropout rate.
 Another possibility is that the other dropout rates available in the grid were already too high and dropouts were occurring too often.
-The next smallest dropout rate available was 10\% or 0.1 so this theory is unlikely as 0.1 is considered relatively low.\\
-The ideal learning rate was 0.005 which was unexpected as s it is higher than Keras' default learning rate of 0.001.
+The next smallest dropout rate available was 10\% or 0.1 so this theory is unlikely as 0.1 is considered a relatively low rate.\\
+The ideal learning rate was 0.005 which was unexpected as it is higher than Keras' default learning rate of 0.001.
 A higher learning rate often allows for faster convergence but can lead to the model oscillating or diverging if it overshoots the optimal point.
 Despite this, it does not seem like the model oscillated or diverged based on the loss graph as it did not display any additional inflections.\\
 The final hyperparameter was a batch size of 8, this was the smallest batch size option.
@@ -125,7 +125,7 @@ This can even be true for models trained using mini-batch sizes as small as 2.
 A model that updates its parameters more frequently is likely to perform well on data that has a lot of complex relationships.
 Therefore, the fact that the smallest batch size produced the best results is not surprising as the data the model is training on likely contains many such relationships.\\
 
-\subsubsection{Recurrent Neural Networks vs None Recurrent Neural Networks}
+\subsubsection{Recurrent Neural Networks vs Non-Recurrent Neural Networks}
 The previously mentioned factors still do not explain why the feedforward network produced superior results to the LSTM.
 During the 'Expected Model Performance' section of this report, the LSTM had been predicted to produce the best results.
 This prediction was made on the basis that an LSTM has the ability to retain historical data and use it in conjunction with present data in order to tune its parameters.
@@ -145,7 +145,7 @@ However, if this was the case then the feedforward network should have struggled
 Furthermore, the features in the dataset cover a wide range of macroeconomic indicators that should exhibit changes in the case of an outside event occurring.
 Finally, there was no obvious indication in the graph comparison between inflation and the LSTM's results that a regime change had taken place.
 A regime change would have been represented in dips or spikes in inflation that were not represented in the LSTM's results. 
-So it is unlikely that the sole reason for poor performance from the LSTM is due to outside features.
+So although it may be a contributing factor, it is unlikely that the sole reason for poor performance from the LSTM is due to outside features.
 
 Another explanation is that the problem of forecasting inflation may be less sequential than it was initially thought to be.
 LSTMs are made to forecast sequential data and time series data, but what if the value of inflation does not rely heavily on past values?
@@ -160,6 +160,7 @@ A quote from their paper states: "The resulting LSTM network involves up to hund
 In comparison the LSTM implemented in this project involved a mere 15000 total parameters, this massive disparity could be the reason the LSTM in this project did not perform as well.
 It seems that for an LSTM to perform to the best of its ability a large amount of data is needed.
 More data means more long-term relationships and more long-term relationships means better performance from recurrent neural networks.
+
 Thus, standard feedforward neural networks may be better suited for smaller datasets as the temporal relationships are less prominent in a limited dataset.
 
 \section{Technical Difficulties}
@@ -169,39 +170,39 @@ This section will discuss some of the technical difficulties presented by the ta
 \subsubsection{Difficulties in the Literature Review}
 The literature review presented several unique difficulties.
 Most of all was the sheer amount of literature available.
-The variety and contents of the research both past and present are seemingly insurmountable.
+The task of reviewing a topic with so much variety and content was seemingly insurmountable.
 This posed the age-old question of where to start.
 Survey papers were a blessing by providing the results of several papers compiled into one.
 Thanks to the obvious monetary incentive of being able to predict financial time series like stocks there was a plethora of papers available covering topics not dissimilar to this project.
 However, there was a rather distinct lack of crossover between machine learning and inflation forecasting.
 This could be possibly because it is the job of national banks to monitor inflation and they are often large enough and have enough resources available to conduct in-house research.
 
-Reviewing literature ultimately became a constant throughout the project allowing for changes and improvements to be made once new information came to light.
-If this project were to be completed again it would be a much smoother process purely because of the literature that has already been read both in and out of this report.
+Reviewing literature ultimately became a constant throughout the project causing many changes and improvements to be made every time new information came to light.
+If this project were to be completed again it would be a much smoother process purely because of the literature that has already been covered both in and out of this report and the knowledged gained from it.
 
 \subsubsection{Difficulties in the Design}
 The design chapter posed challenges of its own, chief of which was data selection and preprocessing.
-The choice was made to include data selection and preprocessing in the design section as implementation of the models could not be started without an already suitable dataset.
-Data selection was particularly difficult as inflation is commonly collected as an annual indicator and quarterly at best.
+The choice was made to include data selection and preprocessing in the design section as the implementation of the models could not be started without an already suitable dataset.
+Data selection was particularly difficult as inflation is commonly collected annually and collected quarterly at best.
 This would not be enough data samples to adequately train a machine-learning model.
-Go to dataset sites like Kaggle provided no solution to this problem.
+Go-to dataset sites like Kaggle provided no solution to this problem.
 Even both the Bank of England and the World Bank did not possess adequate data in this regard or at least it was not available on their websites or as part of their online databases.
 For a long period, it seemed like the project was doomed to poor data and poor data produces poor models. 
 Eventually, OECD's CPI data was found which was collected monthly.
 Although, this too was not as straightforward as it should have been as not only did OECD not store its CPI data with the rest of its country indicators but OECD also did not store its publicly available databases in a tabular format.
-This meant that it was necessary to undergo the painstaking task of hundreds of samples of data into an admissible format.
+This meant that it was necessary to undergo the painstaking task of converting hundreds of samples of data into an admissible format.
 Despite the stress of having to navigate the websites of multiple million-dollar institutions that seemed to be purposefully built like mazes created to withhold information, the best that could be found was data collected monthly.
 This meant that there were only a few hundred data samples available.
 To add insult to injury, a large portion of CPI data (the first available 10 years) was disproportionately large: it was an outlier.
 As such, although removing it increased the performance of the models, it left the data set with a minor 500+ samples: likely too few to produce the best possible results.
 Fortunately, despite the undersized dataset, a few of the models were still able to produce passable predictions.
-If there was only one thing that could be improved about the project it would be the size of the dataset.
+If there was only one thing that could be improved about the project it would be the size and quality of the dataset.
 
 \subsubsection{Difficulties in the Implementation}
-The issues encountered with the sample size naturally followed through into the implementation process, contributing to subpar results from the models compared to if they had been trained on more samples.
+The issues encountered with the sample size naturally followed through into the implementation process, contributing to subpar results from the models compared to if they had been trained on more data.
 The small sample size meant that the training and testing set sizes were limited.
 A model trained on a smaller training set is likely to produce worse results than a model trained on lots of data.
-Using a small testing set could cause performance estimates to be unreliable.
+Furthermore, using a small testing set could cause performance estimates and metrics to be unreliable.
 Thankfully despite these issues, both the feedforward network and the LSTM were able to produce passable results.
 All of the models would have likely benefitted from being trained on a larger dataset.
 As inflation data and many other economic indicators are historical, they can only be collected so many times each year.
@@ -216,13 +217,13 @@ Furthermore, several programming errors were encountered when trying to shift th
 Data needed to be shifted as using values from the same year to forecast other values from that year would be fruitless.
 This is because OECD and many other institutions release all of the indicators simultaneously every month so the target value would already be available.
 As such the data had to be altered so that the models would use data from the previous year to predict the target values of the current year.
-The programming errors encountered when implementing this were eventually resolved however the solution involved resetting the index of the dataframes and dropping even more data.
+The programming errors encountered when implementing this were eventually resolved, however, the solution involved resetting the index of the dataframes and dropping even more data.
 Thus the further into the future the user wishes to predict, the fewer samples will be available in the dataset.
 Predicting one year into the future did not cause much issue as only twelve samples had to be dropped (one for each month) yet this issue is still likely to reduce the performance of the models.
 
 The final issue that will be discussed regarding the implementation of this project is one that is encountered in almost every machine learning project: the runtime.
 This was especially prominent when utilising the grid search method for hyperparameter optimisation as it meant training and testing the models on every combination of hyperparameters in the given set.
-Using a smaller set of hyperparameters would reduce the wait time but it may also produce worse results if more optimal hyperparameters could have been found but were not included in the search.
+Using a smaller set of hyperparameters would reduce the wait time but it may also produce worse results if the optimal hyperparameters were not included in the search set.
 Once the optimal hyperparameters of each model were found they were fed directly to the models for training and testing moving forward in order to avoid using the grid search every time a model had to be run.
 Using a more powerful computer could help combat this issue or using an online service such as Google Collab that provides free access to graphics processing units (GPU) and tensor processing units (TPU) that aid in reducing the execution time of programs.
 
